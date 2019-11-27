@@ -1,0 +1,26 @@
+.burger {
+  position: relative;
+  z-index: $z-burger;
+  display: inline-block;
+
+  .burger__button {
+    @include text-button;
+    text-transform: uppercase;
+
+    &--hide {
+      display: none;
+      color: $color-dark;
+    }
+  }
+}
+
+.burger--active {
+  .burger__button {
+    &--hide {
+      display: initial;
+    }
+    &--show {
+      display: none;
+    }
+  }
+}

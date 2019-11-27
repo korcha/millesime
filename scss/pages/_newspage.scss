@@ -1,0 +1,25 @@
+.newspage {
+  width: 870px;
+  margin: 0 auto;
+  margin-top: -60px;
+  padding-bottom: 150px;
+
+  .newspage__date {
+    @include text-h2;
+    @include font-vollkorn;
+    color: $color-grey;
+    padding-bottom: 40px;
+  }
+
+  .newspage__content {
+    padding-bottom: 100px;
+
+    p {
+      @include text-regular;
+      margin-bottom: 20px;
+    }
+    a {
+      font-weight: 500;
+    }
+  }
+}

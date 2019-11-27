@@ -1,0 +1,35 @@
+.course-preview {
+  width: 420px;
+  height: 420px;
+  position: relative;
+  padding: 20px 30px;
+
+  .course-preview__picture {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .course-preview__title {
+    position: relative;
+    @include font-vollkorn;
+    color: $color-dark;
+    overflow-wrap: break-word;
+    font-size: 72px;
+    line-height: 88px;
+    text-transform: uppercase;
+  }
+
+  .course-preview__desc,
+  .course-preview__type {
+    color: $color-dark;
+    position: relative;
+    margin-left: 230px;
+    margin-top: 50px;
+  }
+
+  .course-preview__type {
+    @include text-button;
+    text-transform: uppercase;
+  }
+}

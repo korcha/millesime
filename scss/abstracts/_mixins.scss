@@ -1,0 +1,124 @@
+@mixin font-ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+@mixin font-vollkorn {
+  font-family: "Vollkorn", serif;
+}
+
+@mixin text-regular {
+  @include font-ubuntu;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137.9%;
+}
+
+@mixin text-h1 {
+  font-size: 48px;
+  line-height: 126%;
+}
+
+@mixin text-h2 {
+  @include text-h1;
+  font-size: 36px;
+}
+
+@mixin text-h3 {
+  @include text-regular;
+  font-weight: medium;
+  font-size: 24px;
+}
+
+@mixin text-button {
+  @include text-regular;
+  font-weight: 500;
+  line-height: 122%;
+}
+
+@mixin text-small {
+  @include text-h2;
+
+  font-weight: medium;
+  letter-spacing: 3%;
+}
+
+@mixin flex-prop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin section-prop {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 650px;
+  position: relative;
+  width: 100%;
+}
+
+@mixin transition {
+  transition: all 0.3s;
+}
+
+@mixin circle($width, $color) {
+  width: $width;
+  height: $width;
+  border-radius: $width / 2;
+  background-color: $color;
+}
+
+@mixin transition-prop($prop, $time, $func, $delay) {
+  transition-property: $prop;
+  transition-duration: $time;
+  transition-timing-function: $func;
+  transition-delay: $delay;
+}
+
+@mixin hover-anim-one($prop, $value) {
+  @include transition;
+
+  &:hover {
+    #{$prop}: $value;
+  }
+}
+
+@mixin hover-anim-many($list-prop) {
+  @include transition;
+
+  &:hover {
+    @each $key, $value in $list-prop {
+      #{$key}: $value;
+    }
+  }
+}
+
+@mixin item--icon-before($top, $translateX, $translateY) {
+  content: "";
+  position: absolute;
+  top: $top;
+  transform: translate($translateX, $translateY);
+  left: 0;
+}
+
+@function rem($px) {
+  @return $px / 16px + 0rem;
+}
+
+@mixin widescreen {
+  @media screen and (min-width: $widescreen) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}

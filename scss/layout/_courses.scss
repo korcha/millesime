@@ -1,0 +1,22 @@
+.courses {
+  padding: 112px 0 77px;
+
+  .courses__list {
+    display: flex;
+    transition: margin-left 550ms ease-in-out 0s;
+  }
+
+  .courses__slider {
+    width: 420px;
+    margin-left: 285px;
+  }
+
+  .courses__viewbox {
+    margin-bottom: 40px;
+  }
+
+  .courses__timer {
+      width: 290px;
+      margin: 0 15px;
+  }
+}

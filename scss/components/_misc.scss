@@ -1,0 +1,61 @@
+.controls-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewbox {
+  overflow: hidden;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.section__title {
+  position: relative;
+  @include text-h1;
+  @include font-vollkorn;
+  color: $color-vine;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 122px;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    right: 25%;
+    bottom: 30%;
+    width: 282px;
+    height: 54px;
+    background-image: url("../img/svg/title_undercover.svg");
+  }
+}
+
+.buy-certificate {
+  padding-right: 45px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 18px;
+    background-image: url("../img/svg/buy_certificate.svg");
+  }
+}
+
+.button-link {
+  @include text-regular;
+  font-weight: 500;
+  color: $color-vine;
+}
+
+mark {
+  background: none;
+  color: $color-grey-light;
+}

@@ -1,0 +1,66 @@
+.footer {
+  width: 1210px;
+  margin-left: 12%;
+  position: relative;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 170px;
+    height: 110px;
+    background-image: url("../img/logo_small.png");
+    transform: translate(-65%, -50%);
+  }
+
+  .footer__column {
+    &--flex {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .footer__box {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $color-grey-light;
+    padding: 70px 90px 60px 145px;
+    color: $color-grey;
+  }
+
+  .footer__phone {
+    @include text-h3;
+    @include font-ubuntu;
+  }
+
+  .footer__address {
+    @include text-regular;
+    margin-top: auto;
+    width: 175px;
+
+    a {
+      font-weight: 500;
+    }
+  }
+
+  .footer_copyright {
+    padding: 50px 30px 60px 145px;
+    @include text-regular;
+    color: $color-grey-light;
+    font-size: 14px;
+    display: flex;
+  }
+
+  .footer__politics {
+    width: 153px;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: 110px;
+  }
+
+  .footer__license {
+    font-weight: 500;
+    width: 322px;
+  }
+}

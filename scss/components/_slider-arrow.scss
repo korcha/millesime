@@ -1,0 +1,15 @@
+.slider-arrow {
+  font-size: 0;
+  width: 20px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &--next {
+    background-image: url("../img/svg/arrow_right.svg");
+  }
+  &--prev {
+    transform: scaleX(-1);
+    background-image: url("../img/svg/arrow_right.svg");
+  }
+}

@@ -1,0 +1,7 @@
+.language {
+    margin-right: 32px;
+
+    @include text-button;
+    color: $color-grey-light;
+    display: inline-block;
+}

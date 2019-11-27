@@ -1,0 +1,18 @@
+.article {
+  @include text-regular;
+
+  .article__date {
+    color: $color-grey-light;
+    margin-bottom: 40px;
+  }
+  .article__title {
+    @include text-h3;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+
+  .article__content {
+    display: block;
+  }
+}

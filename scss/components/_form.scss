@@ -1,0 +1,45 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__field {
+  width: 420px;
+  border: none;
+  border-bottom: 1px solid $color-grey-light;
+  padding: 0 10px 10px;
+  margin-top: 30px;
+  @include text-regular;
+  color: $color-grey;
+
+  &::placeholder {
+    @include text-regular;
+    font-weight: 500;
+    color: $color-grey-light;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+.form__button {
+  position: relative;
+  @include text-regular;
+  text-align: left;
+  font-weight: 500;
+  margin-top: 42px;
+  padding-left: 40px;
+  color: $color-vine;
+  background: none;
+  border: none;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/svg/review.svg");
+  }
+}

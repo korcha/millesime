@@ -1,0 +1,32 @@
+// Импортируем все переменные, миксины и т.д.
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// Импортируем базовые стили
+// @import "base/fonts";
+@import "base/base";
+
+//Ипортируем Cтили для отдельных элементов страницы
+@import "layout/header";
+@import "layout/news";
+@import "layout/courses";
+@import "layout/footer";
+
+//Ипортируем Стили отдельных компонентов
+@import "components/misc";
+@import "components/logo";
+@import "components/burger";
+@import "components/menu";
+@import "components/social";
+@import "components/language";
+@import "components/article";
+@import "components/slider-arrow";
+@import "components/course-preview";
+@import "components/form";
+
+//Ипортируем Персональные стили для страниц
+@import "pages/newspage";
+@import "pages/coursepage";
+
+//Ипортируем Персональные стили для тем
+// @import 'themes/default';
