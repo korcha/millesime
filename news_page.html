@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Millesime</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap&subset=cyrillic,cyrillic-ext"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header container">
+        <div class="logo header__left">
+          <a class="logo__link" href="/">
+            <img class="logo__picture" src="./img/logo.png" />
+          </a>
+        </div>
+        <div class="header__right">
+          <a class="language pointer" href="/">RUS</a>
+          <div class="burger">
+            <div class="burger__button burger__button--show show pointer">
+              меню
+            </div>
+            <div class="burger__button burger__button--hide hide pointer">
+              закрыть
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="section newspage">
+        <h1 class="newspage__title section__title">
+          Летний <br />
+          экспресс-курс!
+        </h1>
+        <div class="newspage__date">06.05.2019</div>
+        <div class="newspage__content">
+          <!--внутри этого блока, контент, очевидно будет вставляться из админки, 
+          поэтому не стал стилизовать глобально, а только через наследование (для <p> и <a>, например)
+          и инлайн для картинок, потому что глобально я не могу предугадать, как они будут расположены
+          в каждой новости -->
+          <p>На летний экспресс-курс можно записаться <a href="#">Здесь</a></p>
+          <p>
+            На занятия 4го, 6го, 11го и 18 июня действуют подарочные
+            сертификаты, выписанные на любую дегустацию Школы.
+          </p>
+          <p>
+            На 13 и 20 июня действуют сертификаты, выписанные на винный ужин.
+          </p>
+          <p>
+            На любое занятие можно купить подарочный сертификат или посетить его
+            отдельно. Но если покупается курс целиком, то можно взять с собой
+            друга на любое из занятий.
+          </p>
+          <p>
+            <img
+              style="width:48%;margin-right: 30px;"
+              src="img/content/news_content_1.jpg"
+            />
+            <img style="width:48%" src="img/content/news_content_2.jpg" />
+          </p>
+        </div>
+        <a class="buy-certificate button-link">КУПИТЬ ПОДАРОЧНЫЙ СЕРТИФИКАТ</a>
+      </section>
+      <footer class="footer">
+        <div class="footer__box">
+          <div class="footer__column footer__column--flex">
+            <div class="footer__phone">
+              <a href="tel:+79110311608">
+                +7 (911) 031 16 08
+              </a>
+            </div>
+            <div class="footer__phone">
+              <a href="tel:+79219408266">
+                +7 (921) 940 82 66
+              </a>
+            </div>
+            <p class="footer__address">
+              Санкт-Петербург Московский пр.,79а<br />
+              <a href="mail:info@wineprofi.com">info@wineprofi.com</a>
+            </p>
+          </div>
+          <div class="footer__column">
+            <form class="footer__form form">
+              <input
+                type="text"
+                class="footer__field form__field"
+                placeholder="Ваше имя"
+              />
+              <input
+                type="text"
+                class="footer__field form__field"
+                placeholder="Ваша электронная почта"
+              />
+              <button type="submit" class="footer__button form__button">
+                ПОДПИСАТЬСЯ НА РАССЫЛКУ
+              </button>
+            </form>
+          </div>
+          <div class="footer__column">
+            <div class="footer__social">
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link social__link--instagram-vine"
+                    >instagram</a
+                  >
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--facebook-vine"
+                    >facebook</a
+                  >
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--twitter-vine">
+                    twitter
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--vkontakte-vine"
+                    >vkontakte</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer_copyright">
+          <p>
+            © 2010-2019 <br />
+            Школа сомелье Миллезим
+          </p>
+          <p class="footer__politics">
+            <a href="#">Политика обработки персональных данных</a>
+          </p>
+          <p class="footer__license">
+            Лицензия на осуществление образовательной деятельности № 2194 от
+            04.10.2016г.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <div class="menu">
+      <div class="menu__header menu__wrapper">
+        <ul class="menu__buttons">
+          <li class="menu__button"><a href="#">задать вопрос</a></li>
+          <li class="menu__button"><a href="#">личный кабинет</a></li>
+        </ul>
+      </div>
+      <div class="menu__top menu__wrapper">
+        <ul class="menu__main-links">
+          <li class="menu__main-link"><a href="#">Дегустации</a></li>
+          <li class="menu__main-link"><a href="#">Курсы</a></li>
+          <li class="menu__main-link"><a href="#">Расписание</a></li>
+          <li class="menu__main-link">
+            <a href="#">Организация мероприятий</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu__bottom menu__wrapper">
+        <ul class="menu__links">
+          <li class="menu__link"><a href="#">Подарочный сертификат</a></li>
+          <li class="menu__link"><a href="#">Новости</a></li>
+          <li class="menu__link"><a href="#">О школе</a></li>
+          <li class="menu__link"><a href="#">Отзывы</a></li>
+          <li class="menu__link"><a href="#">Преподаватели</a></li>
+          <li class="menu__link"><a href="#">Галерея</a></li>
+          <li class="menu__link"><a href="#">Контакты</a></li>
+          <li class="menu__link"><a href="#">Работа</a></li>
+        </ul>
+        <div class="menu__social">
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link social__link--instagram">instagram</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook">facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter">twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte">vkontakte</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="js/self.min.js"></script>
+  </body>
+</html>
