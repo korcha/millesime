@@ -28,6 +28,12 @@
   font-size: 24px;
 }
 
+@mixin text-h4 {
+  @include text-regular;
+  font-weight: medium;
+  font-size: 16px;
+}
+
 @mixin text-button {
   @include text-regular;
   font-weight: 500;
@@ -36,7 +42,6 @@
 
 @mixin text-small {
   @include text-h2;
-
   font-weight: medium;
   letter-spacing: 3%;
 }
@@ -45,6 +50,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@mixin position_absolute{
+  display: block;
+  position: absolute;
+}
+
+@mixin position_relative{
+  display: block;
+  position: relative;
 }
 
 @mixin section-prop {
@@ -122,3 +137,6 @@
     @content;
   }
 }
+
+
+

@@ -3,13 +3,19 @@
   display: none;
   z-index: $z-menu;
   position: absolute;
+  background-color: $color-white;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 
-  &--active {
-    display: initial;
+  ul{
+    opacity: 0;
+    -webkit-animation: bg_menu  1s linear forwards 2s;
+    -moz-animation: bg_menu  1s linear forwards 2s;
+    -ms-animation: bg_menu 1s linear forwards 2s;
+    -o-animation: bg_menu  1s linear forwards 2s;
+    animation: bg_menu  1s linear forwards 2s;
   }
 
   .menu__wrapper {
@@ -27,15 +33,19 @@
   }
 
   .menu__top {
-    min-height: 43vh;
+    height:50%;
     background-color: $color-white;
     padding-top: 150px;
     padding-bottom: 36px;
   }
   .menu__bottom {
-    min-height: 57vh;
-    background-color: $color-vine;
+    position: absolute;
+    width: 100%;
+    height:50%;
+    background: url("../img/content/bg_menu_bottom.png") no-repeat;
+    background-size: cover;
     padding-bottom: 36px;
+    bottom:-500px;
   }
 
   .menu__button {
@@ -53,6 +63,115 @@
       color: $color-vine;
     }
   }
+
+  &--active {
+    display: initial;
+    opacity: 0;
+    -webkit-animation: bg_menu 1s linear forwards;
+    -moz-animation: bg_menu 1s linear forwards;
+    -ms-animation: bg_menu 1s linear forwards;
+    -o-animation: bg_menu 1s linear forwards;
+    animation: bg_menu 1s linear forwards;
+
+    .menu__bottom {
+      -webkit-animation: height_bottom 2s linear forwards;
+      -moz-animation: height_bottom 2s linear forwards;
+      -ms-animation: height_bottom 2s linear forwards;
+      -o-animation: height_bottom 2s linear forwards;
+      animation: height_bottom 2s linear forwards;
+    }
+  }
+
+  @-webkit-keyframes height_bottom {
+    from {
+      bottom:-500px;
+    }
+    to {
+      bottom:0;
+    }
+  }
+
+  @-moz-keyframes height_bottom {
+    from {
+      bottom:-500px;
+    }
+    to {
+      bottom:0;
+    }
+  }
+
+  @-ms-keyframes height_bottom {
+    from {
+      bottom:-500px;
+    }
+    to {
+      bottom:0;
+    }
+  }
+
+  @-o-keyframes height_bottom {
+    from {
+      bottom:-500px;
+    }
+    to {
+      bottom:0;
+    }
+  }
+
+  @keyframes height_bottom {
+    from {
+      bottom:-500px;
+    }
+    to {
+      bottom:0;
+    }
+  }
+
+  @-webkit-keyframes bg_menu {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes bg_menu {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes bg_menu {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes bg_menu {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes bg_menu {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+  }
+
 
   .menu__main-link {
     @include text-h2;

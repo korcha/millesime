@@ -1,0 +1,72 @@
+.degustation{
+  @include position_relative;
+  text-align: center;
+
+  .degustation_about{
+    @include position_relative;
+     left:100px;
+     background: url("../img/content/bg_degustation.png") no-repeat;
+     background-size: cover;
+     width: 833px;
+     height: 611px;
+     margin:0 auto;
+
+     div{
+       @include position_absolute;
+     }
+
+    .degustation_picture{
+      top:-70px;
+      left:-80px;
+      max-width:770px;
+      max-height:500px;
+      margin:0 auto;
+      z-index: 100;
+    }
+
+    .degustation_bg{
+      bottom:280px;
+      right:-10px;
+      color:#311616;
+      font-size:16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      transform: rotate(-90deg);
+    }
+  }
+
+  .link_near_courses{
+    @include position_relative;
+    top:-120px;
+    left:0;
+    text-align: left;
+
+    a{
+      display: inline-block;
+      color:#B17C8F;
+      font-size:16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      transform: rotate(-90deg);
+      padding:0 0 0 75px;
+      margin:0 0 0 -105px;
+
+      &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top:-30px;
+        left:0px;
+        width:70px;
+        height:46px;
+        background: url("../img/svg/icon_drop.svg") no-repeat;
+        transform: rotate(85deg);
+      }
+
+      &:hover:before{
+        background: url("../img/svg/icon_drop_hover.svg") no-repeat;
+      }
+    }
+
+  }
+}
