@@ -1,101 +1,244 @@
 .navigation{
   @include position_relative;
   max-width:100%;
-  height:325px;
-  overflow-x: hidden;
+  height:400px;
+
+  .org_events{
+    @include position_absolute;
+    @include text-regular;
+    top:-150px;
+    right:340px;
+    color:#B17C8F;
+    text-align: left;
+    cursor: pointer;
+    z-index: 100;
+
+    .icon_bottle{
+      @include position_absolute;
+      top:-200px;
+      right:-340px;
+      background: url("../img/content/icon_bottle.png") no-repeat;
+      width:403px;
+      height:557px;
+      z-index: 10;
+    }
+
+    &:hover .icon_bottle{
+      -webkit-animation: move_bottle 0.5s infinite ease-in alternate;
+      -moz-animation: move_bottle 0.5s infinite ease-in alternate;
+      animation: move_bottle 0.5s infinite ease-in alternate;
+    }
+
+    .icon_branch {
+      @include position_absolute;
+      top: -150px;
+      right: -340px;
+      background: url("../img/content/icon_vector.png") no-repeat;
+      width: 222px;
+      height: 461px;
+      z-index: 1;
+    }
+
+    &:hover .icon_branch{
+      -webkit-animation: move_bottle 0.5s infinite ease-in alternate-reverse;
+      -moz-animation: move_bottle 0.5s infinite ease-in alternate-reverse;
+      animation: move_bottle 0.5s infinite ease-in alternate-reverse;
+    }
+  }
 
   .navigation_line{
     display: inline-block;
     position: absolute;
     top:0;
-    left:-100%;
-    background: url("../img/content/bg_navigation.png") center center no-repeat;
-    width:200%;
-    height:325px;
+    left:0;
+    width:100%;
+    height:auto;
+    z-index: 1000;
 
-    -webkit-animation: bg_animation  10s linear infinite alternate;
-    -moz-animation: bg_animation  10s linear infinite alternate;
-    -ms-animation: bg_animation 10s linear infinite alternate;
-    -o-animation: bg_animation  10s linear infinite alternate;
-    animation: bg_animation  10s linear infinite alternate;
+    .line_first{
+      display:block;
+      position: absolute;
+      background: url("../img/content/bg_navigation.png") no-repeat;
+      background-size: cover;
+      top:0;
+      left:-1px;
+      width:100%;
+      height:430px;
+
+      -webkit-animation: bg_animation 40s infinite linear;
+      -moz-animation: bg_animation 40s infinite linear;
+      animation: bg_animation 40s infinite linear;
+    }
+
+    .line_second{
+      display:block;
+      position: absolute;
+      background: url("../img/content/bg_navigation.png") no-repeat;
+      background-size: cover;
+      top:0;
+      left:-100%;
+      width:100%;
+      height:430px;
+
+      -webkit-animation: bg_animation 40s infinite linear;
+      -moz-animation: bg_animation 40s infinite linear;
+      animation: bg_animation 40s infinite linear;
+    }
   }
 
-  .navigation_list{
+  .navigation_list {
     display: inline-block;
     position: absolute;
-    top:0;
-    left:0;
-    width:200%;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1001;
 
-    -webkit-animation: bg_animation  10s linear infinite alternate-reverse;
-    -moz-animation: bg_animation  10s linear infinite alternate-reverse;
-    -ms-animation: bg_animation 10s linear infinite alternate-reverse;
-    -o-animation: bg_animation  10s linear infinite alternate-reverse;
-    animation: bg_animation  10s linear infinite alternate-reverse;
-
-    ul{
-      display: inline-block;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
       list-style: none;
-      line-height: 325px;
+      line-height: 430px;
+      width:100vw;
+      left: 0;
 
-      li{
+      li {
         display: inline-block;
-        font-size:63px;
-        color:#E0CBD2;
-        text-transform: uppercase;
-        padding:0 30px;
+        padding: 0 30px;
 
-        &:hover{
-          color:#B17C8F;
-          text-decoration: underline;
+        a {
+          font-size: 63px;
+          line-height: 80px;
+          color: #E0CBD2;
+          text-transform: uppercase;
+
+          &:hover {
+            color: #B17C8F;
+            border-bottom: 4px solid #B17C8F;
+          }
         }
       }
     }
+
+    .list_first{
+      @include position_absolute;
+      left:0;
+      top:0;
+
+      -webkit-animation: scroll_text 40s infinite linear;
+      -moz-animation: scroll_text 40s infinite linear;
+      animation: scroll_text 40s infinite linear;
+    }
+
+    .list_second{
+      @include position_absolute;
+      left:100%;
+      top:0;
+
+      -webkit-animation: scroll_text 40s infinite linear;
+      -moz-animation: scroll_text 40s infinite linear;
+      animation: scroll_text 40s infinite linear;
+    }
+
   }
 
 
   @-webkit-keyframes bg_animation {
     0% {
-      left:0;
+      -moz-transform: translate(0, 0);
+      transform: translate(0, 0);
     }
     100% {
-      right:0;
+      -webkit-transform: translate(100%, 0);
+      transform: translate(100%, 0)
     }
   }
 
   @-moz-keyframes bg_animation {
     0% {
-      left:0;
+      -moz-transform: translate(0, 0);
+      transform: translate(0, 0);
     }
     100% {
-      right:0;
-    }
-  }
-
-  @-ms-keyframes bg_animation {
-    0% {
-      left:0;
-    }
-    100% {
-      right:0;
-    }
-  }
-
-  @-o-keyframes bg_animation {
-    0% {
-      left:0;
-    }
-    100% {
-      right:0;
+      -webkit-transform: translate(100%, 0);
+      transform: translate(100%, 0)
     }
   }
 
   @keyframes bg_animation {
     0% {
-      left:0;
+      -moz-transform: translate(0, 0);
+      transform: translate(0, 0);
     }
     100% {
-      right:0;
+      -webkit-transform: translate(100%, 0);
+      transform: translate(100%, 0)
     }
   }
+
+
+  @-webkit-keyframes scroll_text {
+    0% {
+      -moz-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    100% {
+      -webkit-transform: translate(-100%, 0);
+      transform: translate(-100%, 0)
+    }
+  }
+
+  @-moz-keyframes scroll_text {
+    0% {
+      -moz-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    100% {
+      -webkit-transform: translate(-100%, 0);
+      transform: translate(-100%, 0)
+    }
+  }
+
+  @keyframes scroll_text {
+    0% {
+      -moz-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    100% {
+      -webkit-transform: translate(-100%, 0);
+      transform: translate(-100%, 0)
+    }
+  }
+
+
+
+
+  @-webkit-keyframes move_bottle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(5deg);
+    }
+  }
+
+  @-moz-keyframes move_bottle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(5deg);
+    }
+  }
+
+  @keyframes move_bottle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(5deg);
+    }
+  }
+
 }

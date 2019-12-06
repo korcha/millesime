@@ -78,7 +78,8 @@ a {
   position: relative;
   color: $color_grey;
   background-color: $color_white;
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .container {
@@ -91,6 +92,6 @@ a {
   position: relative;
   max-width: 1200px;
   margin:0 auto;
-  padding:30px 0;
+  padding:50px 0;
 }
 

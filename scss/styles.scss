@@ -1,6 +1,7 @@
 // Импортируем все переменные, миксины и т.д.
 @import "abstracts/variables";
 @import "abstracts/mixins";
+@import "abstracts/animate";
 
 // Импортируем базовые стили
 // @import "base/fonts";
@@ -13,6 +14,8 @@
 @import "layout/seminar";
 @import "layout/courses";
 @import "layout/navigation";
+@import "layout/reviews";
+@import "layout/partners";
 @import "layout/footer";
 
 //Ипортируем Стили отдельных компонентов

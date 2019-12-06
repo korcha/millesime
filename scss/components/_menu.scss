@@ -65,7 +65,7 @@
   }
 
   &--active {
-    display: initial;
+    display: block;
     opacity: 0;
     -webkit-animation: bg_menu 1s linear forwards;
     -moz-animation: bg_menu 1s linear forwards;

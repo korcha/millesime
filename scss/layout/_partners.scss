@@ -1,0 +1,34 @@
+.partners {
+  @include position_relative;
+  text-align: center;
+  max-width: 100%;
+
+  .icon_glass{
+    @include position_absolute;
+    bottom:-280px;
+    right:-70px;
+    background: url("../img/content/icon_glass.jpg") no-repeat;
+    width:285px;
+    height: 427px;
+  }
+
+  h2{
+    @include text-h2;
+  }
+
+  ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    max-width: 1200px;
+    margin:0 auto;
+    padding:80px 0;
+
+    li{
+      width:15%;
+      padding:20px 0;
+    }
+
+  }
+}

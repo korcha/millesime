@@ -33,13 +33,102 @@
   background: none;
   border: none;
 
+
   &:before {
     content: " ";
     position: absolute;
-    left: 0;
-    top: 0;
     width: 25px;
     height: 25px;
     background-image: url("../img/svg/review.svg");
+
+    -webkit-animation: sub_icon 1s  ease-in-out forwards;
+    -moz-animation: sub_icon 1s  ease-in-out forwards;
+    animation: sub_icon 1s  ease-in-out forwards;
+  }
+
+  &:hover:before{
+    -webkit-animation: flight_icon 1s  ease-in-out forwards;
+    -moz-animation: flight_icon 1s  ease-in-out forwards;
+    animation: flight_icon 1s  ease-in-out forwards;
+  }
+
+
+  @-webkit-keyframes flight_icon {
+    0% {
+      opacity: 1;
+      left: 0;
+      top: 0;
+    }
+    100% {
+      opacity: 0;
+      left: 60px;
+      top: -60px;
+    }
+  }
+
+  @-moz-keyframes flight_icon {
+    0% {
+      opacity: 1;
+      left: 0;
+      top: 0;
+    }
+    100% {
+      opacity: 0;
+      left: 60px;
+      top: -60px;
+    }
+  }
+
+  @keyframes flight_icon {
+    0% {
+      opacity: 1;
+      left: 0;
+      top: 0;
+    }
+    100% {
+      opacity: 0;
+      left: 60px;
+      top: -60px;
+    }
+  }
+
+
+  @-webkit-keyframes sub_icon {
+    0% {
+      opacity: 0;
+      left: -60px;
+      top: 60px;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  @-moz-keyframes sub_icon {
+    0% {
+      opacity: 0;
+      left: -60px;
+      top: 60px;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  @keyframes sub_icon {
+    0% {
+      opacity: 0;
+      left: -60px;
+      top: 60px;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+      top: 0;
+    }
   }
 }

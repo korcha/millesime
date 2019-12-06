@@ -1,5 +1,24 @@
 .seminars{
   @include position_relative;
+  max-width: 100%;
+  padding: 0 10%;
+
+  .block_gift{
+    display: block;
+    position: absolute;
+    top:50px;
+    right:-40px;
+    background: url("../img/content/icon_gift.png") no-repeat;
+    width:530px;
+    height:320px;
+    cursor: pointer;
+
+    transition: transform 0.5s;
+
+    &:hover{
+      transform: rotate(5deg);
+    }
+  }
 
   h2{
     @include text-h2;

@@ -1,6 +1,8 @@
 .degustation{
   @include position_relative;
   text-align: center;
+  max-width: 100%;
+  padding:0 10%;
 
   .degustation_about{
     @include position_relative;
@@ -10,6 +12,12 @@
      width: 833px;
      height: 611px;
      margin:0 auto;
+
+    transition: background 0.5s;
+
+    &.active{
+      background: url("../img/content/bg_degustation_active.png") no-repeat;
+    }
 
      div{
        @include position_absolute;
@@ -24,7 +32,7 @@
       z-index: 100;
     }
 
-    .degustation_bg{
+    .degustation_link{
       bottom:280px;
       right:-10px;
       color:#311616;
@@ -34,6 +42,7 @@
       transform: rotate(-90deg);
     }
   }
+
 
   .link_near_courses{
     @include position_relative;
@@ -61,6 +70,8 @@
         height:46px;
         background: url("../img/svg/icon_drop.svg") no-repeat;
         transform: rotate(85deg);
+
+        transition: background 0.5s;
       }
 
       &:hover:before{

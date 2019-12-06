@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Millesime</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap&subset=cyrillic,cyrillic-ext"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap"
-      rel="stylesheet"
-    />
+
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Vollkorn:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/wow.min.js"></script>
+
+      <script>
+          new WOW().init();
+      </script>
+
   </head>
   <body>
     <div class="wrapper">
@@ -21,11 +23,19 @@
       <header class="header container">
         <div class="logo header__left">
           <a class="logo__link" href="/">
-            <img class="logo__picture" src="./img/logo.png" />
+            <img class="logo__picture animated bounceInLeft" src="./img/logo.png" />
           </a>
         </div>
         <div class="header__right">
-          <a class="language pointer" href="#">RUS</a>
+            <div class="lang_list">
+              <a class="language pointer" href="#">RUS</a>
+                <ul>
+                    <li>RUS</li>
+                    <li>ENG</li>
+                    <li>FIN</li>
+                </ul>
+            </div>
+
           <div class="burger">
             <div class="burger__button burger__button--show show pointer">
               меню
@@ -39,16 +49,16 @@
 
       <section class="section degustation">
 
-        <div class="degustation_about">
-          <div class="degustation_picture">
+        <div class="degustation_about animated bounceInRight">
+          <div class="degustation_picture animated bounceInLeft">
             <img src="./img/content/img_degustation.png" alt="#"/>
           </div>
-          <div class="degustation_bg">
-            <a href="">Ближайшие дегустации</a>
+          <div class="degustation_link">
+            <a href="#">Ближайшие дегустации</a>
           </div>
         </div>
 
-        <div class="link_near_courses">
+        <div class="link_near_courses animated bounceInDown">
           <a href="#">Ближайшие курсы</a>
         </div>
 
@@ -59,11 +69,13 @@
         <h2>Школа «Миллезим» –  лицензированная профессиональная школа сомелье.</h2>
         <h4>Мы работаем с 2010 года, и за это время выпустили более 500 специалистов и заслужили авторитет и признание в профессиональном винном мире.</h4>
 
+        <div class="block_gift wow rotateInDownRight"></div>
+
         <div class="list_seminars">
 
           <div>
-            <img src="./img/content/seminar_1.jpg" alt="#"/>
-            <article>
+            <img class="wow animated fadeInDown" src="./img/content/seminar_1.jpg" alt="#"/>
+            <article class="wow animated slideInRight">
               <p class="date">14.05.2019</p>
               <h3>Душа вина, душа бокала</h3>
               <p>Знаете ли Вы, что пить Пино Нуар из бокала для белого вина - все равно, что слушать вашу любимую мелодию, заткнув уши?</p>
@@ -71,8 +83,8 @@
           </div>
 
           <div>
-            <img src="./img/content/seminar_2.jpg" alt="#"/>
-            <article>
+            <img  class="wow animated fadeInDown" src="./img/content/seminar_2.jpg" alt="#"/>
+            <article class="wow animated slideInRight">
               <p class="date">14.05.2019</p>
               <h3>Душа вина, душа бокала</h3>
               <p>Знаете ли Вы, что пить Пино Нуар из бокала для белого вина - все равно, что слушать вашу любимую мелодию, заткнув уши?</p>
@@ -80,8 +92,8 @@
           </div>
 
           <div>
-            <img src="./img/content/seminar_2.jpg" alt="#"/>
-            <article>
+            <img class="wow animated fadeInDown" src="./img/content/seminar_2.jpg" alt="#"/>
+            <article class="wow animated slideInRight">
               <p class="date">14.05.2019</p>
               <h3>Душа вина, душа бокала</h3>
               <p>Знаете ли Вы, что пить Пино Нуар из бокала для белого вина - все равно, что слушать вашу любимую мелодию, заткнув уши?</p>
@@ -104,7 +116,7 @@
         </div>
         <div class="news__content">
           <div class="news__viewbox viewbox">
-            <ul class="news__list">
+            <ul class="news__list wow animated slideInRight">
               <li class="news__item article">
                 <div class="article__date">
                   19.12.2018
@@ -257,24 +269,81 @@
       </section>
 
       <section class="section navigation">
-        <div class="navigation_line"></div>
+
+        <div><a  class="org_events wow bounceInUp" href="#">
+                Организация<br/>мероприятий
+                <span class="icon_bottle"></span>
+                <span class="icon_branch"></span>
+            </a>
+        </div>
+
+        <div class="navigation_line">
+            <div class="line_first"></div>
+            <div class="line_second"></div>
+        </div>
         <div class="navigation_list">
-          <ul>
-            <li>Дегустации</li>
-            <li>Курсы</li>
-            <li>Расписание</li>
-            <li>Мероприятия</li>
-            <li>Дегустации</li>
-            <li>Курсы</li>
-            <li>Расписание</li>
-            <li>Мероприятия</li>
+          <ul class="list_first">
+              <li><a href="#">Дегустации</a></li>
+              <li><a href="#">Курсы</a></li>
+              <li><a href="">Расписание</a></li>
+              <li><a href="#">Мероприятия</a></li>
+          </ul>
+
+          <ul class="list_second">
+              <li><a href="#">Дегустации</a></li>
+              <li><a href="#">Курсы</a></li>
+              <li><a href="">Расписание</a></li>
+              <li><a href="#">Мероприятия</a></li>
           </ul>
         </div>
+
       </section>
 
-      <section class="section reviews"></section>
+      <section class="section reviews">
 
-      <section class="section partners"></section>
+        <h2>Отзывы</h2>
+
+        <div class="">
+          <article>
+            <p class="date">14.05.2019</p>
+            <h3>Наталья Прищепова</h3>
+            <p>Давно собиралась написать, но всё никак не могла приступить. Очень сложно передать словами все те эмоции, то состояние, в котором я пребывала,пока училась в школе «Миллезим» и, надеюсь, продолжу обучение этой осенью. Как сейчас помню нашу первую лекцию: мы знакомились с преподавателями, с однополчанами винного фронта, знакомились с вином, как нам приоткрывали завесу тайн этого непостижимого напитка.
+              Помню, как сидела, с открытым ртом и слушала, как говорят о вине Евгения и Николай, и мечтала хоть на толику,хоть на тысячную долю приблизиться к ним, постичь эту науку, быть достойной общения с ними ну и ,конечно, быть достойной великих вин ...</p>
+          </article>
+        </div>
+
+        <div>
+          <article>
+            <p class="date">14.05.2019</p>
+            <h3>Наталья Прищепова</h3>
+            <p>Давно собиралась написать, но всё никак не могла приступить. Очень сложно передать словами все те эмоции, то состояние, в котором я пребывала,пока училась в школе «Миллезим» и, надеюсь, продолжу обучение этой осенью. Как сейчас помню нашу первую лекцию: мы знакомились с преподавателями, с однополчанами винного фронта, знакомились с вином, как нам приоткрывали завесу тайн этого непостижимого напитка.
+              Помню, как сидела, с открытым ртом и слушала, как говорят о вине Евгения и Николай, и мечтала хоть на толику,хоть на тысячную долю приблизиться к ним, постичь эту науку, быть достойной общения с ними ну и ,конечно, быть достойной великих вин ...</p>
+          </article>
+        </div>
+
+        <div class="all_reviews"><a href="#">Все отзывы</a></div>
+
+      </section>
+
+      <section class="section partners">
+          <h2>Партнеры</h2>
+          <ul>
+              <li><img src="./img/content/partners/partner_1.jpg" alt="#"/></li>
+              <li><img src="./img/content/partners/partner_2.jpg" alt="#"/></li>
+              <li><img src="./img/content/partners/partner_3.jpg" alt="#"/></li>
+              <li><img src="./img/content/partners/partner_4.jpg" alt="#"/></li>
+              <li><img src="./img/content/partners/partner_5.jpg" alt="#"/></li>
+              <li><img src="./img/content/partners/partner_6.jpg" alt="#"/></li>
+              <li><img src="./img/content/partners/partner_6.jpg" alt="#"/></li>
+              <li><img src="./img/content/partners/partner_7.jpg" alt="#"/></li>
+              <li><img src="./img/content/partners/partner_8.jpg" alt="#"/></li>
+              <li><img src="./img/content/partners/partner_9.jpg" alt="#"/></li>
+              <li><img src="./img/content/partners/partner_10.jpg" alt="#"/></li>
+              <li><img src="./img/content/partners/partner_1.jpg" alt="#"/></li>
+          </ul>
+
+          <div class="icon_glass wow animated tada"></div>
+      </section>
 
       <footer class="footer">
         <div class="footer__box">
