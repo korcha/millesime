@@ -9,17 +9,6 @@
         color: $color-grey-light;
         display: inline-block;
         position: relative;
-
-        &:after{
-            content:'';
-            display: block;
-            position: absolute;
-            top:5px;
-            right:-25px;
-            background: url("../img/svg/select_arrow.svg") no-repeat;
-            width:18px;
-            height:10px;
-        }
     }
 
     ul{
@@ -27,7 +16,7 @@
         position: absolute;
         top: 20px;
         left: -20px;
-        background: #E0CBD2;
+        background: $color-red-medium;
         width: auto;
         padding: 10px 0;
 
@@ -36,7 +25,7 @@
             font-weight: 500;
             list-style: none;
             margin:5px 20px;
-            color:#B5B2B8;
+            color:$color-grey-light;
         }
     }
 
@@ -54,7 +43,7 @@
 
             li{
                 &:hover{
-                    color:#B17C8F;
+                    color:$color-vine;
                     cursor: pointer;
                 }
             }

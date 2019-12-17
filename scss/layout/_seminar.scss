@@ -1,27 +1,55 @@
 .seminars{
   @include position_relative;
   max-width: 100%;
-  padding: 0 10%;
+  padding: 100px 10%;
 
   .block_gift{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    Justify-content:center;
+    align-items: center;
     position: absolute;
     top:50px;
     right:-40px;
-    background: url("../img/content/icon_gift.png") no-repeat;
     width:530px;
     height:320px;
     cursor: pointer;
+    text-align: center;
 
-    transition: transform 0.5s;
+    &:after{
+      content:'';
+      display: block;
+      position: absolute;
+      top:0;
+      left:0;
+      background: url("../img/content/bg_gift.png") no-repeat;
+      width:530px;
+      height:320px;
+      z-index: 1;
 
-    &:hover{
+      transition: transform 0.5s;
+    }
+
+    &:hover:after{
       transform: rotate(5deg);
+    }
+
+    a{
+      @include text-regular;
+      color:$color-vine;
+      font-weight: 500;
+      text-transform: uppercase;
+      z-index: 10;
+    }
+
+    &:hover a{
+      transform: rotate(0deg);
     }
   }
 
   h2{
     @include text-h2;
+    @include font-vollkorn;
     width:53%;
     padding:40px 0;
   }
@@ -39,9 +67,9 @@
   .list_seminars{
     display: inline-grid;
     grid-template-rows: 200px 200px 200px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 5vw;
-    margin:80px 0 0 0;
+    margin: 80px 0 0 0;
 
     div{
       display:table;
@@ -52,7 +80,7 @@
       }
 
       article{
-       padding:20px;
+       padding:0 5vw;
       }
     }
 
@@ -60,7 +88,7 @@
       grid-row-start: 1;
       grid-row-end: 3;
       grid-column-start: 1;
-      grid-column-end: 5;
+      grid-column-end: 6;
 
       img{
         min-width: 420px;
@@ -70,9 +98,9 @@
 
     div:nth-child(2){
       grid-row-start: 2;
-      grid-row-end: 2;
+      grid-row-end: 3;
       grid-column-start: 4;
-      grid-column-end: 7;
+      grid-column-end: 8;
 
       img{
         min-width: 195px;
@@ -84,7 +112,7 @@
       grid-row-start: 3;
       grid-row-end: 3;
       grid-column-start: 3;
-      grid-column-end: 6;
+      grid-column-end: 7;
 
       img{
         min-width: 195px;

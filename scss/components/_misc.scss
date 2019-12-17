@@ -33,19 +33,101 @@
 }
 
 .buy-certificate {
-  padding-right: 45px;
-  position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  align-items:center;
   cursor: pointer;
 
-  &:after {
-    content: " ";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 30px;
-    height: 18px;
-    background-image: url("../img/svg/buy_certificate.svg");
+    span {
+      width: 30px;
+      height: 18px;
+      background-image: url("../img/svg/buy_certificate.svg");
+      margin:0 0 0 10px;
+    }
+
+    &:hover span{
+        -webkit-animation: buy_certificate 1s  ease-in-out forwards;
+        -moz-animation: buy_certificate 1s  ease-in-out forwards;
+        animation: buy_certificate 1s  ease-in-out forwards;
+    }
+
+  @-webkit-keyframes  buy_certificate {
+    0% {
+      background: url("../img/svg/buy_certificate.svg") no-repeat;
+    }
+    3%{
+      background: url("../img/svg/buy_certificate_middle.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    5%{
+      background: url("../img/svg/buy_certificate_big.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    10% {
+      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    100% {
+      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+  }
+
+  @-moz-keyframes buy_certificate {
+    0% {
+      background: url("../img/svg/buy_certificate.svg") no-repeat;
+    }
+    3%{
+      background: url("../img/svg/buy_certificate_middle.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    5%{
+      background: url("../img/svg/buy_certificate_big.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    10% {
+      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    100% {
+      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+  }
+
+  @keyframes buy_certificate {
+    0% {
+      background: url("../img/svg/buy_certificate.svg") no-repeat;
+    }
+    3%{
+      background: url("../img/svg/buy_certificate_middle.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    5%{
+      background: url("../img/svg/buy_certificate_big.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    10% {
+      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    100% {
+      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
   }
 }
 

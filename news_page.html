@@ -1,24 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Millesime</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap&subset=cyrillic,cyrillic-ext"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Millesime</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/wow.min.js"></script>
+
+  <script>
+    new WOW().init();
+  </script>
+
+</head>
+
   <body>
     <div class="wrapper">
 
-      <header class="header container"></header>
+      <header class="header container">
+        <div class="logo header__left">
+          <a class="logo__link" href="/">
+            <img class="logo__picture animated bounceInLeft" src="./img/logo.png" />
+          </a>
+        </div>
+        <div class="header__right">
+          <div class="lang_list">
+            <a class="language pointer" href="#">RUS</a>
+            <ul>
+              <li>RUS</li>
+              <li>ENG</li>
+              <li>FIN</li>
+            </ul>
+          </div>
+
+          <div class="burger">
+            <div class="burger__button burger__button--show show pointer">
+              меню
+            </div>
+            <div class="burger__button burger__button--hide hide pointer">
+              закрыть
+            </div>
+          </div>
+        </div>
+      </header>
 
       <section class="section newspage">
         <h1 class="newspage__title section__title">
@@ -52,7 +80,7 @@
             <img style="width:48%" src="img/content/news_content_2.jpg" />
           </p>
         </div>
-        <a class="buy-certificate button-link">КУПИТЬ ПОДАРОЧНЫЙ СЕРТИФИКАТ</a>
+        <a class="buy-certificate button-link">КУПИТЬ ПОДАРОЧНЫЙ СЕРТИФИКАТ  <span></span></a>
       </section>
       <footer class="footer">
         <div class="footer__box">
@@ -131,6 +159,7 @@
         </div>
       </footer>
     </div>
+
     <div class="menu">
       <div class="menu__header menu__wrapper">
         <ul class="menu__buttons">

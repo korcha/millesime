@@ -35,11 +35,15 @@
     .degustation_link{
       bottom:280px;
       right:-10px;
-      color:#311616;
+      color:$color-dark;
       font-size:16px;
-      font-weight: 500;
+      font-weight: 600;
       text-transform: uppercase;
       transform: rotate(-90deg);
+
+      &:hover a{
+        color:$color-vine;
+      }
     }
   }
 
@@ -52,7 +56,7 @@
 
     a{
       display: inline-block;
-      color:#B17C8F;
+      color:$color-vine;
       font-size:16px;
       font-weight: 500;
       text-transform: uppercase;
@@ -66,18 +70,36 @@
         position: absolute;
         top:-30px;
         left:0px;
-        width:70px;
-        height:46px;
+        width:66px;
+        height:44px;
         background: url("../img/svg/icon_drop.svg") no-repeat;
         transform: rotate(85deg);
 
-        transition: background 0.5s;
+        transition: background 1s;
       }
 
       &:hover:before{
         background: url("../img/svg/icon_drop_hover.svg") no-repeat;
       }
-    }
 
+      &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -50px;
+        right: -40px;
+        width:70px;
+        height:46px;
+        background: url("../img/svg/icon_drop_small.svg") no-repeat;
+        transform: rotate(85deg);
+        opacity: 0;
+
+        transition: opacity 1s;
+      }
+
+      &:hover:after{
+        opacity: 1;
+      }
+    }
   }
 }

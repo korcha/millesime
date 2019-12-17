@@ -49,10 +49,12 @@ var hover_block= function(){
 var out_block= function(){
     document.querySelector(".degustation_about").classList.remove('active');
 }
+
 var degustation=document.querySelector(".degustation_link");
+if (degustation) {
     degustation.onmouseover = hover_block;
     degustation.onmouseout = out_block;
-
+}
 
 var changeLang= function(){
     document.querySelector(".lang_list").classList.toggle('active');

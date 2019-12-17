@@ -7,9 +7,18 @@
 
   &--next {
     background-image: url("../img/svg/arrow_right.svg");
+
+    &:hover{
+      background-image: url("../img/svg/arrow_right_hover.svg");
+    }
   }
   &--prev {
     transform: scaleX(-1);
     background-image: url("../img/svg/arrow_right.svg");
+
+    &:hover{
+      transform: scaleX(-1);
+      background-image: url("../img/svg/arrow_right_hover.svg");
+    }
   }
 }

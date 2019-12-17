@@ -1,14 +1,15 @@
 .form {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .form__field {
   width: 420px;
   border: none;
   border-bottom: 1px solid $color-grey-light;
-  padding: 0 10px 10px;
-  margin-top: 30px;
+  padding: 0 10px 10px 20px;
+  margin-bottom: 30px;
   @include text-regular;
   color: $color-grey;
 
@@ -22,23 +23,74 @@
     margin-top: 0;
   }
 }
+
+.form__checkbox{
+  display: inline-block;
+  position: relative;
+  padding:10px 0;
+
+  input[type="checkbox"] {
+    opacity: 0;
+  }
+
+  label {
+    position: absolute;
+    display: inline-block;
+    left:20px;
+    padding-left: 30px;
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+      display: inline-block;
+    }
+
+    &:before{
+      background: url("../img/svg/icon_checkbox.svg") no-repeat;
+      height: 23px;
+      width: 22px;
+      left: 0px;
+      top: -3px;
+    }
+
+    &:after {
+      background: url("../img/svg/icon_checked.svg") no-repeat;
+      height: 23px;
+      width: 22px;
+      left: 4px;
+      top: -5px;
+    }
+  }
+
+  & input[type="checkbox"] + label:after {
+    content: none;
+  }
+
+  & input[type="checkbox"]:checked + label:after {
+    content:'';
+  }
+}
+
+
 .form__button {
   position: relative;
   @include text-regular;
   text-align: left;
   font-weight: 500;
   margin-top: 42px;
-  padding-left: 40px;
+  padding-left: 60px;
   color: $color-vine;
   background: none;
   border: none;
+  cursor: pointer;
 
 
   &:before {
     content: " ";
-    position: absolute;
-    width: 25px;
-    height: 25px;
+    position: absolute;;
+    width: 26px;
+    height: 26px;
     background-image: url("../img/svg/review.svg");
 
     -webkit-animation: sub_icon 1s  ease-in-out forwards;
@@ -56,39 +108,45 @@
   @-webkit-keyframes flight_icon {
     0% {
       opacity: 1;
-      left: 0;
+      left: 20px;
       top: 0;
+      background-image: url("../img/svg/review_step_1.svg");
     }
     100% {
       opacity: 0;
       left: 60px;
       top: -60px;
+      background-image: url("../img/svg/review_step_1.svg");
     }
   }
 
   @-moz-keyframes flight_icon {
     0% {
       opacity: 1;
-      left: 0;
+      left: 20px;
       top: 0;
+      background-image: url("../img/svg/review_step_1.svg");
     }
     100% {
       opacity: 0;
       left: 60px;
       top: -60px;
+      background-image: url("../img/svg/review_step_1.svg");
     }
   }
 
   @keyframes flight_icon {
     0% {
       opacity: 1;
-      left: 0;
+      left: 20px;
       top: 0;
+      background-image: url("../img/svg/review_step_1.svg");
     }
     100% {
       opacity: 0;
       left: 60px;
       top: -60px;
+      background-image: url("../img/svg/review_step_1.svg");
     }
   }
 
@@ -98,11 +156,13 @@
       opacity: 0;
       left: -60px;
       top: 60px;
+      background-image: url("../img/svg/review_step_1.svg");
     }
     100% {
       opacity: 1;
-      left: 0;
+      left: 20px;
       top: 0;
+      background-image: url("../img/svg/review.svg");
     }
   }
 
@@ -111,11 +171,13 @@
       opacity: 0;
       left: -60px;
       top: 60px;
+      background-image: url("../img/svg/review_step_1.svg");
     }
     100% {
       opacity: 1;
-      left: 0;
+      left: 20px;
       top: 0;
+      background-image: url("../img/svg/review.svg");
     }
   }
 
@@ -124,11 +186,13 @@
       opacity: 0;
       left: -60px;
       top: 60px;
+      background-image: url("../img/svg/review_step_1.svg");
     }
     100% {
       opacity: 1;
-      left: 0;
+      left: 20px;
       top: 0;
+      background-image: url("../img/svg/review.svg");
     }
   }
 }

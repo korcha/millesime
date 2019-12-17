@@ -36,34 +36,39 @@
       background-image: url("../img/svg/twitter.svg");
     }
 
+    &--vkontakte {
+      width: 20px;
+      height: 12px;
+      background-image: url("../img/svg/vkontakte.svg");
+    }
+
     &--vkontakte-vine {
       width: 20px;
       height: 12px;
-      background-image: url("../img/svg/vkontakte_vine.svg");
     }
 
     &--instagram-vine {
       width: 16px;
       height: 17px;
-      background-image: url("../img/svg/instagram_vine.svg");
     }
 
     &--facebook-vine {
       width: 9px;
       height: 17px;
-      background-image: url("../img/svg/facebook_vine.svg");
     }
 
     &--twitter-vine {
       width: 16px;
       height: 14px;
-      background-image: url("../img/svg/twitter_vine.svg");
+
     }
 
-    &--vkontakte {
-      width: 20px;
-      height: 12px;
-      background-image: url("../img/svg/vkontakte.svg");
+    .fill-icon{
+      fill:$color-vine;
+    }
+
+    &:hover .fill-icon{
+      fill:$color-dark;
     }
   }
 }

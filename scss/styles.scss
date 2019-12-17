@@ -1,6 +1,6 @@
 // Импортируем все переменные, миксины и т.д.
-@import "abstracts/variables";
-@import "abstracts/mixins";
+@import "abstracts/_variables";
+@import "abstracts/_mixins.scss";
 @import "abstracts/animate";
 
 // Импортируем базовые стили

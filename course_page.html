@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Millesime</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap&subset=cyrillic,cyrillic-ext"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Millesime</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/wow.min.js"></script>
+
+  <script>
+    new WOW().init();
+  </script>
+
+</head>
+
   <body>
     <div class="wrapper">
+
       <header class="header container">
         <div class="logo header__left">
           <a class="logo__link" href="/">
-            <img class="logo__picture" src="./img/logo.png" />
+            <img class="logo__picture animated bounceInLeft" src="./img/logo.png" />
           </a>
         </div>
         <div class="header__right">
-          <a class="language pointer" href="/">RUS</a>
+          <div class="lang_list">
+            <a class="language pointer" href="#">RUS</a>
+            <ul>
+              <li>RUS</li>
+              <li>ENG</li>
+              <li>FIN</li>
+            </ul>
+          </div>
+
           <div class="burger">
             <div class="burger__button burger__button--show show pointer">
               меню
@@ -35,6 +47,7 @@
           </div>
         </div>
       </header>
+
       <section class="section coursepage">
         <h1 class="coursepage__title section__title">
           Wineglish ® <br />
@@ -113,22 +126,19 @@
             </p>
             <p><mark>* для студентов текущего курса скидка 50%</mark></p>
             <p>
-              <a href="#"
-                >Здесь можно оплатить со скидкой 50% для студентов текущих
-                курсов</a
-              >
+              <a href="#">Здесь можно оплатить со скидкой 50% для студентов текущих курсов</a>
             </p>
           </div>
           <div class="coursepage__links">
-            <a class="buy-certificate button-link" href=""
-              >КУПИТЬ ПОДАРОЧНЫЙ СЕРТИФИКАТ</a
-            >
-            <a class="coursepage__link button-link" href=""
-              >ВСЕ СЕМИНАРЫ И ДЕГУСТАЦИИ</a
-            >
+            <a class="buy-certificate button-link" href="">КУПИТЬ ПОДАРОЧНЫЙ СЕРТИФИКАТ  <span></span></a>
+            <a class="coursepage__link button-link" href="">ВСЕ СЕМИНАРЫ И ДЕГУСТАЦИИ</a>
           </div>
         </div>
         <div class="coursepage__register">
+          <div class="courses__status">
+            <div class="done">Записаться</div>
+            <div>Заказать на другие даты</div>
+          </div>
           <div class="coursepage__info">
             <mark>
               * Подтвердить свое участие нужно не позднее чем за два дня до
@@ -151,12 +161,27 @@
               class="footer__field form__field"
               placeholder="Телефон"
             />
+
+            <div class="form__checkbox">
+              <input type="checkbox" value="" id="checkbox_1"/>
+              <label for="checkbox_1">Сообщать мне о новых дегустациях и курсах</label>
+            </div>
+            <div class="form__checkbox">
+              <input type="checkbox" value="" id="checkbox_2"/>
+              <label for="checkbox_2">Согласен с политикой обработки персональных данных</label>
+            </div>
+            <div class="form__checkbox">
+              <input type="checkbox" value="" id="checkbox_3"/>
+              <label for="checkbox_3">Согласен с Договором публичной оферты</label>
+            </div>
+
             <button type="submit" class="footer__button form__button">
               ОТПРАВИТЬ
             </button>
           </form>
         </div>
       </section>
+      <div class="icon__list wow rotateInUpRight animated fast"></div>
       <footer class="footer">
         <div class="footer__box">
           <div class="footer__column footer__column--flex">
@@ -234,6 +259,7 @@
         </div>
       </footer>
     </div>
+
     <div class="menu">
       <div class="menu__header menu__wrapper">
         <ul class="menu__buttons">

@@ -1,6 +1,5 @@
 .news {
   position: relative;
-  padding: 36px 0;
   max-width: 100%;
 
   &:before {
@@ -19,6 +18,7 @@
 
   .news__title {
     @include text-h2;
+    @include font-vollkorn;
     padding: 0 90px;
   }
 
