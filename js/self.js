@@ -16,12 +16,10 @@ if (coursesCarousel) {
 
     var sliderPrevCourses = function () {
         coursesPosition += coursesWidth * coursesCount, coursesPosition = Math.min(coursesPosition, 0), coursesList.style.marginLeft = coursesPosition + "px",
-        console.log('prev ' + coursesCount + ' ' +coursesPosition);
     };
 
     var sliderNextCourses = function () {
         coursesPosition -= coursesWidth * coursesCount, coursesPosition = Math.max(coursesPosition, -coursesWidth * (coursesListElems.length - coursesCount)), coursesList.style.marginLeft = coursesPosition + "px",
-        console.log('next ' +coursesCount + ' ' + coursesPosition);
     }
 
     coursesCarousel.querySelector(".courses__arrow.slider-arrow--prev").onclick = sliderPrevCourses;

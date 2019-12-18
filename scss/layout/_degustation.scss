@@ -13,7 +13,7 @@
      height: 611px;
      margin:0 auto;
 
-    transition: background 0.5s;
+    transition: background 1.5s;
 
     &.active{
       background: url("../img/content/bg_degustation_active.png") no-repeat;
@@ -40,6 +40,8 @@
       font-weight: 600;
       text-transform: uppercase;
       transform: rotate(-90deg);
+
+      transition: color 1.5s;
 
       &:hover a{
         color:$color-vine;
@@ -75,7 +77,7 @@
         background: url("../img/svg/icon_drop.svg") no-repeat;
         transform: rotate(85deg);
 
-        transition: background 1s;
+        transition: background 1.5s;
       }
 
       &:hover:before{
@@ -94,7 +96,7 @@
         transform: rotate(85deg);
         opacity: 0;
 
-        transition: opacity 1s;
+        transition: opacity 1.5s;
       }
 
       &:hover:after{
