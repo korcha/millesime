@@ -47,9 +47,9 @@
     }
 
     &:hover span{
-        -webkit-animation: buy_certificate 1s  ease-in-out forwards;
-        -moz-animation: buy_certificate 1s  ease-in-out forwards;
-        animation: buy_certificate 1s  ease-in-out forwards;
+        -webkit-animation: buy_certificate 2s  ease-in-out forwards;
+        -moz-animation: buy_certificate 2s  ease-in-out forwards;
+        animation: buy_certificate 2s  ease-in-out forwards;
     }
 
   @-webkit-keyframes  buy_certificate {

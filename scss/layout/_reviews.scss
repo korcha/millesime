@@ -67,9 +67,9 @@
         color:$color-dark;
 
         span{
-          -webkit-animation: all_reviews 1s  ease-in-out forwards;
-          -moz-animation: all_reviews 1s  ease-in-out forwards;
-          animation: all_reviews 1s  ease-in-out forwards;
+          -webkit-animation: all_reviews 2s  ease-in-out forwards;
+          -moz-animation: all_reviews 2s  ease-in-out forwards;
+          animation: all_reviews 2s  ease-in-out forwards;
         }
       }
 
@@ -77,13 +77,18 @@
         0% {
           background: url("../img/svg/icon_review.svg") no-repeat;
         }
-        5%{
+        3%{
           background: url("../img/svg/icon_review_middle.svg") no-repeat;
           width:34px;
           height:25px;
         }
-        10%{
+        5%{
           background: url("../img/svg/icon_review_big.svg") no-repeat;
+          width:34px;
+          height:25px;
+        }
+        10% {
+          background: url("../img/svg/icon_review_hover.svg") no-repeat;
           width:34px;
           height:25px;
         }
@@ -98,13 +103,18 @@
         0% {
           background: url("../img/svg/icon_review.svg") no-repeat;
         }
-        5%{
+        3%{
           background: url("../img/svg/icon_review_middle.svg") no-repeat;
           width:34px;
           height:25px;
         }
-        10%{
+        5%{
           background: url("../img/svg/icon_review_big.svg") no-repeat;
+          width:34px;
+          height:25px;
+        }
+        10% {
+          background: url("../img/svg/icon_review_hover.svg") no-repeat;
           width:34px;
           height:25px;
         }
@@ -119,13 +129,18 @@
         0% {
           background: url("../img/svg/icon_review.svg") no-repeat;
         }
-        5%{
+        3%{
           background: url("../img/svg/icon_review_middle.svg") no-repeat;
           width:34px;
           height:25px;
         }
-        10%{
+        5%{
           background: url("../img/svg/icon_review_big.svg") no-repeat;
+          width:34px;
+          height:25px;
+        }
+        10% {
+          background: url("../img/svg/icon_review_hover.svg") no-repeat;
           width:34px;
           height:25px;
         }
