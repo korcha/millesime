@@ -16,7 +16,61 @@
   }
 
   .courses__timer {
-      width: 290px;
-      margin: 0 15px;
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 2px;
+    margin: 0 15px;
+    background: $color-red-white;
+    overflow: hidden;
+    opacity: 0;
+
+    &.loading{
+      opacity: 1;
+    }
+
+    &:before{
+      content:'';
+      display: block;
+      position: absolute;
+      top:0;
+      left:0;
+      background: $color-red-white;
+      width:300px;
+      height:2px;
+    }
+
+    &.loading:before{
+      background: $color-vine;
+
+      -webkit-animation: loader 5s  linear infinite;
+      -moz-animation: loader 5s  linear infinite;
+      animation: loader 5s  linear infinite;
+    }
+
+    @-webkit-keyframes loader {
+      0% {
+        margin-left:0;
+      }
+      100% {
+        margin-left:100%;
+      }
+    }
+    @-moz-keyframes loader {
+      0% {
+        margin-left:0;
+      }
+      100% {
+        margin-left:100%;
+      }
+    }
+    @keyframes loader {
+      0% {
+        margin-left:0;
+      }
+      100% {
+        margin-left:100%;
+      }
+    }
   }
 }
