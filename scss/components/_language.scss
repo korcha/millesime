@@ -3,12 +3,15 @@
     position: relative;
 
     .language {
-        margin-right: 32px;
-
         @include text-button;
+        margin-right: 32px;
         color: $color-grey-light;
         display: inline-block;
         position: relative;
+
+        &:hover{
+            color:$color-grey;
+        }
     }
 
     ul{
@@ -16,7 +19,7 @@
         position: absolute;
         top: 20px;
         left: -20px;
-        background: $color-red-medium;
+        background: $color-red-white;
         width: auto;
         padding: 10px 0;
 
@@ -26,6 +29,12 @@
             list-style: none;
             margin:5px 20px;
             color:$color-grey-light;
+
+            transition: all .5s;
+
+            &:hover{
+                color:$color-grey;
+            }
         }
     }
 

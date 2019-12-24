@@ -88,3 +88,6 @@ var changeLang= function(){
     document.querySelector(".lang_list").classList.toggle('active');
 }
 document.querySelector(".language").onclick=changeLang;
+
+
+

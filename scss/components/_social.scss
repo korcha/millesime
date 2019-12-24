@@ -65,10 +65,22 @@
 
     .fill-icon{
       fill:$color-vine;
+
+      transition: all .5s;
     }
 
     &:hover .fill-icon{
       fill:$color-dark;
+    }
+
+    .fill-icon-menu{
+      fill:$color-red-medium;
+
+      transition: all .5s;
+    }
+
+    &:hover .fill-icon-menu{
+      fill: $color-white;
     }
   }
 }

@@ -35,16 +35,19 @@
     .degustation_link{
       bottom:280px;
       right:-10px;
-      color:$color-dark;
-      font-size:16px;
-      font-weight: 600;
-      text-transform: uppercase;
       transform: rotate(-90deg);
 
-      transition: color 1.5s;
+      a {
+        font-size:16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color:$color-dark;
 
-      &:hover a{
-        color:$color-vine;
+        transition: color 1.5s;
+
+        &:hover{
+          color:$color-vine;
+        }
       }
     }
   }
@@ -66,6 +69,12 @@
       padding:0 0 0 75px;
       margin:0 0 0 -105px;
 
+      transition: color 1s;
+
+      &:hover{
+        color:$color-dark;
+      }
+
       &:before{
         content: "";
         display: block;
@@ -76,8 +85,6 @@
         height:44px;
         background: url("../img/svg/icon_drop.svg") no-repeat;
         transform: rotate(85deg);
-
-        transition: background 1.5s;
       }
 
       &:hover:before{

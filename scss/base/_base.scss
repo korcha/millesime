@@ -54,8 +54,10 @@ a {
   color: inherit;
   cursor: pointer;
 
-  &:hover{
-    color:$color-dark;
+  transition: color .5s;
+
+  &:hover {
+    color: $color-dark;
   }
 }
 

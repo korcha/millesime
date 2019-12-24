@@ -59,35 +59,122 @@
         bottom:10px;
         left: 110px;
         background: url("../img/svg/icon_review.svg") no-repeat;
-        width:28px;
-        height:22px;
+
+        -webkit-animation: all_reviews_start .5s  ease-in forwards;
+        -moz-animation: all_reviews_start .5s  ease-in forwards;
+        animation: all_reviews_start .5s  ease-in forwards;
       }
 
       &:hover {
         color:$color-dark;
 
         span{
-          -webkit-animation: all_reviews 2s  ease-in-out forwards;
-          -moz-animation: all_reviews 2s  ease-in-out forwards;
-          animation: all_reviews 2s  ease-in-out forwards;
+          -webkit-animation: all_reviews .5s  ease-out forwards;
+          -moz-animation: all_reviews .5s  ease-out forwards;
+          animation: all_reviews .5s  ease-out forwards;
         }
       }
+      @-webkit-keyframes all_reviews_start {
+        0% {
+          background: url("../img/svg/icon_review_hover.svg") no-repeat;
+          width:34px;
+          height:25px;
+        }
+        25%{
+          background: url("../img/svg/icon_review_hover.svg") no-repeat;
+          width:34px;
+          height:25px;
+        }
+        75%{
+          background: url("../img/svg/icon_review_middle.svg") no-repeat;
+          width:34px;
+          height:25px;
+        }
+        95% {
+          background: url("../img/svg/icon_review_big.svg") no-repeat;
+          width:34px;
+          height:25px;
+        }
+        100% {
+          background: url("../img/svg/icon_review.svg") no-repeat;
+          width:28px;
+          height:22px;
+        }
+      }
+
+      @-moz-keyframes all_reviews_start {
+        0% {
+          background: url("../img/svg/icon_review_hover.svg") no-repeat;
+          width:34px;
+          height:25px;
+        }
+        25%{
+          background: url("../img/svg/icon_review_hover.svg") no-repeat;
+          width:34px;
+          height:25px;
+        }
+        75%{
+          background: url("../img/svg/icon_review_middle.svg") no-repeat;
+          width:34px;
+          height:25px;
+        }
+        95% {
+          background: url("../img/svg/icon_review_big.svg") no-repeat;
+          width:34px;
+          height:25px;
+        }
+        100% {
+          background: url("../img/svg/icon_review.svg") no-repeat;
+          width:28px;
+          height:22px;
+        }
+      }
+
+      @keyframes all_reviews_start {
+        0% {
+          background: url("../img/svg/icon_review_hover.svg") no-repeat;
+          width:34px;
+          height:25px;
+        }
+        25%{
+          background: url("../img/svg/icon_review_hover.svg") no-repeat;
+          width:34px;
+          height:25px;
+        }
+        75%{
+          background: url("../img/svg/icon_review_middle.svg") no-repeat;
+          width:34px;
+          height:25px;
+        }
+        95% {
+          background: url("../img/svg/icon_review_big.svg") no-repeat;
+          width:34px;
+          height:25px;
+        }
+        100% {
+          background: url("../img/svg/icon_review.svg") no-repeat;
+          width:28px;
+          height:22px;
+        }
+      }
+
+
 
       @-webkit-keyframes all_reviews {
         0% {
           background: url("../img/svg/icon_review.svg") no-repeat;
         }
-        3%{
+        10%{
           background: url("../img/svg/icon_review_middle.svg") no-repeat;
           width:34px;
           height:25px;
         }
-        5%{
+        20%{
           background: url("../img/svg/icon_review_big.svg") no-repeat;
           width:34px;
           height:25px;
         }
-        10% {
+        75% {
           background: url("../img/svg/icon_review_hover.svg") no-repeat;
           width:34px;
           height:25px;
@@ -103,17 +190,17 @@
         0% {
           background: url("../img/svg/icon_review.svg") no-repeat;
         }
-        3%{
+        10%{
           background: url("../img/svg/icon_review_middle.svg") no-repeat;
           width:34px;
           height:25px;
         }
-        5%{
+        20%{
           background: url("../img/svg/icon_review_big.svg") no-repeat;
           width:34px;
           height:25px;
         }
-        10% {
+        75% {
           background: url("../img/svg/icon_review_hover.svg") no-repeat;
           width:34px;
           height:25px;
@@ -129,17 +216,17 @@
         0% {
           background: url("../img/svg/icon_review.svg") no-repeat;
         }
-        3%{
+        10%{
           background: url("../img/svg/icon_review_middle.svg") no-repeat;
           width:34px;
           height:25px;
         }
-        5%{
+        20%{
           background: url("../img/svg/icon_review_big.svg") no-repeat;
           width:34px;
           height:25px;
         }
-        10% {
+        75% {
           background: url("../img/svg/icon_review_hover.svg") no-repeat;
           width:34px;
           height:25px;

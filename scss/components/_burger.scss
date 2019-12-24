@@ -7,6 +7,11 @@
   .burger__button {
     @include text-button;
     text-transform: uppercase;
+    transition: color .5s;
+
+    &:hover{
+      color:$color-vine;
+    }
 
     &--hide {
       display: none;

@@ -5,13 +5,20 @@
 
   .org_events{
     @include position_absolute;
-    @include text-regular;
+    @include text-button;
+    text-transform: uppercase;
     top:-150px;
     right:340px;
     color:$color-vine;
     text-align: left;
     cursor: pointer;
     z-index: 100;
+
+    transition: all .5s;
+
+    &:hover{
+      color:$color-dark;
+    }
 
     .icon_bottle{
       @include position_absolute;
@@ -88,6 +95,7 @@
       line-height: 323px;
       width:2000px;
       left: 0;
+      @include font-vollkorn;
 
       li {
         display: inline-block;

@@ -92,6 +92,9 @@
                 6000 рублей
               </p>
             </li>
+            <li class="coursepage__item">
+              <a class="button-link" href="#form_course">ЗАПИСАТЬСЯ</a>
+            </li>
           </ul>
         </div>
         <div class="coursepage__bottom">
@@ -126,7 +129,7 @@
             </p>
             <p><mark>* для студентов текущего курса скидка 50%</mark></p>
             <p>
-              <a href="#">Здесь можно оплатить со скидкой 50% для студентов текущих курсов</a>
+              <a class="grey" href="#">Здесь можно оплатить со скидкой 50% для студентов текущих курсов</a>
             </p>
           </div>
           <div class="coursepage__links">
@@ -134,10 +137,10 @@
             <a class="coursepage__link button-link" href="">ВСЕ СЕМИНАРЫ И ДЕГУСТАЦИИ</a>
           </div>
         </div>
-        <div class="coursepage__register">
+        <div class="coursepage__register" id="form_course">
           <div class="courses__status">
-            <div class="done">Записаться</div>
-            <div>Заказать на другие даты</div>
+            <a href="javascript:;" id="form_sign_up">Записаться</a>
+            <a href="javascript:;" id="form_other_date">Заказать на другие даты</a>
           </div>
           <div class="coursepage__info">
             <mark>
@@ -145,22 +148,47 @@
               начала мероприятия.
             </mark>
           </div>
+
           <form class="coursepage__form form">
             <input
               type="text"
               class="footer__field form__field"
               placeholder="Ваше имя"
+              name=""
             />
             <input
               type="text"
               class="footer__field form__field"
               placeholder="Ваша электронная почта"
+              name=""
             />
             <input
               type="text"
               class="footer__field form__field"
               placeholder="Телефон"
+              name=""
             />
+
+            <input
+                    type="text"
+                    class="footer__field form__field"
+                    placeholder="Интересующие Вас даты"
+                    name=""
+                    hidden
+            />
+
+            <input
+                    type="text"
+                    class="footer__field form__field"
+                    placeholder="Кол-во учатников"
+                    name=""
+                    hidden
+            />
+
+            <textarea class="footer__field form__field"
+                      placeholder="Ваши комментарии"
+                      name="" hidden></textarea>
+
 
             <div class="form__checkbox">
               <input type="checkbox" value="" id="checkbox_1"/>
@@ -175,10 +203,11 @@
               <label for="checkbox_3">Согласен с Договором публичной оферты</label>
             </div>
 
-            <button type="submit" class="footer__button form__button">
+            <button type="submit" class="footer__button form_button_send">
               ОТПРАВИТЬ
             </button>
           </form>
+
         </div>
       </section>
       <div class="icon__list wow rotateInUpRight animated fast"></div>

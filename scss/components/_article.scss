@@ -2,7 +2,7 @@
   @include text-regular;
 
   .article__date {
-    color: $color-grey-light;
+    color:  $color-vine;
     margin-bottom: 40px;
   }
   .article__title {
@@ -10,6 +10,11 @@
     display: block;
     font-weight: 500;
     margin-bottom: 25px;
+    cursor: pointer;
+
+    &:hover{
+      color:  $color-vine;
+    }
   }
 
   .article__content {
