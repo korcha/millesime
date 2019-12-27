@@ -87,7 +87,38 @@ if (degustation) {
 var changeLang= function(){
     document.querySelector(".lang_list").classList.toggle('active');
 }
+
 document.querySelector(".language").onclick=changeLang;
+
+
+$(document).ready(function() {
+
+    $(function(){
+        $('a[href^="#"]').on('click', function(event) {
+            event.preventDefault();
+
+            var click_item = $(this).attr("href"),
+                scroll_item = $(click_item).offset().top;
+
+            $('html, body').animate({scrollTop: scroll_item}, 1000);
+        });
+    });
+
+    $('.courses__status a').bind('click', function() {
+        $(this).parents().find('a').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('#form_other_date').bind('click', function() {
+        $('.coursepage__form').find('input, textarea').removeAttr('hidden');
+    });
+
+    $('#form_sign_up').bind('click', function() {
+        $('.coursepage__form').find('.date, .participant, .comments').attr('hidden', 'hidden');
+    });
+
+});
+
 
 
 
