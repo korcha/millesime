@@ -1,0 +1,84 @@
+.degustationpage {
+  width: 100%;
+  max-width: 100%;
+  margin:-60px auto 0 auto;
+  padding-bottom: 150px;
+  text-align: center;
+
+  .degustation__title:after {
+    bottom: 25%;
+  }
+
+  .degustation__info{
+    @include text-regular;
+    margin:0 0 50px 0;
+    width: 100%;
+
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1vw;
+
+    p{
+      max-width: 600px;
+      text-align: left;
+
+      &:nth-child(1){
+        grid-column-start: 2;
+        grid-column-end: 6;
+      }
+    }
+
+    a{
+      color: $color-vine;
+
+      &:hover{
+        color:$color-dark;
+      }
+    }
+  }
+
+  .degustation__galery{
+    display: block;
+    position: relative;
+    text-align: center;
+    padding:40px 0;
+
+    background:$color-grey-white;
+    width:100%;
+
+    .galery__list{
+      display: block;
+      position: relative;
+      min-height: 400px;
+      margin: 0 auto;
+      width:100%;
+
+      img{
+        width:195px;
+      }
+    }
+
+    &:before{
+      content:'';
+      display:block;
+      position:absolute;
+      top:-15px;
+      left:0;
+      background: url("../img/svg/bg_pic_dugustation.svg") repeat-x;
+      height:15px;
+      width: 100%;
+    }
+
+    &:after{
+      content:'';
+      display:block;
+      position:absolute;
+      bottom:-15px;
+      left:0;
+      background: url("../img/svg/bg_pic_dugustation.svg") repeat-x;
+      height:15px;
+      width: 100%;
+      transform: scale(1, -1);
+    }
+  }
+}

@@ -90,8 +90,19 @@ var changeLang= function(){
 
 document.querySelector(".language").onclick=changeLang;
 
-
 $(document).ready(function() {
+
+    var $container = $('.galery__list');
+    $container.masonry({
+        columnWidth: 200,
+        itemSelector: '.item_img',
+        percentPosition: true,
+        gutter: 20,
+        isFitWidth: true
+    });
+    $container.imagesLoaded().progress( function() {
+        $container.masonry('layout');
+    });
 
     $(function(){
         $('a[href^="#"]').on('click', function(event) {
