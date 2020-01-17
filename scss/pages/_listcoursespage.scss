@@ -1,0 +1,171 @@
+.listcoursespage {
+  width: 1200px;
+  margin:-60px auto 0 auto;
+  padding-bottom: 150px;
+  text-align: center;
+
+  .courses__title:after {
+    bottom: 25%;
+  }
+
+  .courses__list{
+    display: grid;
+    width:840px;
+    grid-template-columns: 420px 420px;
+    grid-gap: 5vw;
+    margin: 20px auto;
+  }
+
+  div{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+
+    img {
+      width: 420px;
+      height: 420px;
+    }
+
+    article{
+      padding:0 3vw;
+      text-align: left;
+
+      h4{
+        color: $color-grey;
+        font-size: 14px;
+      }
+
+      .article__title{
+        @include font-vollkorn;
+        margin:25px 0;
+      }
+
+      .article__content{
+        font-weight: 500;
+        span{
+          color:$color-grey-light;
+          font-size: 12px;
+          margin:0 5px 0 0;
+        }
+      }
+
+      .courses_sign_up{
+        display: inline-block;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        line-height: 32px;
+        font-weight: 500;
+        color: #b17c8f;
+        text-transform: uppercase;
+        margin-top:25px;
+
+
+        span {
+          display: inline-block;
+          position: relative;
+          width: 21px;
+          height: 32px;
+          background: url("../img/svg/icon_zapis.svg") no-repeat;
+          margin:0 0 0 5px;
+        }
+
+        &:hover span{
+          -webkit-animation: sing_icon 2s  ease-out forwards;
+          -moz-animation: sing_icon 2s  ease-out forwards;
+          animation: sing_icon 2s  ease-out forwards;
+        }
+
+        @-webkit-keyframes  sing_icon {
+          0% {
+            background: url("../img/svg/icon_zapis.svg") no-repeat;
+          }
+          5%{
+            background: url("../img/svg/icon_zapis.svg") no-repeat;
+            width:32px;
+            height:32px;
+          }
+          10%{
+            background: url("../img/svg/icon_zapis_2.svg") no-repeat;
+            width:32px;
+            height:32px;
+          }
+          75% {
+            background: url("../img/svg/icon_zapis_3.svg") no-repeat;
+            width:32px;
+            height:32px;
+          }
+          100% {
+            background: url("../img/svg/icon_zapis_3.svg") no-repeat;
+            width:32px;
+            height:32px;
+          }
+        }
+
+        @-moz-keyframes sing_icon {
+          0% {
+            background: url("../img/svg/icon_zapis.svg") no-repeat;
+          }
+          5%{
+            background: url("../img/svg/icon_zapis.svg") no-repeat;
+            width:32px;
+            height:32px;
+          }
+          10%{
+            background: url("../img/svg/icon_zapis_2.svg") no-repeat;
+            width:32px;
+            height:32px;
+          }
+          75% {
+            background: url("../img/svg/icon_zapis_3.svg") no-repeat;
+            width:32px;
+            height:32px;
+          }
+          100% {
+            background: url("../img/svg/icon_zapis_3.svg") no-repeat;
+            width:32px;
+            height:32px;
+          }
+        }
+
+        @keyframes sing_icon {
+          0% {
+            background: url("../img/svg/icon_zapis.svg") no-repeat;
+          }
+          5%{
+            background: url("../img/svg/icon_zapis.svg") no-repeat;
+            width:32px;
+            height:32px;
+          }
+          10%{
+            background: url("../img/svg/icon_zapis_2.svg") no-repeat;
+            width:32px;
+            height:32px;
+          }
+          75% {
+            background: url("../img/svg/icon_zapis_3.svg") no-repeat;
+            width:32px;
+            height:32px;
+          }
+          100% {
+            background: url("../img/svg/icon_zapis_3.svg") no-repeat;
+            width:32px;
+            height:32px;
+          }
+        }
+      }
+    }
+  }
+
+  div:nth-child(odd){
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  div:nth-child(even){
+    flex-direction: row-reverse;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+}

@@ -45,6 +45,10 @@
 
       article{
         padding:0 3vw;
+
+        .article__title{
+          @include font-vollkorn;
+        }
       }
     }
 
