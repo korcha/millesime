@@ -1,0 +1,105 @@
+.aboutschoolpage {
+  width: 1200px;
+  margin:-60px auto 0 auto;
+  padding-bottom: 150px;
+
+  .about__title:after {
+    bottom: 25%;
+  }
+
+  .about_school__info{
+    @include text-regular;
+    margin:0 0 50px 0;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1vw;
+    align-items: center;
+    position: relative;
+
+    &:before{
+      content: "";
+      display: block;
+      position: absolute;
+      bottom:50px;
+      right:-40px;
+      background: url("../img/svg/icon_spot.svg") no-repeat;
+      width:227px;
+      height:242px;
+    }
+
+    div{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding:20px 0;
+
+      img {
+        min-width: 420px;
+        height: 320px;
+      }
+
+      article{
+        .article__title{
+          @include font-vollkorn;
+        }
+        padding:1vw 2vw;
+
+        li{
+          position: relative;
+          margin:10px 0;
+
+          &:before{
+            content:"\2014";
+            position: absolute;
+            left:-25px;
+            height:2px;
+            color: $color-vine;
+          }
+        }
+
+        p{
+          padding:5px 0;
+        }
+      }
+    }
+
+    div:nth-child(1){
+      grid-column-start: 2;
+      grid-column-end: 6;
+
+      article{
+        text-align: left;
+      }
+    }
+
+    div:nth-child(2){
+      flex-direction: row-reverse;
+      grid-column-start: 2;
+      grid-column-end: 7;
+    }
+
+    div:nth-child(3){
+      position: relative;
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+
+    span{
+      color:$color-vine;
+    }
+
+    a{
+      color: $color-grey;
+      font-weight: 500;
+
+      &:hover{
+        color:$color-vine;
+      }
+    }
+  }
+
+}
+
+
