@@ -6,10 +6,6 @@
   padding-bottom: 150px;
   text-align: center;
 
-  .gift__title:after {
-    bottom: 25%;
-  }
-
   .gift__info{
     @include text-regular;
     width: 100%;

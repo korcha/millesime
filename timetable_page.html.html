@@ -12,14 +12,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
 
-    <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-
   <body>
     <div class="wrapper">
 
@@ -30,14 +24,14 @@
           </a>
         </div>
         <div class="header__right">
-          <div class="lang_list">
-            <a class="language pointer" href="#">RUS</a>
-            <ul>
-              <li>RUS</li>
-              <li>ENG</li>
-              <li>FIN</li>
-            </ul>
-          </div>
+            <div class="lang_list">
+                <a class="language pointer" href="#">RUS</a>
+                <ul>
+                    <li>RUS</li>
+                    <li>ENG</li>
+                    <li>FIN</li>
+                </ul>
+            </div>
 
           <div class="burger">
             <div class="burger__button burger__button--show show pointer">
@@ -50,302 +44,187 @@
         </div>
       </header>
 
-      <section class="section degustation">
+      <section class="section timetablepage">
+        <h1 class="timetable__title section__title">
+          Расписание
+        </h1>
 
-        <div class="degustation_about animated fast bounceInRight">
-          <div class="degustation_picture animated fast bounceInLeft">
-            <img src="./img/content/img_degustation.png" alt="#"/>
-          </div>
-          <div class="degustation_link">
-            <a href="#">Ближайшие дегустации</a>
-          </div>
-        </div>
+        <div class="timetable__filters">
 
-        <div class="link_near_courses animated fast  bounceInDown">
-          <a href="#">Ближайшие курсы</a>
-        </div>
-
-      </section>
-
-      <section class="section seminars">
-
-        <h2>Школа «Миллезим» –  лицензированная профессиональная школа сомелье.</h2>
-        <h4>Мы работаем с 2010 года, и за это время выпустили более 500 специалистов и заслужили авторитет и признание в профессиональном винном мире.</h4>
-
-        <div class="block_gift wow rotateInDownRight">
-          <a>Подарочные<br/>сертификаты</a>
-        </div>
-
-        <div class="list_seminars">
-
-          <div class="article">
-            <img class="wow animated fadeInDown" src="./img/content/seminar_1.jpg" alt="#"/>
-              <article class="wow animated slideInRight">
-                  <p class="article__date">14.05.2019</p>
-                  <a href="#" class="article__title">Душа вина, душа бокала</a>
-                  <p class="article__content">Знаете ли Вы, что пить Пино Нуар из бокала для белого вина - все равно, что слушать вашу любимую мелодию, заткнув уши?</p>
-              </article>
+          <div class="filters__year">
+              <div class="select_list">
+                  <p><a class="select pointer" href="javascript:;">2019 Март</a></p>
+                  <ul>
+                      <li>2019 Январь</li>
+                      <li>2019 Февраль</li>
+                      <li class="select_option">2019 Март</li>
+                      <li>2019 Апрель</li>
+                      <li>2019 Май</li>
+                      <li>2019 Июнь</li>
+                      <li>2019 Июль</li>
+                      <li>2019 Август</li>
+                      <li>2019 Сентябрь</li>
+                      <li>2019 Октябрь</li>
+                      <li>2019 Ноябрь</li>
+                      <li>2019 Декабрь</li>
+                  </ul>
+              </div>
           </div>
 
-          <div class="article">
-            <img  class="wow animated fadeInDown" src="./img/content/seminar_2.jpg" alt="#"/>
-              <article class="wow animated slideInRight">
-                  <p class="article__date">14.05.2019</p>
-                  <a href="#" class="article__title">Душа вина, душа бокала</a>
-                  <p class="article__content">Знаете ли Вы, что пить Пино Нуар из бокала для белого вина - все равно, что слушать вашу любимую мелодию, заткнув уши?</p>
-              </article>
-          </div>
+          <div class="filters_list">
 
-          <div class="article">
-            <img class="wow animated fadeInDown" src="./img/content/seminar_2.jpg" alt="#"/>
-            <article class="wow animated slideInRight">
-              <p class="article__date">14.05.2019</p>
-              <a href="#" class="article__title">Душа вина, душа бокала</a>
-              <p class="article__content">Знаете ли Вы, что пить Пино Нуар из бокала для белого вина - все равно, что слушать вашу любимую мелодию, заткнув уши?</p>
-            </article>
+            <div><a href="#">Все курсы <span>30</span></a></div>
+            <div><a href="#">Profi <span>3</span></a></div>
+            <div><a href="#">Первые шаги <span>10</span></a></div>
+            <div><a href="#">Семинары <span>4</span></a></div>
+            <div><a href="#">Profi Weekend<span>1</span></a></div>
+
+              <div class="select_list">
+                  <a class="select pointer" href="javascript:;">Все преподаватели</a>
+                  <ul>
+                      <li>Николай Чащинов WA</li>
+                      <li>Анна Баранова WA</li>
+                      <li>Андрей Шабуров</li>
+                      <li>Наталья Большакова</li>
+                      <li>Евгения Иванова</li>
+                      <li>Все преподаватели</li>
+                  </ul>
+              </div>
           </div>
 
         </div>
 
-      </section>
+        <div class="timetable">
 
-      <section class="section news">
-        <div class="news__header controls-container">
-          <div class="news__arrow slider-arrow slider-arrow--prev pointer">
-            Обратно
-          </div>
-          <h2 class="news__title">Новости</h2>
-          <div class="news__arrow slider-arrow slider-arrow--next pointer">
-            Туда
-          </div>
-        </div>
-        <div class="news__content">
-          <div class="news__viewbox viewbox">
-            <ul class="news__list wow animated slideInRight">
-              <li class="news__item article">
-                <div class="article__date">
-                  19.12.2018
-                </div>
-                <a href="/news_page.html" class="article__title">
-                  Конкурс фотографий на нашей странице в Инстаграм!
-                </a>
-                <a href="/news_page.html" class="article__content">
-                  Конкурс фотографий (можно и видео!) на нашей странице в
-                  Инстаграм! Замечательные призы! Заходите к нам на страницу
-                  и...
-                </a>
-              </li>
-              <li class="news__item article">
-                <div class="article__date">
-                  18.12.2018
-                </div>
-                <a href="/news_page.html" class="article__title">
-                  Подари себе новую профессию в Новом Году!
-                </a>
-                <a href="/news_page.html" lass="article__content">
-                  Освоить новую профессию в будущем году? Легко! В нашей школе
-                  вы сможете получить диплом Сомелье/Кавист ! Ну конечно, не...
-                </a>
-              </li>
-              <li class="news__item article">
-                <div class="article__date">
-                  19.11.2018
-                </div>
-                <a href="/news_page.html" class="article__title">
-                  Наши преподаватели - в жюри винного рейтинга 5 Star Wines
-                </a>
-                <a href="/news_page.html" class="article__content">
-                  Перед выставкой Винитали в Вероне ежегодно проводится
-                  дегустационный конкурс. Приглашаются эксперты со всего мира...
-                </a>
-              </li>
-              <li class="news__item article">
-                <div class="article__date">
-                  19.11.2018
-                </div>
-                <a href="/news_page.html" class="article__title">
-                  4 - в жюри винного рейтинга 5 Star Wines
-                </a>
-                <a href="/news_page.html" class="article__content">
-                  Перед выставкой Винитали в Вероне ежегодно проводится
-                  дегустационный конкурс. Приглашаются эксперты со всего мира...
-                </a>
-              </li>
-              <li class="news__item article">
-                <div class="article__date">
-                  19.11.2018
-                </div>
-                <a href="/news_page.html" class="article__title">
-                  5 - в жюри винного рейтинга 5 Star Wines
-                </a>
-                <a href="/news_page.html" class="article__content">
-                  Перед выставкой Винитали в Вероне ежегодно проводится
-                  дегустационный конкурс. Приглашаются эксперты со всего мира...
-                </a>
-              </li>
-              <li class="news__item article">
-                <div class="article__date">
-                  19.11.2018
-                </div>
-                <a href="/news_page.html" class="article__title">
-                  6 - в жюри винного рейтинга 5 Star Wines
-                </a>
-                <a href="/news_page.html" class="article__content">
-                  Перед выставкой Винитали в Вероне ежегодно проводится
-                  дегустационный конкурс. Приглашаются эксперты со всего мира...
-                </a>
-              </li>
-              <li class="news__item article">
-                <div class="article__date">
-                  19.11.2018
-                </div>
-                <a href="/news_page.html" class="article__title">
-                  7 - в жюри винного рейтинга 5 Star Wines
-                </a>
-                <a href="/news_page.html" class="article__content">
-                  Перед выставкой Винитали в Вероне ежегодно проводится
-                  дегустационный конкурс. Приглашаются эксперты со всего мира...
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="news__all">
-            <a href="#">все новости</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section courses">
-        <div class="courses__slider">
-          <div class="courses__viewbox viewbox">
-            <ul class="courses__list">
-              <li class="courses__item">
-                <a href="/course_page.html">
-                  <div class="course-preview">
-                    <img class="course-preview__picture" src="./img/content/course_1.jpg"/>
-                    <div class="course-preview__title">wine glish</div>
-                    <div class="course-preview__desc">о вине на английском</div>
-                    <div class="course-preview__type">специальный курс</div>
-                  </div>
-                </a>
-              </li>
-              <li class="courses__item">
-                <a href="/course_page.html">
-                  <div class="course-preview">
-                    <img
-                      class="course-preview__picture"
-                      src="./img/content/course_1.jpg"
-                    />
-                    <div class="course-preview__title">первые шаги</div>
-                    <div class="course-preview__desc">
-                      вечерний курс для начинающих
-                    </div>
-                    <div class="course-preview__type">специальный курс</div>
-                  </div>
-                </a>
-              </li>
-              <li class="courses__item">
-                <a href="/course_page.html">
-                  <div class="course-preview">
-                    <img
-                      class="course-preview__picture"
-                      src="./img/content/course_1.jpg"
-                    />
-                    <div class="course-preview__title">один семестр</div>
-                    <div class="course-preview__desc">
-                      профессиональный курс выходного дня
-                    </div>
-                    <div class="course-preview__type">специальный курс</div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="courses__controls controls-container">
-            <div class="courses__arrow slider-arrow slider-arrow--prev pointer">
-              Обратно
-            </div>
-            <div class="courses__timer loading"></div>
-            <div class="courses__arrow slider-arrow slider-arrow--next pointer">
-              Туда
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section navigation">
-
-        <div><a  class="org_events wow bounceInUp" href="#">
-                Организация<br/>мероприятий
-                <span class="icon_bottle"></span>
-                <span class="icon_branch"></span>
-            </a>
-        </div>
-
-        <div class="navigation_line">
-            <div class="line_animation"></div>
-        </div>
-
-        <div class="navigation_list">
-          <ul class="list_first">
-              <li><a href="#">Дегустации</a></li>
-              <li><a href="#">Курсы</a></li>
-              <li><a href="">Расписание</a></li>
-              <li><a href="#">Мероприятия</a></li>
-          </ul>
-
-          <ul class="list_second">
-              <li><a href="#">Дегустации</a></li>
-              <li><a href="#">Курсы</a></li>
-              <li><a href="">Расписание</a></li>
-              <li><a href="#">Мероприятия</a></li>
-          </ul>
-        </div>
-
-      </section>
-
-      <section class="section reviews">
-
-        <h2>Отзывы</h2>
-
-          <div class="article">
-              <article>
-                <p class="article__date">14.05.2019</p>
-                <p class="article__title">Наталья Прищепова</p>
-                <p class="article__content">Давно собиралась написать, но всё никак не могла приступить. Очень сложно передать словами все те эмоции, то состояние, в котором я пребывала,пока училась в школе «Миллезим» и, надеюсь, продолжу обучение этой осенью. Как сейчас помню нашу первую лекцию: мы знакомились с преподавателями, с однополчанами винного фронта, знакомились с вином, как нам приоткрывали завесу тайн этого непостижимого напитка.
-                  Помню, как сидела, с открытым ртом и слушала, как говорят о вине Евгения и Николай, и мечтала хоть на толику,хоть на тысячную долю приблизиться к ним, постичь эту науку, быть достойной общения с ними ну и ,конечно, быть достойной великих вин ...</p>
-              </article>
-            </div>
-
-          <div class="article">
-              <article>
-                  <p class="article__date">14.05.2019</p>
-                  <p class="article__title">Наталья Прищепова</p>
-                  <p class="article__content">Давно собиралась написать, но всё никак не могла приступить. Очень сложно передать словами все те эмоции, то состояние, в котором я пребывала,пока училась в школе «Миллезим» и, надеюсь, продолжу обучение этой осенью. Как сейчас помню нашу первую лекцию: мы знакомились с преподавателями, с однополчанами винного фронта, знакомились с вином, как нам приоткрывали завесу тайн этого непостижимого напитка.
-                      Помню, как сидела, с открытым ртом и слушала, как говорят о вине Евгения и Николай, и мечтала хоть на толику,хоть на тысячную долю приблизиться к ним, постичь эту науку, быть достойной общения с ними ну и ,конечно, быть достойной великих вин ...</p>
-              </article>
-          </div>
-
-        <div class="all_reviews"><a href="#">Все отзывы <span class="icon_reviews"></span></a></div>
-
-      </section>
-
-      <section class="section partners">
-          <h2>Партнеры</h2>
           <ul>
-              <li><a href="#"><img src="./img/content/partners/partner_10.jpg" alt="#"></a></li>
-              <li><a href="#"><img src="./img/content/partners/partner_10.jpg" alt="#"></a></li>
-              <li><a href="#"><img src="./img/content/partners/partner_10.jpg" alt="#"></a></li>
-              <li><a href="#"><img src="./img/content/partners/partner_10.jpg" alt="#"></a></li>
-              <li><a href="#"><img src="./img/content/partners/partner_10.jpg" alt="#"></a></li>
-              <li><a href="#"><img src="./img/content/partners/partner_10.jpg" alt="#"></a></li>
-              <li><a href="#"><img src="./img/content/partners/partner_10.jpg" alt="#"></a></li>
-              <li><a href="#"><img src="./img/content/partners/partner_10.jpg" alt="#"></a></li>
-              <li><a href="#"><img src="./img/content/partners/partner_10.jpg" alt="#"></a></li>
-              <li><a href="#"><img src="./img/content/partners/partner_10.jpg" alt="#"></a></li>
+              <li>Понедельник</li>
+              <li>Вторник</li>
+              <li>Среда</li>
+              <li>Четверг</li>
+              <li>Пятница</li>
+              <li>Суббота</li>
+              <li>Воскресенье</li>
           </ul>
 
-          <div class="icon_glass wow animated tada"></div>
+          <ul>
+              <li><li>
+              <li></li>
+              <li></li>
+
+              <li>
+                  <p class="timetable__data">01.02</p>
+                  <div class="timetable__item weekend">
+                      <p class="item__time">10:30</p>
+                      <p class="item__title">Франция, вводное занятие Классификация и терминология</p>
+                      <p class="item__teacher">Наталья Большакова</p>
+                      <p class="item__description">Игра в форме "Винного казино". Повторяем пройденный материал. Слепая дегустация вин Бордо и Бургундии <br/>
+                          <a href="#">Подробней</a>
+                      </p>
+                  </div>
+              </li>
+
+              <li>
+                  <p class="timetable__data">02.02</p>
+                  <div class="timetable__item pro">
+                      <p class="item__time">20:00</p>
+                      <p class="item__title">Франция, вводное занятие Классификация и терминология</p>
+                      <p class="item__teacher">Наталья Большакова</p>
+                      <p class="item__description">Игра в форме "Винного казино". Повторяем пройденный материал. Слепая дегустация вин Бордо и Бургундии <br/>
+                          <a href="#">Подробней</a>
+                      </p>
+                  </div>
+
+                  <div class="timetable__item amateur">
+                      <p class="timetable__data">03.02</p>
+                      <p class="item__time">12:00</p>
+                      <p class="item__title">Коньяк, Арманьяк</p>
+                      <p class="item__teacher">Наталья Большакова</p>
+                      <p class="item__description">Игра в форме "Винного казино". Повторяем пройденный материал. Слепая дегустация вин Бордо и Бургундии <br/>
+                          <a href="#">Подробней</a>
+                      </p>
+                  </div>
+              </li>
+
+              <li>
+                  <p class="timetable__data">04.02</p>
+                  <div class="timetable__item hight_level">
+                      <p class="item__time">10:30</p>
+                      <p class="item__title">Франция, вводное занятие Классификация и терминология</p>
+                      <p class="item__teacher">Николай Чащинов WA</p>
+                      <p class="item__description">Игра в форме "Винного казино". Повторяем пройденный материал. Слепая дегустация вин Бордо и Бургундии <br/>
+                          <a href="#">Подробней</a>
+                      </p>
+                  </div>
+              </li>
+              <li>
+                  <p class="timetable__data">05.02</p>
+              </li>
+              <li>
+                  <p class="timetable__data">06.02</p>
+                  <div class="timetable__item hight_level">
+                      <p class="item__time">10:30</p>
+                      <p class="item__title">Франция, вводное занятие Классификация и терминология</p>
+                      <p class="item__teacher">Наталья Большакова</p>
+                      <p class="item__description">Игра в форме "Винного казино". Повторяем пройденный материал. Слепая дегустация вин Бордо и Бургундии <br/>
+                          <a href="#">Подробней</a>
+                      </p>
+                  </div>
+              </li>
+
+              <li>
+                  <p class="timetable__data">07.02</p>
+                  <div class="timetable__item amateur">
+                      <p class="item__time">20:00</p>
+                      <p class="item__title">Франция, вводное занятие Классификация и терминология</p>
+                      <p class="item__teacher">Наталья Большакова</p>
+                      <p class="item__description">Игра в форме "Винного казино". Повторяем пройденный материал. Слепая дегустация вин Бордо и Бургундии <br/>
+                          <a href="#">Подробней</a>
+                      </p>
+                  </div>
+
+                  <div class="timetable__item hight_level">
+                      <p class="item__time">12:00</p>
+                      <p class="item__title">Коньяк, Арманьяк</p>
+                      <p class="item__teacher">Николай Чащинов WA</p>
+                      <p class="item__description">Игра в форме "Винного казино". Повторяем пройденный материал. Слепая дегустация вин Бордо и Бургундии <br/>
+                          <a href="#">Подробней</a>
+                      </p>
+                  </div>
+              </li>
+
+              <li>
+                  <p class="timetable__data">08.02</p>
+              </li>
+
+              <li>
+                  <p class="timetable__data">09.02</p>
+                  <div class="timetable__item weekend">
+                      <p class="item__time">10:30</p>
+                      <p class="item__title">Франция, вводное занятие Классификация и терминология</p>
+                      <p class="item__teacher">Наталья Большакова</p>
+                      <p class="item__description">Игра в форме "Винного казино". Повторяем пройденный материал. Слепая дегустация вин Бордо и Бургундии <br/>
+                          <a href="#">Подробней</a>
+                      </p>
+                  </div>
+              </li>
+
+              <li>
+                  <p class="timetable__data">10.02</p>
+              </li>
+              <li>
+                  <p class="timetable__data">11.02</p>
+              </li>
+            </ul>
+
+        </div>
+
+        <div class="timetable__list_couses">
+          <a href="#">Курс для профессионалов</a>
+          <a href="#">Курс для любителей</a>
+          <a href="#">Курс повышения квалификации</a>
+            <div class="timetable__att"><p>Внимание!<br/>Возможны изменения в расписании.</p></div>
+        </div>
+
       </section>
 
       <footer class="footer">
@@ -433,9 +312,8 @@
           </p>
         </div>
       </footer>
-    </div>
 
-    <div class="menu">
+      <div class="menu">
       <div class="menu__header menu__wrapper">
         <ul class="menu__buttons">
           <li class="menu__button"><a href="#">задать вопрос</a></li>
@@ -499,7 +377,7 @@
         </div>
       </div>
     </div>
-    <script type='text/javascript' src="js/carousel.js"></script>
+    </div>
     <script type='text/javascript' src="js/self.js"></script>
   </body>
 </html>

@@ -1,0 +1,114 @@
+.seminar__item{
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 2vw;
+  border:2px solid $color-red-white;
+  cursor: pointer;
+  margin:20px auto;
+
+  transition: all .5s;
+
+  div{
+    text-align: left;
+
+    &:nth-child(1){
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-column-start: 1;
+      grid-column-end: 1;
+      text-align :center;
+
+      img{
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray;
+        opacity: .5;
+
+        transition: all .5s;
+      }
+    }
+
+    &:nth-child(2){
+      grid-column-start: 2;
+      grid-column-end: 2;
+      align-self :center;
+    }
+
+    &:nth-child(3){
+      grid-column-start: 3;
+      grid-column-end: 6;
+    }
+
+    &:nth-child(4){
+      grid-column-start: 6;
+      grid-column-end: 7;
+      align-self :center;
+    }
+  }
+
+  .seminar__select{
+    display: block;
+    position: relative;
+    width:100%;
+    height: 150px;
+    border-left:2px solid $color-vine;
+    opacity: 0;
+
+    transition: all .5s;
+
+    a{
+      display: grid;
+      position: relative;
+      height: 50%;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 500;
+
+      &:hover{
+        color:$color-vine;
+      }
+
+      &:nth-child(1){
+        border-bottom:2px solid $color-vine;
+      }
+    }
+  }
+
+  .seminar__data{
+    @include font-vollkorn;
+    color:$color-vine;
+    font-size: 24px;
+
+    span{
+      font-size: 36px;
+    }
+  }
+
+  &:hover{
+    border:2px solid  $color-vine;
+
+    .seminar__select{
+      opacity: 1;
+    }
+
+    .seminar__img img {
+      -webkit-filter: none;
+      -moz-filter: none;
+      -ms-filter: none;
+      -o-filter: none;
+      filter: none;
+      filter: none;
+      opacity: 1;
+    }
+
+    .seminar__title_info h3 {
+      color: $color-vine;
+    }
+  }
+}

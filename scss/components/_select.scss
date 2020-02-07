@@ -1,0 +1,74 @@
+.select_list{
+    display: inline-block;
+    position: relative;
+    padding:0 10px;
+    z-index: 100;
+
+    .select {
+        padding: 0 32px 0 0;
+        display: inline-block;
+        position: relative;
+        text-transform: none;
+
+        &:hover{
+            color:$color-vine!important;
+        }
+
+        &:after{
+            content:'';
+            display: inline-block;
+            position: absolute;
+            top:50%;
+            right:0;
+            background: url('../img/svg/icon_arrow_1.svg') no-repeat;
+            width:18px;
+            height:11px;
+            margin:-5px 0 0 0;
+        }
+    }
+
+    ul{
+        display: none;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        background:$color-red-white;
+        width: 100%;
+        padding: 10px 0;
+
+        li{
+            @include text-regular;
+            font-weight: 500;
+            list-style: none;
+            margin:5px 10px;
+            color:$color-grey-light;
+            text-align: left;
+            text-transform: none;
+
+            transition: all .5s;
+
+            &:hover{
+                color:$color-grey;
+                cursor: pointer;
+            }
+
+            &.select_option{
+                color:$color-vine;
+            }
+        }
+    }
+
+    &.active{
+        .select {
+            color:$color-vine;
+
+            &:after{
+                transform: rotate(180deg);
+            }
+        }
+
+        ul{
+            display: block;
+        }
+    }
+}

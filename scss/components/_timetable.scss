@@ -1,0 +1,98 @@
+.timetable__item {
+  @include text-regular;
+  width:100%;
+  padding:10px;
+  z-index: 1;
+  cursor: pointer;
+
+  &.active{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+    height:100%;
+  }
+
+  &.hide{
+    display: none;
+  }
+
+  &.weekend{
+    .item__time{
+      color:$color-red;
+    }
+    &.active{
+      background-color: rgba(244, 136, 112, 0.2);
+    }
+  }
+
+  &.pro{
+    .item__time{
+      color:$color-grey;
+    }
+    &.active{
+      background-color: rgba(114, 108, 120, 0.2);
+    }
+  }
+
+  &.amateur{
+    .item__time{
+      color:$color-vine;
+    }
+    &.active{
+      background-color: rgba(177, 124, 143, 0.2);
+    }
+  }
+
+  &.hight_level{
+    .item__time{
+      color:$color-green;
+    }
+    &.active{
+      background-color: rgba(150, 204, 191, 0.2);
+    }
+  }
+
+  .item__time {
+    @include font-vollkorn;
+    @include text-h2;
+  }
+
+  .item__title {
+    color:$color-grey;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom:10px;
+  }
+
+  .item__teacher {
+    display: block;
+    font-size: 14px;
+    color:$color-grey-light;
+  }
+
+  .item__description{
+    display: none;
+    font-size: 14px;
+    color:$color-grey;
+    margin:10px 0;
+
+    a{
+      font-size: 16px;
+      line-height: 2;
+      font-weight: 500;
+      color:$color-vine;
+      text-transform: uppercase;
+
+      &:hover{
+        color:$color-dark;
+      }
+    }
+  }
+
+  &.active .item__description{
+    display:block;
+  }
+}

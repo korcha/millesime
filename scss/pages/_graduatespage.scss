@@ -1,0 +1,22 @@
+.graduatespage {
+  margin:-60px auto 0 auto;
+  padding-bottom: 150px;
+  text-align: center;
+
+  h3{
+    @include text-h3;
+    line-height: 3;
+
+    transition: all .5s;
+  }
+
+  .seminar__select{
+    a{
+      height: 100%;
+
+      &:nth-child(1){
+        border-bottom:none;
+      }
+    }
+  }
+}

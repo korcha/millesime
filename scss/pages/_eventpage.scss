@@ -3,10 +3,6 @@
   margin:-60px auto 0 auto;
   padding-bottom: 150px;
 
-  .eventpage__title:after {
-    bottom: 25%;
-  }
-
   .event__info{
     @include text-regular;
     margin:0 0 50px 0;

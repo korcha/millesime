@@ -25,10 +25,14 @@
 @import "components/menu";
 @import "components/social";
 @import "components/language";
+@import "components/select";
 @import "components/article";
 @import "components/slider-arrow";
 @import "components/course-preview";
 @import "components/form";
+@import "components/timetable";
+@import "components/galery";
+@import "components/seminar";
 
 //Ипортируем Персональные стили для страниц
 @import "pages/newspage";
@@ -41,6 +45,9 @@
 @import "pages/aboutpage";
 @import "pages/timetablepage";
 @import "pages/albumspage";
+@import "pages/meetingpage";
+@import "pages/teacherspage";
+@import "pages/graduatespage";
 
 
 

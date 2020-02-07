@@ -5,12 +5,8 @@
   padding-bottom: 150px;
   text-align: center;
 
-  .albums__title:after {
-    bottom: 25%;
-  }
-
   .albums__list{
-    display: inline-block;
+    display: block;
     position: relative;
     list-style: none;
     text-align: center;

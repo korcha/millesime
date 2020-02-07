@@ -3,10 +3,6 @@
   margin:-60px auto 0 auto;
   padding-bottom: 150px;
 
-  .about__title:after {
-    bottom: 25%;
-  }
-
   .about_school__info{
     @include text-regular;
     margin:0 0 50px 0;

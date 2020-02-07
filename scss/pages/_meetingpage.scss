@@ -1,18 +1,18 @@
-.degustationpage {
+.meetingpage {
   width: 100%;
   max-width: 100%;
   margin:-60px auto 0 auto;
   padding-bottom: 150px;
   text-align: center;
 
-  .degustation__info{
+  .meeting__info{
     @include text-regular;
-    margin:0 0 50px 0;
+    margin:0 0 100px 0;
     width: 100%;
 
     display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 1vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 
     p{
       max-width: 600px;
@@ -20,7 +20,15 @@
 
       &:nth-child(1){
         grid-column-start: 2;
-        grid-column-end: 6;
+        grid-column-end: 4;
+
+        @include font-vollkorn;
+        font-size: 40px;
+      }
+
+      &:nth-child(2){
+        grid-column-start: 4;
+        grid-column-end: 7;
       }
     }
 
