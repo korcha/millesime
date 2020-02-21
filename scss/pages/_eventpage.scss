@@ -60,24 +60,40 @@
 
     div:nth-child(2){
       grid-column-start: 1;
-      grid-column-end: 4;
+      grid-column-end: 7;
+
+      article{
+        text-align: left;
+      }
     }
 
     div:nth-child(3){
       flex-direction: row-reverse;
       grid-column-start: 3;
       grid-column-end: 9;
+
+      article{
+        text-align: right;
+      }
     }
 
     div:nth-child(4){
       grid-column-start: 2;
       grid-column-end: 8;
+
+      article{
+        text-align: left;
+      }
     }
 
     div:nth-child(5){
       flex-direction: row-reverse;
       grid-column-start: 2;
       grid-column-end: 8;
+
+      article{
+        text-align: right;
+      }
     }
 
   }

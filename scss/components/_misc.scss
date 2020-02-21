@@ -25,110 +25,11 @@
   &:after {
     content: " ";
     position: absolute;
-    right: -40px;
+    right: -120px;
     bottom:0;
     width: 282px;
     height: 54px;
     background: url("../img/svg/title_undercover.svg") no-repeat;
-  }
-}
-
-.buy-certificate {
-  display: flex;
-  flex-direction:row;
-  justify-content:flex-start;
-  align-items:center;
-  cursor: pointer;
-
-    span {
-      width: 30px;
-      height: 18px;
-      background-image: url("../img/svg/buy_certificate.svg");
-      margin:0 0 0 10px;
-    }
-
-    &:hover span{
-      -webkit-animation: buy_certificate 2s  ease-out forwards;
-      -moz-animation: buy_certificate 2s  ease-out forwards;
-      animation: buy_certificate 2s  ease-out forwards;
-    }
-
-  @-webkit-keyframes  buy_certificate {
-    0% {
-      background: url("../img/svg/buy_certificate.svg") no-repeat;
-    }
-    5%{
-      background: url("../img/svg/buy_certificate_middle.svg") no-repeat;
-      width:36px;
-      height:21px;
-    }
-    10%{
-      background: url("../img/svg/buy_certificate_big.svg") no-repeat;
-      width:36px;
-      height:21px;
-    }
-    75% {
-      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
-      width:36px;
-      height:21px;
-    }
-    100% {
-      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
-      width:36px;
-      height:21px;
-    }
-  }
-
-  @-moz-keyframes buy_certificate {
-    0% {
-      background: url("../img/svg/buy_certificate.svg") no-repeat;
-    }
-    5%{
-      background: url("../img/svg/buy_certificate_middle.svg") no-repeat;
-      width:36px;
-      height:21px;
-    }
-    10%{
-      background: url("../img/svg/buy_certificate_big.svg") no-repeat;
-      width:36px;
-      height:21px;
-    }
-    75% {
-      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
-      width:36px;
-      height:21px;
-    }
-    100% {
-      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
-      width:36px;
-      height:21px;
-    }
-  }
-
-  @keyframes buy_certificate {
-    0% {
-      background: url("../img/svg/buy_certificate.svg") no-repeat;
-    }
-    5%{
-      background: url("../img/svg/buy_certificate_middle.svg") no-repeat;
-      width:36px;
-      height:21px;
-    }
-    10%{
-      background: url("../img/svg/buy_certificate_big.svg") no-repeat;
-      width:36px;
-      height:21px;
-    }
-    75% {
-      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
-      width:36px;
-      height:21px;
-    }
-    100% {
-      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
-      width:36px;
-      height:21px;
-    }
   }
 }
 

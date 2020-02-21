@@ -1,5 +1,6 @@
 .article {
   @include text-regular;
+  text-align: left;
 
   .article__date {
     color:  $color-vine;
@@ -15,6 +16,10 @@
     &:hover{
       color:  $color-vine;
     }
+  }
+
+  .article__phone{
+    @include text-h3;
   }
 
   .article__content {

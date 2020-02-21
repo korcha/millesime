@@ -60,7 +60,6 @@
     &--twitter-vine {
       width: 16px;
       height: 14px;
-
     }
 
     .fill-icon{
@@ -81,6 +80,16 @@
 
     &:hover .fill-icon-menu{
       fill: $color-white;
+    }
+
+    .fill-icon-vacancy{
+      stroke:$color-vine;
+
+      transition: all .5s;
+    }
+
+    &:hover .fill-icon-vacancy{
+      stroke:$color-dark;
     }
   }
 }

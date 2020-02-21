@@ -2,6 +2,7 @@
 @import "abstracts/_variables";
 @import "abstracts/_mixins.scss";
 @import "abstracts/animate";
+@import "abstracts/icons";
 
 // Импортируем базовые стили
 // @import "base/fonts";
@@ -48,6 +49,10 @@
 @import "pages/meetingpage";
 @import "pages/teacherspage";
 @import "pages/graduatespage";
+@import "pages/contactspage";
+@import "pages/listnewspage";
+@import "pages/listjobspage";
+@import "pages/vacancypage";
 
 
 

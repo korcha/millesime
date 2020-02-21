@@ -1,0 +1,1005 @@
+.icon-certificate {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top:0;
+    left:295px;
+    width: 30px;
+    height: 18px;
+    background-image: url("../img/svg/buy_certificate.svg");
+    margin:0 0 0 10px;
+  }
+
+  &:hover:after{
+    -webkit-animation: buy_certificate 2s  ease-out forwards;
+    -moz-animation: buy_certificate 2s  ease-out forwards;
+    animation: buy_certificate 2s  ease-out forwards;
+  }
+
+  @-webkit-keyframes  buy_certificate {
+    0% {
+      background: url("../img/svg/buy_certificate.svg") no-repeat;
+    }
+    5%{
+      background: url("../img/svg/buy_certificate_middle.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    10%{
+      background: url("../img/svg/buy_certificate_big.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    75% {
+      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    100% {
+      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+  }
+
+
+  .icon_reviews{
+    @include text-regular;
+    display: inline-block;
+    position: relative;
+    color:$color-vine;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    &:after{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      bottom:10px;
+      left: 110px;
+      background: url("../img/svg/icon_review.svg") no-repeat;
+
+      -webkit-animation: all_reviews_start .5s  ease-in forwards;
+      -moz-animation: all_reviews_start .5s  ease-in forwards;
+      animation: all_reviews_start .5s  ease-in forwards;
+    }
+
+    &:hover {
+      color:$color-dark;
+
+      span{
+        -webkit-animation: all_reviews .5s  ease-out forwards;
+        -moz-animation: all_reviews .5s  ease-out forwards;
+        animation: all_reviews .5s  ease-out forwards;
+      }
+    }
+    @-webkit-keyframes all_reviews_start {
+      0% {
+        background: url("../img/svg/icon_review_hover.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      25%{
+        background: url("../img/svg/icon_review_hover.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      75%{
+        background: url("../img/svg/icon_review_middle.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      95% {
+        background: url("../img/svg/icon_review_big.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      100% {
+        background: url("../img/svg/icon_review.svg") no-repeat;
+        width:28px;
+        height:22px;
+      }
+    }
+
+    @-moz-keyframes all_reviews_start {
+      0% {
+        background: url("../img/svg/icon_review_hover.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      25%{
+        background: url("../img/svg/icon_review_hover.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      75%{
+        background: url("../img/svg/icon_review_middle.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      95% {
+        background: url("../img/svg/icon_review_big.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      100% {
+        background: url("../img/svg/icon_review.svg") no-repeat;
+        width:28px;
+        height:22px;
+      }
+    }
+
+    @keyframes all_reviews_start {
+      0% {
+        background: url("../img/svg/icon_review_hover.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      25%{
+        background: url("../img/svg/icon_review_hover.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      75%{
+        background: url("../img/svg/icon_review_middle.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      95% {
+        background: url("../img/svg/icon_review_big.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      100% {
+        background: url("../img/svg/icon_review.svg") no-repeat;
+        width:28px;
+        height:22px;
+      }
+    }
+
+
+
+    @-webkit-keyframes all_reviews {
+      0% {
+        background: url("../img/svg/icon_review.svg") no-repeat;
+      }
+      10%{
+        background: url("../img/svg/icon_review_middle.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      20%{
+        background: url("../img/svg/icon_review_big.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      75% {
+        background: url("../img/svg/icon_review_hover.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      100% {
+        background: url("../img/svg/icon_review_hover.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+    }
+
+    @-moz-keyframes all_reviews {
+      0% {
+        background: url("../img/svg/icon_review.svg") no-repeat;
+      }
+      10%{
+        background: url("../img/svg/icon_review_middle.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      20%{
+        background: url("../img/svg/icon_review_big.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      75% {
+        background: url("../img/svg/icon_review_hover.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      100% {
+        background: url("../img/svg/icon_review_hover.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+    }
+
+    @keyframes all_reviews {
+      0% {
+        background: url("../img/svg/icon_review.svg") no-repeat;
+      }
+      10%{
+        background: url("../img/svg/icon_review_middle.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      20%{
+        background: url("../img/svg/icon_review_big.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      75% {
+        background: url("../img/svg/icon_review_hover.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+      100% {
+        background: url("../img/svg/icon_review_hover.svg") no-repeat;
+        width:34px;
+        height:25px;
+      }
+    }
+  }
+
+  @-moz-keyframes buy_certificate {
+    0% {
+      background: url("../img/svg/buy_certificate.svg") no-repeat;
+    }
+    5%{
+      background: url("../img/svg/buy_certificate_middle.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    10%{
+      background: url("../img/svg/buy_certificate_big.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    75% {
+      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    100% {
+      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+  }
+
+  @keyframes buy_certificate {
+    0% {
+      background: url("../img/svg/buy_certificate.svg") no-repeat;
+    }
+    5%{
+      background: url("../img/svg/buy_certificate_middle.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    10%{
+      background: url("../img/svg/buy_certificate_big.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    75% {
+      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+    100% {
+      background: url("../img/svg/buy_certificate_hover.svg") no-repeat;
+      width:36px;
+      height:21px;
+    }
+  }
+}
+
+
+.form_button_send {
+  position: relative;
+  @include text-regular;
+  text-align: left;
+  font-weight: 500;
+  margin-top: 42px;
+  padding-left: 60px;
+  color: $color-vine;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+
+  &:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top:0;
+    left:20px;
+    width: 30px;
+    height: 18px;
+    background-image: url("../img/svg/icon_send.svg");
+  }
+
+  &:hover:before{
+    -webkit-animation: send_icon 2s  ease-out forwards;
+    -moz-animation: send_icon 2s  ease-out forwards;
+    animation: send_icon 2s  ease-out forwards;
+  }
+
+
+  @-webkit-keyframes  send_icon {
+    0% {
+      background: url("../img/svg/icon_send.svg") no-repeat;
+    }
+    5%{
+      background: url("../img/svg/icon_send_1.svg") no-repeat;
+      width:35px;
+      height:18px;
+    }
+    10%{
+      background: url("../img/svg/icon_send_2.svg") no-repeat;
+      width:35px;
+      height:18px;
+    }
+    75% {
+      background: url("../img/svg/icon_send_3.svg") no-repeat;
+      width:35px;
+      height:18px;
+    }
+    100% {
+      background: url("../img/svg/icon_send_3.svg") no-repeat;
+      width:35px;
+      height:18px;
+    }
+  }
+
+  @-moz-keyframes send_icon {
+    0% {
+      background: url("../img/svg/icon_send.svg") no-repeat;
+    }
+    5%{
+      background: url("../img/svg/icon_send_1.svg") no-repeat;
+      width:35px;
+      height:18px;
+    }
+    10%{
+      background: url("../img/svg/icon_send_2.svg") no-repeat;
+      width:35px;
+      height:18px;
+    }
+    75% {
+      background: url("../img/svg/icon_send_3.svg") no-repeat;
+      width:35px;
+      height:18px;
+    }
+    100% {
+      background: url("../img/svg/icon_send_3.svg") no-repeat;
+      width:35px;
+      height:18px;
+    }
+  }
+
+  @keyframes send_icon {
+    0% {
+      background: url("../img/svg/icon_send.svg") no-repeat;
+    }
+    5%{
+      background: url("../img/svg/icon_send_1.svg") no-repeat;
+      width:35px;
+      height:18px;
+    }
+    10%{
+      background: url("../img/svg/icon_send_2.svg") no-repeat;
+      width:35px;
+      height:18px;
+    }
+    75% {
+      background: url("../img/svg/icon_send_3.svg") no-repeat;
+      width:35px;
+      height:18px;
+    }
+    100% {
+      background: url("../img/svg/icon_send_3.svg") no-repeat;
+      width:35px;
+      height:18px;
+    }
+  }
+
+}
+
+
+
+.icon_subscribe {
+  position: relative;
+  @include text-regular;
+  text-align: left;
+  font-weight: 500;
+  margin-top: 42px;
+  padding-left: 60px;
+  color: $color-vine;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+
+  &:before {
+    content: " ";
+    position: absolute;;
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/svg/icon_subscribe.svg");
+
+    -webkit-animation: sub_icon 1s  ease-in-out forwards;
+    -moz-animation: sub_icon 1s  ease-in-out forwards;
+    animation: sub_icon 1s  ease-in-out forwards;
+  }
+
+  &:hover:before{
+    -webkit-animation: flight_icon 1s  ease-in-out forwards;
+    -moz-animation: flight_icon 1s  ease-in-out forwards;
+    animation: flight_icon 1s  ease-in-out forwards;
+  }
+
+
+  @-webkit-keyframes flight_icon {
+    0% {
+      opacity: 1;
+      left: 20px;
+      top: 0;
+      background-image: url("../img/svg/icon_subscribe_1.svg");
+    }
+    100% {
+      opacity: 0;
+      left: 60px;
+      top: -60px;
+      background-image: url("../img/svg/icon_subscribe_1.svg");
+    }
+  }
+
+  @-moz-keyframes flight_icon {
+    0% {
+      opacity: 1;
+      left: 20px;
+      top: 0;
+      background-image: url("../img/svg/icon_subscribe_1.svg");
+    }
+    100% {
+      opacity: 0;
+      left: 60px;
+      top: -60px;
+      background-image: url("../img/svg/icon_subscribe_1.svg");
+    }
+  }
+
+  @keyframes flight_icon {
+    0% {
+      opacity: 1;
+      left: 20px;
+      top: 0;
+      background-image: url("../img/svg/icon_subscribe_1.svg");
+    }
+    100% {
+      opacity: 0;
+      left: 60px;
+      top: -60px;
+      background-image: url("../img/svg/icon_subscribe_1.svg");
+    }
+  }
+
+
+  @-webkit-keyframes sub_icon {
+    0% {
+      opacity: 0;
+      left: -60px;
+      top: 60px;
+      background-image: url("../img/svg/icon_subscribe_1.svg");
+    }
+    100% {
+      opacity: 1;
+      left: 20px;
+      top: 0;
+      background-image: url("../img/svg/icon_subscribe.svg");
+    }
+  }
+
+  @-moz-keyframes sub_icon {
+    0% {
+      opacity: 0;
+      left: -60px;
+      top: 60px;
+      background-image: url("../img/svg/icon_subscribe_1.svg");
+    }
+    100% {
+      opacity: 1;
+      left: 20px;
+      top: 0;
+      background-image: url("../img/svg/icon_subscribe.svg");
+    }
+  }
+
+  @keyframes sub_icon {
+    0% {
+      opacity: 0;
+      left: -60px;
+      top: 60px;
+      background-image: url("../img/svg/icon_subscribe_1.svg");
+    }
+    100% {
+      opacity: 1;
+      left: 20px;
+      top: 0;
+      background-image: url("../img/svg/icon_subscribe.svg");
+    }
+  }
+}
+
+
+
+.icon_sign_up{
+  display: inline-block;
+  position: relative;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #b17c8f;
+  text-transform: uppercase;
+  margin-top:25px;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top:-10px;
+    right:-30px;
+    width: 21px;
+    height: 32px;
+    background: url("../img/svg/icon_zapis.svg") no-repeat;
+    margin:0 0 0 5px;
+  }
+
+  &:hover:after{
+    -webkit-animation: sing_icon 2s  ease-out forwards;
+    -moz-animation: sing_icon 2s  ease-out forwards;
+    animation: sing_icon 2s  ease-out forwards;
+  }
+
+  @-webkit-keyframes  sing_icon {
+    0% {
+      background: url("../img/svg/icon_zapis.svg") no-repeat;
+      right:-30px;
+    }
+    5%{
+      background: url("../img/svg/icon_zapis.svg") no-repeat;
+      width:32px;
+      height:32px;
+      right:-40px;
+    }
+    10%{
+      background: url("../img/svg/icon_zapis_2.svg") no-repeat;
+      width:32px;
+      height:32px;
+      right:-40px;
+    }
+    75% {
+      background: url("../img/svg/icon_zapis_3.svg") no-repeat;
+      width:32px;
+      height:32px;
+      right:-40px;
+    }
+    100% {
+      background: url("../img/svg/icon_zapis_3.svg") no-repeat;
+      width:32px;
+      height:32px;
+      right:-40px;
+    }
+  }
+
+  @-moz-keyframes sing_icon {
+    0% {
+      background: url("../img/svg/icon_zapis.svg") no-repeat;
+      right:-30px;
+    }
+    5%{
+      background: url("../img/svg/icon_zapis.svg") no-repeat;
+      width:32px;
+      height:32px;
+      right:-40px;
+    }
+    10%{
+      background: url("../img/svg/icon_zapis_2.svg") no-repeat;
+      width:32px;
+      height:32px;
+      right:-40px;
+    }
+    75% {
+      background: url("../img/svg/icon_zapis_3.svg") no-repeat;
+      width:32px;
+      height:32px;
+      right:-40px;
+    }
+    100% {
+      background: url("../img/svg/icon_zapis_3.svg") no-repeat;
+      width:32px;
+      height:32px;
+      right:-40px;
+    }
+  }
+
+  @keyframes sing_icon {
+    0% {
+      background: url("../img/svg/icon_zapis.svg") no-repeat;
+      right:-30px;
+    }
+    5%{
+      background: url("../img/svg/icon_zapis.svg") no-repeat;
+      width:32px;
+      height:32px;
+      right:-40px;
+    }
+    10%{
+      background: url("../img/svg/icon_zapis_2.svg") no-repeat;
+      width:32px;
+      height:32px;
+      right:-40px;
+    }
+    75% {
+      background: url("../img/svg/icon_zapis_3.svg") no-repeat;
+      width:32px;
+      height:32px;
+      right:-40px;
+    }
+    100% {
+      background: url("../img/svg/icon_zapis_3.svg") no-repeat;
+      width:32px;
+      height:32px;
+      right:-40px;
+    }
+  }
+}
+
+
+.icon_coures{
+  display: inline-block;
+  position: relative;
+  padding:0 0 0 40px;
+  font-size:22px;
+  line-height: 2;
+  font-weight: 500;
+  color:$color-vine;
+  text-align: left;
+
+  &:before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top:8px;
+    left:0;
+    background: url("../img/svg/icon_info.svg") no-repeat;
+    width:22px;
+    height:28px;
+
+    -webkit-animation: icon_info_start .5s  ease-in forwards;
+    -moz-animation: icon_info_start .5s  ease-in forwards;
+    animation: icon_info_start .5s  ease-in forwards;
+  }
+
+  &:hover{
+    color:$color-dark;
+
+    &:before{
+      -webkit-animation: icon_info .5s  ease-out forwards;
+      -moz-animation: icon_info .5s  ease-out forwards;
+      animation: icon_info .5s  ease-out forwards;
+    }
+  }
+
+  @-webkit-keyframes icon_info_start {
+    0% {
+      background: url("../img/svg/icon_info_4.svg") no-repeat;
+    }
+    25%{
+      background: url("../img/svg/icon_info_3.svg") no-repeat;
+    }
+    50%{
+      background: url("../img/svg/icon_info_2.svg") no-repeat;
+    }
+    75% {
+      background: url("../img/svg/icon_info_1.svg") no-repeat;
+    }
+    100% {
+      background: url("../img/svg/icon_info.svg") no-repeat;
+    }
+  }
+
+  @-moz-keyframes icon_info_start {
+    0% {
+      background: url("../img/svg/icon_info_4.svg") no-repeat;
+    }
+    25%{
+      background: url("../img/svg/icon_info_3.svg") no-repeat;
+    }
+    50%{
+      background: url("../img/svg/icon_info_2.svg") no-repeat;
+    }
+    75% {
+      background: url("../img/svg/icon_info_1.svg") no-repeat;
+    }
+    100% {
+      background: url("../img/svg/icon_info.svg") no-repeat;
+    }
+  }
+
+  @keyframes icon_info_start {
+    0% {
+      background: url("../img/svg/icon_info_4.svg") no-repeat;
+    }
+    25%{
+      background: url("../img/svg/icon_info_3.svg") no-repeat;
+    }
+    50%{
+      background: url("../img/svg/icon_info_2.svg") no-repeat;
+    }
+    75% {
+      background: url("../img/svg/icon_info_1.svg") no-repeat;
+    }
+    100% {
+      background: url("../img/svg/icon_info.svg") no-repeat;
+    }
+  }
+
+
+  @-webkit-keyframes icon_info {
+    0% {
+      background: url("../img/svg/icon_info.svg") no-repeat;
+    }
+    25%{
+      background: url("../img/svg/icon_info_1.svg") no-repeat;
+    }
+    50%{
+      background: url("../img/svg/icon_info_2.svg") no-repeat;
+    }
+    75% {
+      background: url("../img/svg/icon_info_3.svg") no-repeat;
+    }
+    100% {
+      background: url("../img/svg/icon_info_4.svg") no-repeat;
+    }
+  }
+
+  @-moz-keyframes icon_info {
+    0% {
+      background: url("../img/svg/icon_info.svg") no-repeat;
+    }
+    25%{
+      background: url("../img/svg/icon_info_1.svg") no-repeat;
+    }
+    50%{
+      background: url("../img/svg/icon_info_2.svg") no-repeat;
+    }
+    75% {
+      background: url("../img/svg/icon_info_3.svg") no-repeat;
+    }
+    100% {
+      background: url("../img/svg/icon_info_4.svg") no-repeat;
+    }
+  }
+
+  @keyframes icon_info {
+    0% {
+      background: url("../img/svg/icon_info.svg") no-repeat;
+    }
+    25%{
+      background: url("../img/svg/icon_info_1.svg") no-repeat;
+    }
+    50%{
+      background: url("../img/svg/icon_info_2.svg") no-repeat;
+    }
+    75% {
+      background: url("../img/svg/icon_info_3.svg") no-repeat;
+    }
+    100% {
+      background: url("../img/svg/icon_info_4.svg") no-repeat;
+    }
+  }
+}
+
+
+
+.icon_reviews{
+  @include text-regular;
+  display: inline-block;
+  position: relative;
+  color:$color-vine;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &:after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom:10px;
+    left: 110px;
+    background: url("../img/svg/icon_review.svg") no-repeat;
+
+    -webkit-animation: all_reviews_start .5s  ease-in forwards;
+    -moz-animation: all_reviews_start .5s  ease-in forwards;
+    animation: all_reviews_start .5s  ease-in forwards;
+  }
+
+  &:hover:after {
+    color:$color-dark;
+
+    -webkit-animation: all_reviews .5s  ease-out forwards;
+    -moz-animation: all_reviews .5s  ease-out forwards;
+    animation: all_reviews .5s  ease-out forwards;
+
+  }
+
+  @-webkit-keyframes all_reviews_start {
+    0% {
+      background: url("../img/svg/icon_review_hover.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    25%{
+      background: url("../img/svg/icon_review_hover.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    75%{
+      background: url("../img/svg/icon_review_middle.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    95% {
+      background: url("../img/svg/icon_review_big.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    100% {
+      background: url("../img/svg/icon_review.svg") no-repeat;
+      width:28px;
+      height:22px;
+    }
+  }
+
+  @-moz-keyframes all_reviews_start {
+    0% {
+      background: url("../img/svg/icon_review_hover.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    25%{
+      background: url("../img/svg/icon_review_hover.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    75%{
+      background: url("../img/svg/icon_review_middle.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    95% {
+      background: url("../img/svg/icon_review_big.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    100% {
+      background: url("../img/svg/icon_review.svg") no-repeat;
+      width:28px;
+      height:22px;
+    }
+  }
+
+  @keyframes all_reviews_start {
+    0% {
+      background: url("../img/svg/icon_review_hover.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    25%{
+      background: url("../img/svg/icon_review_hover.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    75%{
+      background: url("../img/svg/icon_review_middle.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    95% {
+      background: url("../img/svg/icon_review_big.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    100% {
+      background: url("../img/svg/icon_review.svg") no-repeat;
+      width:28px;
+      height:22px;
+    }
+  }
+
+
+
+  @-webkit-keyframes all_reviews {
+    0% {
+      background: url("../img/svg/icon_review.svg") no-repeat;
+    }
+    10%{
+      background: url("../img/svg/icon_review_middle.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    20%{
+      background: url("../img/svg/icon_review_big.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    75% {
+      background: url("../img/svg/icon_review_hover.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    100% {
+      background: url("../img/svg/icon_review_hover.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+  }
+
+  @-moz-keyframes all_reviews {
+    0% {
+      background: url("../img/svg/icon_review.svg") no-repeat;
+    }
+    10%{
+      background: url("../img/svg/icon_review_middle.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    20%{
+      background: url("../img/svg/icon_review_big.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    75% {
+      background: url("../img/svg/icon_review_hover.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    100% {
+      background: url("../img/svg/icon_review_hover.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+  }
+
+  @keyframes all_reviews {
+    0% {
+      background: url("../img/svg/icon_review.svg") no-repeat;
+    }
+    10%{
+      background: url("../img/svg/icon_review_middle.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    20%{
+      background: url("../img/svg/icon_review_big.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    75% {
+      background: url("../img/svg/icon_review_hover.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+    100% {
+      background: url("../img/svg/icon_review_hover.svg") no-repeat;
+      width:34px;
+      height:25px;
+    }
+  }
+}

@@ -11,8 +11,10 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.js"></script>
 
     <link rel="stylesheet" href="css/styles.css" />
+
   </head>
   <body>
     <div class="wrapper">
@@ -24,14 +26,14 @@
           </a>
         </div>
         <div class="header__right">
-            <div class="lang_list">
-                <a class="language pointer" href="#">RUS</a>
-                <ul>
-                    <li>RUS</li>
-                    <li>ENG</li>
-                    <li>FIN</li>
-                </ul>
-            </div>
+          <div class="lang_list">
+            <a class="language pointer" href="#">RUS</a>
+            <ul>
+              <li>RUS</li>
+              <li>ENG</li>
+              <li>FIN</li>
+            </ul>
+          </div>
 
           <div class="burger">
             <div class="burger__button burger__button--show show pointer">
@@ -44,65 +46,74 @@
         </div>
       </header>
 
-      <section class="section listcoursespage">
-        <h1 class="courses__title section__title">
-          Курсы
+      <section class="section listjobspage">
+        <h1 class="degustation__title section__title">
+          Работа
         </h1>
 
-        <div class="courses__list">
+        <div class="jobs__info">
+          <div><h1>Подготовка персонала, вакансии и резюме</h1></div>
 
-          <div class="courses__item">
-            <div class="courses__img">
-              <img src="./img/content/pic_courses.jpg" alt="#"/>
-            </div>
-            <article class="courses__title_info article">
-              <h4>Вечерний курс для начинающих</h4>
-              <p class="article__title">Первые шаги</p>
-              <p class="article__content"><span>Начало:</span>1 октября</p>
-              <p class="article__content"><span>Стоимость:</span>20000 руб.</p>
-              <p class="icon_sign_up"><a href="#">Записаться</a></p>
-            </article>
+          <div>
+            <p>
+              Дорогие выпускники, студенты, партнеры школы, нас часто спрашивают, способствуем ли мы трудоустройству своих выпускников. Да, лучших выпускников мы направляем на работу в винные бутики, предприятия ресторанно-гостиничного бизнеса, виноторговые компании. К нам обращаются наши выпускники, которые ищут работу, и работодатели, которые ищут сотрудников. Мы решили создать этот раздел, чтобы помочь хорошим сотрудникам найти хорошую компанию, и наоборот :)<br/><br/>
+              Уважаемые руководители компаний, мы занимаемся целевой подготовкой персонала по договору с работодателями. Знания, полученные в нашей школе, помогут стать вашему работнику квалифицированным кавистом,  сомелье, менеджером по продажам или закупкам, F&B менеджером.
+            </p>
           </div>
 
-          <div class="courses__item">
-            <div class="courses__img">
-              <img src="./img/content/pic_courses.jpg" alt="#"/>
+          <div><a class="post__job" href="">Разместить<br/>вакансию</a></div>
+          <div><a class="link__job" href="">Вакансии для сомелье на jooble.org</a></div>
+        </div>
+
+        <h2>Вакансии</h2>
+
+        <div class="job__list">
+
+          <div class="job__item">
+            <div class="job__data">
+              <p>28.04.2019</p>
             </div>
-            <article class="courses__title_info article">
-              <h4>Вечерний курс для начинающих</h4>
-              <p class="article__title">Первые шаги</p>
-              <p class="article__content"><span>Начало:</span>1 октября</p>
-              <p class="article__content"><span>Стоимость:</span>20000 руб.</p>
-              <p class="icon_sign_up"><a href="#">Записаться </a></p>
-            </article>
+
+            <div class="job__title_info">
+              <h3>Помощник Сомелье</h3>
+              <p>Винный Склад</p>
+            </div>
           </div>
 
-          <div class="courses__item">
-            <div class="courses__img">
-              <img src="./img/content/pic_courses.jpg" alt="#"/>
+          <div class="job__item">
+            <div class="job__data">
+              <p>14.04.2019</p>
             </div>
-            <article class="courses__title_info article">
-              <h4>Вечерний курс для начинающих</h4>
-              <p class="article__title">Первые шаги</p>
-              <p class="article__content"><span>Начало:</span>1 октября</p>
-              <p class="article__content"><span>Стоимость:</span>20000 руб.</p>
-              <p class="icon_sign_up"><a href="#">Записаться </a></p>
-            </article>
+
+            <div class="job__title_info">
+              <h3>Кавист</h3>
+              <p>Винный Склад</p>
+            </div>
           </div>
 
-          <div class="courses__item">
-            <div class="courses__img">
-              <img src="./img/content/pic_courses.jpg" alt="#"/>
+          <div class="job__item">
+            <div class="job__data">
+              <p>10.04.2019</p>
             </div>
-            <article class="courses__title_info article">
-              <h4>Вечерний курс для начинающих</h4>
-              <p class="article__title">Первые шаги</p>
-              <p class="article__content"><span>Начало:</span>1 октября</p>
-              <p class="article__content"><span>Стоимость:</span>20000 руб.</p>
-              <p class="icon_sign_up"><a href="#">Записаться </a></p>
-            </article>
+
+            <div class="job__title_info">
+              <h3>Официант-сомелье</h3>
+              <p>Винный Склад</p>
+            </div>
           </div>
 
+        </div>
+
+        <div class="course-preview">
+          <img
+                  class="course-preview__picture"
+                  src="./img/content/course_1.jpg"
+          />
+          <div class="course-preview__title">первые шаги</div>
+          <div class="course-preview__desc">
+            вечерний курс для начинающих
+          </div>
+          <div class="course-preview__type">специальный курс</div>
         </div>
 
       </section>

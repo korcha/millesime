@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-gap: 2vw;
-  border:2px solid $color-red-white;
+  border:1px solid $color-red-white;
   cursor: pointer;
   margin:20px auto;
 
@@ -56,7 +56,7 @@
     position: relative;
     width:100%;
     height: 150px;
-    border-left:2px solid $color-vine;
+    border-left:1px solid $color-vine;
     opacity: 0;
 
     transition: all .5s;
@@ -75,7 +75,7 @@
       }
 
       &:nth-child(1){
-        border-bottom:2px solid $color-vine;
+        border-bottom:1px solid $color-vine;
       }
     }
   }
@@ -91,7 +91,7 @@
   }
 
   &:hover{
-    border:2px solid  $color-vine;
+    border:1px solid  $color-vine;
 
     .seminar__select{
       opacity: 1;
