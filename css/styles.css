@@ -3259,6 +3259,8 @@ a {
   background-color: #ffffff;
   width: 100vw;
   overflow-x: hidden; }
+  .wrapper.bg_pink {
+    background-color: #f4f3f4; }
 
 .container {
   width: 1440px;
@@ -4389,6 +4391,8 @@ mark {
     color: #b5b2b8; }
   .form__field:first-child {
     margin-top: 0; }
+  .bg_pink .form__field {
+    background: #f4f3f4; }
 
 .form__checkbox {
   display: inline-block;
@@ -5274,8 +5278,19 @@ mark {
   max-width: 100%;
   margin: -60px auto 0 auto;
   padding-bottom: 150px;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+  .teacherspage:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 80%;
+    right: -100px;
+    background: url(../img/svg/icon_spot_2.svg) no-repeat;
+    width: 208px;
+    height: 215px; }
   .teacherspage .teachers__info {
+    position: relative;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -5286,6 +5301,15 @@ mark {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 2vw; }
+    .teacherspage .teachers__info:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 150px;
+      right: -40px;
+      background: url(../img/svg/icon_white_list.svg) no-repeat;
+      width: 240px;
+      height: 250px; }
     .teacherspage .teachers__info p {
       text-align: left; }
       .teacherspage .teachers__info p:nth-child(1) {
@@ -5302,6 +5326,59 @@ mark {
       color: #b17c8f; }
       .teacherspage .teachers__info a:hover {
         color: #311616; }
+  .teacherspage .teachers__list {
+    display: inline-block;
+    position: relative;
+    max-width: 1200px; }
+    .teacherspage .teachers__list .teacher__card {
+      display: inline-block;
+      position: relative;
+      text-align: left;
+      color: #726c78;
+      margin: 50px 20px; }
+      .teacherspage .teachers__list .teacher__card .teacher__photo img {
+        display: block;
+        width: 195px;
+        height: 270px; }
+      .teacherspage .teachers__list .teacher__card .teacher__name {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 137.9%;
+        font-weight: medium;
+        font-size: 24px;
+        padding: 20px 0; }
+      .teacherspage .teachers__list .teacher__card .teacher__info {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 137.9%;
+        margin: 0 30px; }
+      .teacherspage .teachers__list .teacher__card:nth-child(1), .teacherspage .teachers__list .teacher__card:nth-child(2), .teacherspage .teachers__list .teacher__card:nth-child(3), .teacherspage .teachers__list .teacher__card:nth-child(6), .teacherspage .teachers__list .teacher__card:nth-child(7), .teacherspage .teachers__list .teacher__card:nth-child(8), .teacherspage .teachers__list .teacher__card:nth-child(11), .teacherspage .teachers__list .teacher__card:nth-child(12), .teacherspage .teachers__list .teacher__card:nth-child(13), .teacherspage .teachers__list .teacher__card:nth-child(16), .teacherspage .teachers__list .teacher__card:nth-child(18) {
+        width: 33%;
+        max-width: 350px; }
+      .teacherspage .teachers__list .teacher__card:nth-child(4), .teacherspage .teachers__list .teacher__card:nth-child(5), .teacherspage .teachers__list .teacher__card:nth-child(9), .teacherspage .teachers__list .teacher__card:nth-child(10), .teacherspage .teachers__list .teacher__card:nth-child(14), .teacherspage .teachers__list .teacher__card:nth-child(15), .teacherspage .teachers__list .teacher__card:nth-child(19), .teacherspage .teachers__list .teacher__card:nth-child(20) {
+        width: 45%;
+        max-width: 350px;
+        margin: 50px; }
+      .teacherspage .teachers__list .teacher__card.center {
+        display: block;
+        position: relative;
+        margin: 50px auto;
+        max-width: 420px; }
+        .teacherspage .teachers__list .teacher__card.center:before, .teacherspage .teachers__list .teacher__card.center:after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 180px;
+          width: 40px;
+          height: 40px; }
+        .teacherspage .teachers__list .teacher__card.center:before {
+          left: -100px; }
+        .teacherspage .teachers__list .teacher__card.center:after {
+          right: -100px; }
+        .teacherspage .teachers__list .teacher__card.center .teacher__photo img {
+          width: 420px; }
 
 .graduatespage {
   margin: -60px auto 0 auto;

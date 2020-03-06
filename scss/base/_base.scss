@@ -86,6 +86,10 @@ a {
   background-color: $color_white;
   width: 100vw;
   overflow-x: hidden;
+
+  &.bg_pink{
+    background-color: $color-grey-white;
+  }
 }
 
 .container {
