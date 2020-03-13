@@ -30,10 +30,14 @@
 @import "components/article";
 @import "components/slider-arrow";
 @import "components/course-preview";
+@import "components/partner-preview";
+@import "components/pager";
 @import "components/form";
 @import "components/timetable";
 @import "components/galery";
+@import "components/carousel";
 @import "components/seminar";
+@import "components/gift";
 
 //Ипортируем Персональные стили для страниц
 @import "pages/newspage";
@@ -53,6 +57,7 @@
 @import "pages/listnewspage";
 @import "pages/listjobspage";
 @import "pages/vacancypage";
+@import "pages/reviewspage";
 
 
 

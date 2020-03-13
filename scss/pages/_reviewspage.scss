@@ -1,0 +1,131 @@
+.reviewspage {
+  width: 1200px;
+  max-width: 1200px;
+  margin:-60px auto 0 auto;
+  padding-bottom: 150px;
+  position: relative;
+
+  .reviews__list{
+    width: 100%;
+    min-height: 1800px;
+    text-align: left;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5vw 0;
+    position: relative;
+
+    .reviews__item{
+      display: block;
+      max-width: 500px;
+
+      .article{
+        height:310px;
+        overflow-y: hidden;
+      }
+
+      &.open .article{
+        height: 100%;
+      }
+
+      p{
+        margin:10px 0;
+      }
+
+      .article__date{
+        color:$color-grey-light;
+      }
+      .article__title{
+        color:$color-vine;
+      }
+
+      &:nth-child(odd){
+        grid-column:1/4;
+      }
+      &:nth-child(even){
+        grid-column:2/5;
+      }
+
+      .source{
+        color:$color-grey;
+        font-weight: 500;
+      }
+
+      .show_link{
+        position: relative;
+        color:$color-white;
+
+        &:before{
+          content:'Показать полностью';
+          display: contents;
+          position: absolute;
+          top:0;
+          left:0;
+          width: 100%;
+        }
+      }
+
+      &.open .show_link:before{
+        content:' Скрыть';
+      }
+    }
+  }
+
+  .icon__write_reviews{
+    display: block;
+    position: absolute;
+    top:200px;
+    left:50%;
+    background: url("../img/svg/bg_reviews.svg") no-repeat;
+    width:180px;
+    height: 90px;
+    text-align: center;
+    margin:0 0 0 170px;
+
+    @include text-regular;
+    color: $color-vine;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 70px;
+  }
+
+  .icon__bung{
+    display: block;
+    position: absolute;
+    top:1800px;
+    right:100px;
+    background: url("../img/svg/icon_bung.svg") no-repeat;
+    width:156px;
+    height: 188px;
+  }
+
+  .course-preview{
+    display: block;
+    position: absolute;
+    top:400px;
+    right:0;
+  }
+
+  .partner-preview{
+    display: block;
+    position: absolute;
+    top:1300px;
+    right:0;
+  }
+}
+
+.icon__corkscrew{
+  display: block;
+  position: absolute;
+  top:900px;
+  left:-100px;
+  background: url("../img/svg/icon_corkscrew.svg") no-repeat;
+  width:330px;
+  height: 330px;
+}
+
+.block__gift{
+  top: 1100px;
+  right:-40px;
+}

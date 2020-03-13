@@ -1,0 +1,32 @@
+.partner-preview {
+  width: 420px;
+  height: 420px;
+  position: relative;
+  padding: 20px 30px;
+  color: $color-white;
+
+  .partner-preview__picture {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .partner-preview__title {
+    position: relative;
+    @include text-h2;
+    @include font-vollkorn;
+    overflow-wrap: break-word;
+    text-align: left;
+    margin-bottom:60%;
+  }
+
+  .partner-preview__desc,
+  .partner-preview__phone {
+    position: relative;
+    text-align: right;
+  }
+
+  .partner-preview__phone {
+    @include text-h3;
+  }
+}

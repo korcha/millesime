@@ -25,6 +25,15 @@ document.querySelector(".language").onclick=changeLang;
 
 $(document).ready(function() {
 
+    if($('.reviewspage').length){
+
+        $('.reviewspage .article').each(function(){
+            var block_article=$(this),
+                block_content=$(this).find('.article__content');
+            heightBlock(block_article, block_content);
+        });
+    }
+
     if($('.degustationpage, .meetingpage').length){
         var $container = $('.galery__foto');
         $container.masonry({
@@ -32,6 +41,7 @@ $(document).ready(function() {
             itemSelector: '.item_img',
             percentPosition: true,
             gutter: 20,
+
             isFitWidth: true
         });
         $container.imagesLoaded().progress( function() {
@@ -72,9 +82,18 @@ $(document).ready(function() {
         $(this).siblings(".timetable__item").removeClass('hide');
     });
 
-
     $('.select_list a').bind('click', function(){
         $(this).parents('.select_list').toggleClass('active');
+    });
+
+    function heightBlock(block_1, block_2){
+        if(block_1.height() < (block_2.height() + 50)){
+            block_1.parent().find('.show_link').css('color', '#B5B2B8');
+        }
+    }
+
+    $('.show_link').on('click', function(){
+        $(this).parents('.reviews__item').toggleClass('open');
     });
 });
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * animate.css -https://daneden.github.io/animate.css/
  * Version - 3.7.2
@@ -3416,42 +3417,6 @@ a {
   position: relative;
   max-width: 100%;
   padding: 100px 10%; }
-  .seminars .block_gift {
-    display: flex;
-    flex-direction: column;
-    Justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50px;
-    right: -40px;
-    width: 530px;
-    height: 320px;
-    cursor: pointer;
-    text-align: center; }
-    .seminars .block_gift:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: url("../img/content/bg_gift.png") no-repeat;
-      width: 530px;
-      height: 320px;
-      z-index: 1;
-      transition: transform 0.5s; }
-    .seminars .block_gift:hover:after {
-      transform: rotate(5deg); }
-    .seminars .block_gift a {
-      font-family: 'Ubuntu', sans-serif;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 137.9%;
-      color: #b17c8f;
-      font-weight: 500;
-      text-transform: uppercase;
-      z-index: 10; }
-    .seminars .block_gift:hover a {
-      transform: rotate(0deg); }
   .seminars h2 {
     font-size: 48px;
     line-height: 126%;
@@ -4315,7 +4280,24 @@ mark {
     font-weight: medium;
     font-size: 24px; }
   .article .article__content {
-    display: block; }
+    display: block;
+    position: relative;
+    vertical-align: top; }
+    .article .article__content span {
+      display: block;
+      margin: 0 0 20px 0; }
+    .article .article__content img {
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      max-width: 100px;
+      height: auto; }
+  .article .article_link {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137.9%;
+    color: #b5b2b8; }
 
 .slider-arrow {
   font-size: 0;
@@ -4365,6 +4347,59 @@ mark {
     font-weight: 500;
     line-height: 122%;
     text-transform: uppercase; }
+
+.partner-preview {
+  width: 420px;
+  height: 420px;
+  position: relative;
+  padding: 20px 30px;
+  color: #ffffff; }
+  .partner-preview .partner-preview__picture {
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .partner-preview .partner-preview__title {
+    position: relative;
+    font-size: 48px;
+    line-height: 126%;
+    font-size: 36px;
+    font-family: 'Vollkorn', serif;
+    overflow-wrap: break-word;
+    text-align: left;
+    margin-bottom: 60%; }
+  .partner-preview .partner-preview__desc,
+  .partner-preview .partner-preview__phone {
+    position: relative;
+    text-align: right; }
+  .partner-preview .partner-preview__phone {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137.9%;
+    font-weight: medium;
+    font-size: 24px; }
+
+.pager {
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  text-align: center;
+  margin: 40px 0; }
+  .pager ul {
+    display: inline-block; }
+  .pager li, .pager p {
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    color: #b17c8f;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    cursor: pointer; }
+    .pager li:hover, .pager p:hover {
+      background: #f9f3f4;
+      border-radius: 30px;
+      color: #726c78; }
 
 .form {
   display: flex;
@@ -4504,6 +4539,8 @@ mark {
     min-height: 400px;
     margin: 0 auto;
     width: 100%; }
+    .galery__list .galery__foto .item_img {
+      margin-bottom: 20px; }
     .galery__list .galery__foto img {
       width: 195px; }
   .galery__list:before {
@@ -4525,6 +4562,48 @@ mark {
     height: 15px;
     width: 100%;
     transform: scale(1, -1); }
+
+.carousel__view {
+  display: none;
+  position: fixed;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 40px 0;
+  background: rgba(244, 243, 244, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 10000; }
+  .carousel__view .carousel__list {
+    width: 60%;
+    max-width: 800px;
+    margin: 0 5%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+    .carousel__view .carousel__list .carousel__img {
+      display: contents;
+      width: 100%; }
+      .carousel__view .carousel__list .carousel__img img {
+        width: 100%;
+        height: auto; }
+  .carousel__view .carousel__close {
+    display: inline-block;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137.9%;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #311616; }
 
 .seminar__item {
   display: inline-grid;
@@ -4605,6 +4684,43 @@ mark {
     .seminar__item:hover .seminar__title_info h3 {
       color: #b17c8f; }
 
+.block__gift {
+  display: flex;
+  flex-direction: column;
+  Justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  right: -40px;
+  width: 530px;
+  height: 320px;
+  cursor: pointer;
+  text-align: center; }
+  .block__gift:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/content/bg_gift.png") no-repeat;
+    width: 530px;
+    height: 320px;
+    z-index: 1;
+    transition: transform 0.5s; }
+  .block__gift:hover:after {
+    transform: rotate(5deg); }
+  .block__gift a {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137.9%;
+    color: #b17c8f;
+    font-weight: 500;
+    text-transform: uppercase;
+    z-index: 10; }
+  .block__gift:hover a {
+    transform: rotate(0deg); }
+
 .newspage {
   width: 870px;
   margin: 0 auto;
@@ -4616,17 +4732,20 @@ mark {
     font-size: 36px;
     font-family: 'Vollkorn', serif;
     color: #726c78;
-    padding-bottom: 40px; }
+    padding-bottom: 40px;
+    text-align: left; }
+  .newspage p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137.9%;
+    margin: 0 0 20px 0;
+    text-align: left; }
+  .newspage a {
+    font-weight: 500;
+    display: inline-block; }
   .newspage .newspage__content {
     padding-bottom: 100px; }
-    .newspage .newspage__content p {
-      font-family: 'Ubuntu', sans-serif;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 137.9%;
-      margin-bottom: 20px; }
-    .newspage .newspage__content a {
-      font-weight: 500; }
 
 .coursepage {
   width: 1200px;
@@ -4666,7 +4785,8 @@ mark {
     line-height: 137.9%;
     padding-top: 12px;
     color: #726c78;
-    width: 586px; }
+    width: 586px;
+    text-align: left; }
     .coursepage .coursepage__content h3 {
       font-family: 'Ubuntu', sans-serif;
       font-weight: 400;
@@ -4696,7 +4816,8 @@ mark {
   .coursepage .coursepage__register {
     padding-top: 100px;
     width: 645px;
-    margin-left: 25%; }
+    margin-left: 25%;
+    text-align: left; }
   .coursepage .coursepage__form {
     padding-top: 50px; }
   .coursepage .coursepage__info {
@@ -5011,11 +5132,9 @@ mark {
           top: -25px;
           left: 0;
           width: 100%; }
-    .giftspage .gift_about .gift_img {
-      grid-column-start: 6;
-      grid-column-end: 9;
-      grid-row-start: 2;
-      grid-row-end: 4; }
+    .giftspage .gift_about .partner-preview {
+      grid-column: 6/9;
+      grid-row: 2/4; }
 
 .icon__gift {
   display: block;
@@ -5504,27 +5623,6 @@ mark {
       margin: 0 0 100px 0; }
       .listnewspage .news__article .article .article__date {
         color: #b5b2b8; }
-  .listnewspage .news__pager {
-    display: inline-block;
-    position: relative;
-    list-style: none;
-    text-align: center;
-    margin: 40px 0; }
-    .listnewspage .news__pager ul {
-      display: inline-block; }
-    .listnewspage .news__pager li, .listnewspage .news__pager p {
-      display: inline-block;
-      font-family: 'Ubuntu', sans-serif;
-      color: #b17c8f;
-      font-size: 16px;
-      font-weight: 500;
-      text-transform: uppercase;
-      padding: 10px 15px;
-      cursor: pointer; }
-      .listnewspage .news__pager li:hover, .listnewspage .news__pager p:hover {
-        background: #f9f3f4;
-        border-radius: 30px;
-        color: #726c78; }
 
 .listjobspage {
   width: 1200px;
@@ -5670,3 +5768,101 @@ mark {
       text-align: right; }
       .vacancypage .vacancy__info .vacancy__social li {
         margin: 0 0 60px 0; }
+
+.reviewspage {
+  width: 1200px;
+  max-width: 1200px;
+  margin: -60px auto 0 auto;
+  padding-bottom: 150px;
+  position: relative; }
+  .reviewspage .reviews__list {
+    width: 100%;
+    min-height: 1800px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5vw 0;
+    position: relative; }
+    .reviewspage .reviews__list .reviews__item {
+      display: block;
+      max-width: 500px; }
+      .reviewspage .reviews__list .reviews__item .article {
+        height: 310px;
+        overflow-y: hidden; }
+      .reviewspage .reviews__list .reviews__item.open .article {
+        height: 100%; }
+      .reviewspage .reviews__list .reviews__item p {
+        margin: 10px 0; }
+      .reviewspage .reviews__list .reviews__item .article__date {
+        color: #b5b2b8; }
+      .reviewspage .reviews__list .reviews__item .article__title {
+        color: #b17c8f; }
+      .reviewspage .reviews__list .reviews__item:nth-child(odd) {
+        grid-column: 1/4; }
+      .reviewspage .reviews__list .reviews__item:nth-child(even) {
+        grid-column: 2/5; }
+      .reviewspage .reviews__list .reviews__item .source {
+        color: #726c78;
+        font-weight: 500; }
+      .reviewspage .reviews__list .reviews__item .show_link {
+        position: relative;
+        color: #ffffff; }
+        .reviewspage .reviews__list .reviews__item .show_link:before {
+          content: 'Показать полностью';
+          display: contents;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%; }
+      .reviewspage .reviews__list .reviews__item.open .show_link:before {
+        content: ' Скрыть'; }
+  .reviewspage .icon__write_reviews {
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    background: url("../img/svg/bg_reviews.svg") no-repeat;
+    width: 180px;
+    height: 90px;
+    text-align: center;
+    margin: 0 0 0 170px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137.9%;
+    color: #b17c8f;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 70px; }
+  .reviewspage .icon__bung {
+    display: block;
+    position: absolute;
+    top: 1800px;
+    right: 100px;
+    background: url("../img/svg/icon_bung.svg") no-repeat;
+    width: 156px;
+    height: 188px; }
+  .reviewspage .course-preview {
+    display: block;
+    position: absolute;
+    top: 400px;
+    right: 0; }
+  .reviewspage .partner-preview {
+    display: block;
+    position: absolute;
+    top: 1300px;
+    right: 0; }
+
+.icon__corkscrew {
+  display: block;
+  position: absolute;
+  top: 900px;
+  left: -100px;
+  background: url("../img/svg/icon_corkscrew.svg") no-repeat;
+  width: 330px;
+  height: 330px; }
+
+.block__gift {
+  top: 1100px;
+  right: -40px; }

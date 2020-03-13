@@ -21,8 +21,26 @@
   .article__phone{
     @include text-h3;
   }
-
   .article__content {
     display: block;
+    position: relative;
+    vertical-align: top;
+
+    span{
+      display: block;
+      margin:0 0 20px 0;
+    }
+
+    img{
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      max-width: 100px;
+      height:auto;
+    }
+  }
+  .article_link{
+    @include text-regular;
+    color:$color-grey-light;
   }
 }

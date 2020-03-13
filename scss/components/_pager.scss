@@ -1,0 +1,28 @@
+.pager{
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  text-align: center;
+  margin:40px 0;
+
+  ul{
+    display: inline-block;
+  }
+
+  li, p{
+    display: inline-block;
+    @include font-ubuntu;
+    color:$color-vine;
+    font-size:16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    cursor: pointer;
+
+    &:hover{
+      background:$color-red-white;
+      border-radius: 30px;
+      color:$color-grey;
+    }
+  }
+}

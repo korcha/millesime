@@ -49,6 +49,7 @@
     padding-top: 12px;
     color: $color-grey;
     width: 586px;
+    text-align: left;
 
     h3 {
       @include text-h3;
@@ -90,6 +91,7 @@
     padding-top: 100px;
     width: 645px;
     margin-left: 25%;
+    text-align: left;
   }
 
   .coursepage__form {
