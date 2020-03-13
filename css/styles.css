@@ -4578,20 +4578,20 @@ mark {
   height: 100%;
   z-index: 10000; }
   .carousel__view .carousel__list {
-    width: 60%;
-    max-width: 800px;
+    max-height: 500px;
+    width: 800px;
     margin: 0 5%;
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center; }
     .carousel__view .carousel__list .carousel__img {
       display: contents;
       width: 100%; }
       .carousel__view .carousel__list .carousel__img img {
-        width: 100%;
-        height: auto; }
+        width: auto;
+        height: 500px; }
   .carousel__view .carousel__close {
     display: inline-block;
     position: absolute;
@@ -4603,7 +4603,8 @@ mark {
     line-height: 137.9%;
     text-transform: uppercase;
     font-weight: 500;
-    color: #311616; }
+    color: #311616;
+    cursor: pointer; }
 
 .seminar__item {
   display: inline-grid;
