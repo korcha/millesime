@@ -2,78 +2,169 @@
   display: flex;
   flex-direction: column;
   position: relative;
-}
 
-.form__field {
-  width: 420px;
-  border: none;
-  border-bottom: 1px solid $color-grey-light;
-  padding: 0 10px 10px 20px;
-  margin-bottom: 30px;
-  @include text-regular;
-  color: $color-grey;
-
-  &::placeholder {
+  .form__field {
+    max-width: 420px;
+    width: 100%;
+    min-width: 200px;
+    border: none;
+    border-bottom: 1px solid $color-grey-light;
+    padding: 0 10px 20px 20px;
+    margin-bottom: 20px;
     @include text-regular;
-    font-weight: 500;
-    color: $color-grey-light;
+    color: $color-grey;
+
+    &::placeholder {
+      @include text-regular;
+      font-weight: 500;
+      color: $color-grey-light;
+      white-space: pre-wrap;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    .bg_pink & {
+      background: $color-grey-white;
+    }
   }
 
-  &:first-child {
-    margin-top: 0;
-  }
-  .bg_pink &{
-    background: $color-grey-white;
-  }
-}
+  .form__checkbox {
+    display: inline-block;
+    position: relative;
+    padding: 10px 0;
 
-.form__checkbox{
-  display: inline-block;
-  position: relative;
-  padding:10px 0;
+    input[type="checkbox"] {
+      opacity: 0;
+    }
 
-  input[type="checkbox"] {
-    opacity: 0;
+    label {
+      position: absolute;
+      display: inline-block;
+      left: 20px;
+      padding-left: 30px;
+
+      &:before,
+      &:after {
+        position: absolute;
+        content: "";
+        display: inline-block;
+      }
+
+      &:before {
+        background: url("../img/svg/icon_checkbox.svg") no-repeat;
+        height: 23px;
+        width: 22px;
+        left: 0px;
+        top: -3px;
+      }
+
+      &:after {
+        background: url("../img/svg/icon_checked.svg") no-repeat;
+        height: 23px;
+        width: 22px;
+        left: 4px;
+        top: -5px;
+      }
+    }
+
+    & input[type="checkbox"] + label:after {
+      content: none;
+    }
+
+    & input[type="checkbox"]:checked + label:after {
+      content: '';
+    }
   }
 
   label {
-    position: absolute;
-    display: inline-block;
-    left:20px;
-    padding-left: 30px;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0 10px 20px 20px;
 
-    &:before,
-    &:after {
-      position: absolute;
-      content: "";
-      display: inline-block;
+    input[type="file"] {
+      display: none;
     }
 
-    &:before{
-      background: url("../img/svg/icon_checkbox.svg") no-repeat;
-      height: 23px;
-      width: 22px;
-      left: 0px;
-      top: -3px;
-    }
+    span {
+      float: left;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 135%;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: #726C78;
+      margin: 0 5px 0 0;
 
-    &:after {
-      background: url("../img/svg/icon_checked.svg") no-repeat;
-      height: 23px;
-      width: 22px;
-      left: 4px;
-      top: -5px;
+      &.filename {
+        float: left;
+        font-size: 16px;
+        line-height: 135%;
+        color: #B5B2B8;
+        text-transform: none;
+        text-decoration: none;
+        cursor: pointer;
+        margin: 0 0 0 30px;
+
+
+        .dwld {
+          -webkit-animation: color_change 3s infinite alternate;
+          -moz-animation: color_change 3s infinite alternate;
+          -ms-animation: color_change 3s infinite alternate;
+          -o-animation: color_change 3s infinite alternate;
+          animation: color_change 3s infinite alternate;
+        }
+
+        @-webkit-keyframes color_change {
+          from {
+            color: #ddd;
+          }
+          to {
+            color: #B5B2B8;
+          }
+        }
+
+        @-moz-keyframes color_change {
+          from {
+            color: #ddd;
+          }
+          to {
+            color: #B5B2B8;
+          }
+        }
+
+        @-ms-keyframes color_change {
+          from {
+            color: #ddd;
+          }
+          to {
+            color: #B5B2B8;
+          }
+        }
+
+        @-o-keyframes color_change {
+          from {
+            color: #ddd;
+          }
+          to {
+            color: #B5B2B8;
+          }
+        }
+
+        @keyframes color_change {
+          from {
+            color: #ddd;
+          }
+          to {
+            color: #B5B2B8;
+          }
+        }
+      }
     }
   }
 
-  & input[type="checkbox"] + label:after {
-    content: none;
-  }
-
-  & input[type="checkbox"]:checked + label:after {
-    content:'';
-  }
 }
-
-
 

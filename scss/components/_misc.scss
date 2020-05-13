@@ -31,6 +31,10 @@
     height: 54px;
     background: url("../img/svg/title_undercover.svg") no-repeat;
   }
+
+  @media only screen and (max-width: 800px) {
+    margin: 40px auto 60px auto;
+  }
 }
 
 .button-link {

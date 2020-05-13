@@ -95,6 +95,12 @@ $(document).ready(function() {
     $('.show_link').on('click', function(){
         $(this).parents('.reviews__item').toggleClass('open');
     });
+
+    $(".form input[type=file]").change(function () {
+        var filename = $(this).val().replace(/.*\\/, "").substr(0, 20);
+        $(this).siblings(".filename").text(filename);
+        $(this).siblings(".filename").addClass('dwld');
+    });
 });
 
 
