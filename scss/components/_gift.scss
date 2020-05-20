@@ -1,15 +1,19 @@
-.block__gift{
+.card__gift{
   display: flex;
   flex-direction: column;
-  Justify-content:center;
+  Justify-content: center;
   align-items: center;
   position: absolute;
-  top:50px;
-  right:-40px;
-  width:530px;
-  height:320px;
+  right: -40px;
+  width: 530px;
+  height: 320px;
   cursor: pointer;
   text-align: center;
+
+  @media only screen and (max-width: 480px) {
+    width: 320px;
+    height: 194px;
+  }
 
   &:after{
     content:'';
@@ -18,11 +22,17 @@
     top:0;
     left:0;
     background: url("../img/content/bg_gift.png") no-repeat;
+    background-size: cover;
     width:530px;
     height:320px;
     z-index: 1;
 
     transition: transform 0.5s;
+
+    @media only screen and (max-width: 480px) {
+      width: 320px;
+      height: 194px;
+    }
   }
 
   &:hover:after{

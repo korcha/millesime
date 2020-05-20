@@ -10,6 +10,10 @@
     width: 176px;
     height: 216px;
     background-image: url("../img/svg/news.svg");
+
+    @media only screen and (max-width: 480px) {
+     display: none;
+    }
   }
 
   .news__header {
@@ -30,13 +34,28 @@
 
   .news__list {
     display: flex;
+    width: 1260px;
     transition: margin-left 550ms ease-in-out 0s;
+
+    @media only screen and (max-width: 1200px) {
+      width: 100%;
+    }
   }
 
   .news__item {
     flex-shrink: 0;
-    flex: 0 0 360px;
-    margin-right: 90px;
+    flex: 0 0 30%;
+    margin-right: 5%;
+    padding:0 10px;
+
+    @media only screen and (max-width: 800px) {
+      flex: 0 0 45%;
+    }
+
+    @media only screen and (max-width: 480px) {
+      flex: 0 0 100%;
+      margin:0;
+    }
 
     &:last-child {
       margin: 0;
@@ -48,9 +67,15 @@
     color: $color-vine;
     text-transform: uppercase;
     position: absolute;
-    right: 0;
+    right: 20px;
     top: 110%;
     transform-origin: 100% 50%;
     transform: rotate(-90deg);
+
+    @media only screen and (max-width: 480px) {
+      transform: rotate(0deg);
+      top: 120%;
+    }
+
   }
 }

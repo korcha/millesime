@@ -86,6 +86,7 @@ a {
   background-color: $color_white;
   width: 100vw;
   overflow-x: hidden;
+  text-align: center;
 
   &.bg_pink{
     background-color: $color-grey-white;
@@ -103,6 +104,5 @@ a {
   max-width: 1200px;
   margin:0 auto;
   margin:50px 0;
-  text-align: center;
 }
 

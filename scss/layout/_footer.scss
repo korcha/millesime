@@ -1,39 +1,75 @@
 .footer {
-  width: 1200px;
+  width: 100%;
   margin:40px auto 0 auto;
   position: relative;
+  z-index: 1000;
+  text-align: center;
 
-  &:before {
-    content: " ";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 170px;
-    height: 110px;
-    background-image: url("../img/logo_small.png");
-    transform: translate(-65%, -50%);
-  }
+  .footer__box {
+    display: table;
+    position: relative;
+    max-width: 1200px;
+    width:80%;
+    justify-content: space-between;
+    border: 1px solid $color-grey-light;
+    padding: 70px 10% 60px 10%;
+    color: $color-grey;
+    margin:0 auto;
 
-  .footer__column {
-    &--flex {
-      display: flex;
-      flex-direction: column;
+    @media only screen and (max-width: 1200px) {
+      margin:0 10%;
+    }
+
+    @media only screen and (max-width: 960px) {
+      padding: 40px 10px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      padding: 40px 5%;
+    }
+
+    &:before {
+      content: " ";
+      position: absolute;
+      left:0;
+      top: 0;
+      width: 105px;
+      height: 114px;
+      background-image: url("../img/logo_footer.svg");
+      transform: translate(-65%, -50%);
     }
   }
 
-  .footer__box {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid $color-grey-light;
-    padding: 70px 90px 60px 145px;
-    color: $color-grey;
+  .footer__column {
+    display: table-cell;
+    vertical-align: top;
+    text-align: left;
+    width: 50%;
+
+    @media only screen and (max-width: 960px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width:100%;
+    }
+
+    @media only screen and (max-width: 480px) {
+      flex-direction: column;
+    }
+
+    &--flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 
   .footer__phone {
     @include text-h3;
-    @include font-ubuntu;
+    @include font-ubuntu;;
 
     a{
+      display: block;
       color:$color-grey;
 
       &:hover{
@@ -44,8 +80,16 @@
 
   .footer__address {
     @include text-regular;
-    margin-top: auto;
+    margin: 20% 0 0 0;
     width: 175px;
+
+    @media only screen and (max-width: 960px) {
+      margin: 0;
+    }
+
+    @media only screen and (max-width: 480px) {
+      margin: 10% 0 0 0;
+    }
 
     a {
       font-weight: 500;
@@ -60,43 +104,96 @@
     }
   }
 
+  .footer__subscription{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+
+
+    @media only screen and (max-width: 960px) {
+      justify-content: space-around;
+      width: 100%;
+      margin:10% 0 0 0;
+    }
+
+    .footer__form{
+      width:80%;
+
+      @media only screen and (max-width: 480px) {
+        width:100%;
+      }
+    }
+
+    .footer__social{
+      @media only screen and (max-width: 480px) {
+        display: none;
+      }
+    }
+  }
+
   .footer_copyright {
-    padding: 50px 30px 60px 145px;
+    max-width: 1200px;
+    width:100%;
+    padding: 50px 10% 60px 10%;
     @include text-regular;
     color: $color-grey-light;
     font-size: 14px;
     display: flex;
-  }
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    margin:0 auto;
 
-  .footer__politics {
-    width: 153px;
-    font-weight: 500;
-    margin-left: auto;
-    margin-right: 110px;
+    @media only screen and (max-width: 480px) {
+      flex-direction: column;
+      padding: 30px 10% 30px 30%;
+    }
 
-    a{
-      color: $color-grey-light;
+    .footer__terms{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0 0 0 10%;
 
-      transition: color .5s;
+      @media only screen and (max-width: 960px) {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
 
-      &:hover{
-        color:$color-grey;
+      @media only screen and (max-width: 480px) {
+        margin: 10px 0 0 0;
+      }
+
+      .footer__politics {
+        max-width: 153px;
+        font-weight: 500;
+        margin:0 0 10px 0;
+
+        a{
+          color: $color-grey-light;
+          transition: color .5s;
+
+          &:hover{
+            color:$color-grey;
+          }
+        }
+      }
+
+      .footer__license {
+        font-weight: 500;
+        max-width: 322px;
+
+        a{
+          color: $color-grey-light;
+
+          transition: color .5s;
+
+          &:hover{
+            color:$color-grey;
+          }
+        }
       }
     }
   }
 
-  .footer__license {
-    font-weight: 500;
-    width: 322px;
-
-    a{
-      color: $color-grey-light;
-
-      transition: color .5s;
-
-      &:hover{
-        color:$color-grey;
-      }
-    }
-  }
 }
