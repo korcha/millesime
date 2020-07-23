@@ -15,6 +15,10 @@
     height: 18px;
     background-image: url("../img/svg/buy_certificate.svg");
     margin:0 0 0 10px;
+
+    @media only screen and (max-width: 480px) {
+      left:255px;
+    }
   }
 
   &:hover:after{

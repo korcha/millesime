@@ -9,26 +9,38 @@
     @include text-regular;
     margin:0 0 100px 0;
     width: 100%;
+    padding:10px;
 
     display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, minmax(30px, 175px));
+    grid-gap: 30px;
+
+    @media only screen and (max-width: 480px) {
+      grid-gap: 20px;
+    }
 
     p{
       max-width: 600px;
       text-align: left;
 
       &:nth-child(1){
-        grid-column-start: 2;
-        grid-column-end: 4;
+        grid-column: 2/4;
+
+        @media only screen and (max-width: 480px) {
+          grid-column: 1/4;
+        }
 
         @include font-vollkorn;
         font-size: 40px;
       }
 
       &:nth-child(2){
-        grid-column-start: 4;
-        grid-column-end: 7;
+        grid-column: 3/7;
+
+        @media only screen and (max-width: 480px) {
+          grid-column: 2/7;
+          grid-row: 2;
+        }
       }
     }
 

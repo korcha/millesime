@@ -33,7 +33,8 @@
   }
 
   @media only screen and (max-width: 800px) {
-    margin: 40px auto 60px auto;
+    margin: 50px auto;
+    font-size: 28px;
   }
 }
 
@@ -41,6 +42,10 @@
   @include text-regular;
   font-weight: 500;
   color: $color-vine;
+
+  @media only screen and (max-width: 480px) {
+   font-size: 14px;
+  }
 }
 
 mark {

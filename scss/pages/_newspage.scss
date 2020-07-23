@@ -1,8 +1,9 @@
 .newspage {
   width: 870px;
-  margin: 0 auto;
-  margin-top: -60px;
-  padding-bottom: 150px;
+  max-width: 100%;
+  margin:-60px auto 0 auto;
+  padding-bottom: 50px;
+  text-align: center;
 
   .newspage__date {
     @include text-h2;
@@ -10,16 +11,30 @@
     color: $color-grey;
     padding-bottom: 40px;
     text-align: left;
+    margin:0 10px;
   }
 
   p {
     @include text-regular;
-    margin: 0 0 20px 0;
+    margin: 0 10px 20px 10px;
     text-align: left;
   }
   a {
     font-weight: 500;
     display: inline-block;
+  }
+
+  img{
+    width:48%;
+
+    &:nth-child(1){
+      margin-left: 1%;
+    }
+
+    @media only screen and (max-width: 480px) {
+      width:100%;
+      margin:0 10px;
+    }
   }
 
   .newspage__content {

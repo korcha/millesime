@@ -9,6 +9,11 @@
     background: url(../img/logo.svg) no-repeat;
     background-size: contain;
 
+    -webkit-animation: flip 1s linear;
+    -moz-animation: flip 1s linear;
+    -o-animation: flip 1s linear;
+    animation: flip 1s linear;
+
     @media only screen and (max-width: 640px) {
       width: 166px;
       height: 72px;
