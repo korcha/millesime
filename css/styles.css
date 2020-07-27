@@ -3374,109 +3374,81 @@ a {
     .degustation {
       grid-template-columns: 40px repeat(3, minmax(50px, 175px)); } }
   .degustation .degustation_about {
-    grid-column: 2/5;
+    grid-column: 1/7;
     grid-row: 1;
-    background: url(../img/content/bg_degustation.png) no-repeat;
-    background-size: contain;
-    width: 833px;
-    height: 611px;
-    transition: background 1.5s; }
-    .degustation .degustation_about.active {
-      background: url("../img/content/bg_degustation_active.png") no-repeat;
-      background-size: cover; }
-    @media only screen and (max-width: 1100px) {
-      .degustation .degustation_about {
-        width: 600px;
-        height: 437px; } }
-    @media only screen and (max-width: 960px) {
-      .degustation .degustation_about {
-        width: 412px;
-        height: 302px; } }
-    @media only screen and (max-width: 640px) {
-      .degustation .degustation_about {
-        width: 100%; } }
-    @media only screen and (max-width: 400px) {
-      .degustation .degustation_about {
-        height: 200px; } }
-    .degustation .degustation_about div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .degustation .degustation_about img {
+      display: inline-block;
+      max-width: 870px;
+      max-height: 565px;
+      margin: 0 40px; }
+  .degustation .degustation_links {
+    grid-column: 1/7;
+    grid-row: 2;
+    display: inline-grid;
+    position: relative;
+    grid-template-columns: repeat(6, minmax(175px, 175px));
+    grid-template-rows: auto; }
+    .degustation .degustation_links .link_near_courses {
       display: block;
-      position: absolute; }
-    .degustation .degustation_about .degustation_link {
-      z-index: 100;
-      white-space: nowrap;
-      bottom: 255px;
-      right: -20px;
-      -webkit-transform: rotate(-90deg);
-      transform: rotate(-90deg); }
+      position: relative;
+      grid-column: 1/3;
+      text-align: left;
+      white-space: nowrap; }
+      .degustation .degustation_links .link_near_courses a {
+        display: inline-block;
+        color: #b17c8f;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: color 1s; }
+        .degustation .degustation_links .link_near_courses a:hover {
+          color: #311616; }
+        .degustation .degustation_links .link_near_courses a:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: -30px;
+          left: 0px;
+          width: 66px;
+          height: 44px;
+          background: url("../img/svg/icon_drop.svg") no-repeat;
+          transition: background 1s; }
+        .degustation .degustation_links .link_near_courses a:hover:before {
+          background: url("../img/svg/icon_drop_hover.svg") no-repeat; }
+    .degustation .degustation_links .degustation_link {
+      grid-column: 5/7; }
       @media only screen and (max-width: 1100px) {
-        .degustation .degustation_about .degustation_link {
+        .degustation .degustation_links .degustation_link {
           bottom: 215px;
           right: -40px; } }
       @media only screen and (max-width: 960px) {
-        .degustation .degustation_about .degustation_link {
+        .degustation .degustation_links .degustation_link {
           bottom: 0px;
           right: -150px; } }
       @media only screen and (max-width: 640px) {
-        .degustation .degustation_about .degustation_link {
+        .degustation .degustation_links .degustation_link {
           display: none; } }
-      .degustation .degustation_about .degustation_link a {
+      .degustation .degustation_links .degustation_link a {
         font-size: 16px;
         font-weight: 600;
         text-transform: uppercase;
         color: #311616;
         transition: color 1.5s; }
-        .degustation .degustation_about .degustation_link a:hover {
+        .degustation .degustation_links .degustation_link a:hover {
           color: #b17c8f; }
-  .degustation .link_near_courses {
-    display: block;
-    position: relative;
-    grid-column: 1;
-    grid-row: 2;
-    top: -120px;
-    left: 0;
-    text-align: left;
-    white-space: nowrap; }
-    @media only screen and (max-width: 600px) {
-      .degustation .link_near_courses {
-        display: none; } }
-    .degustation .link_near_courses a {
-      display: inline-block;
-      color: #b17c8f;
-      font-size: 16px;
-      font-weight: 500;
-      text-transform: uppercase;
-      transform: rotate(-90deg);
-      padding: 0 0 0 75px;
-      margin: 0 0 0 -105px;
-      transition: color 1s; }
-      .degustation .link_near_courses a:hover {
-        color: #311616; }
-      .degustation .link_near_courses a:before {
+      .degustation .degustation_links .degustation_link:before {
         content: "";
         display: block;
         position: absolute;
         top: -30px;
         left: 0px;
-        width: 66px;
-        height: 44px;
-        background: url("../img/svg/icon_drop.svg") no-repeat;
-        transform: rotate(85deg); }
-      .degustation .link_near_courses a:hover:before {
-        background: url("../img/svg/icon_drop_hover.svg") no-repeat; }
-      .degustation .link_near_courses a:after {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: -50px;
-        right: -40px;
-        width: 70px;
-        height: 46px;
-        background: url("../img/svg/icon_drop_small.svg") no-repeat;
-        transform: rotate(85deg);
-        opacity: 0;
-        transition: opacity 1.5s; }
-      .degustation .link_near_courses a:hover:after {
-        opacity: 1; }
+        width: 318px;
+        height: 270px;
+        padding: 0 0 0 100px;
+        background: url("../img/svg/bg_degustation_link.svg") no-repeat; }
 
 .seminars {
   display: block;
