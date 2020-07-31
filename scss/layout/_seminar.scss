@@ -17,6 +17,10 @@
     @media only screen and (max-width: 960px) {
       margin:0 20px;
     }
+
+    @media only screen and (max-width: 640px) {
+      font-size: 28px;
+    }
   }
 
   h3{
@@ -31,6 +35,10 @@
 
     @media only screen and (max-width: 960px) {
       margin:0 20px;
+    }
+
+    @media only screen and (max-width: 640px) {
+      font-size: 14px;
     }
   }
 
@@ -70,7 +78,7 @@
         width:100%;
       }
 
-      @media only screen and (max-width: 480px) {
+      @media only screen and (max-width: 640px) {
         height:160px;
       }
     }
