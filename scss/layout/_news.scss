@@ -1,6 +1,7 @@
 .news {
   position: relative;
   max-width: 100%;
+  margin:100px 0;
 
   &:before {
     content: " ";
@@ -23,7 +24,7 @@
   .news__title {
     @include text-h2;
     @include font-vollkorn;
-    padding: 0 90px;
+    padding: 0 5%;
   }
 
   .news__content {
@@ -37,7 +38,7 @@
     width: 1260px;
     transition: margin-left 550ms ease-in-out 0s;
 
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1300px) {
       width: 100%;
     }
   }

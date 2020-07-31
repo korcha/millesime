@@ -51,25 +51,41 @@
       <section class="section degustation">
 
         <div class="degustation_about animated fast bounceInRight">
-          <div class="degustation__arrow slider-arrow slider-arrow--prev pointer"></div>
 
-          <ul>
-            <li>
-              <img src="./img/content/pic_degustation.png" alt="#"/>
-            </li>
-          </ul>
+          <div class="degustation_content">
 
-          <div class="degustation__arrow slider-arrow slider-arrow--next pointer"></div>
+            <div class="degustation__viewbox viewbox">
+
+              <ul class="slider">
+                <li class="degustation_item">
+                  <img src="./img/content/pic_degustation.png" alt="#"/>
+                </li>
+
+                <li class="degustation_item">
+                  <img src="./img/content/pic_degustation.png" alt="#"/>
+                </li>
+
+                <li class="degustation_item">
+                  <img src="./img/content/pic_degustation.png" alt="#"/>
+                </li>
+
+                <li class="degustation_item">
+                  <img src="./img/content/pic_degustation.png" alt="#"/>
+                </li>
+              </ul>
+            </div>
+
+          </div>
         </div>
 
         <div class="degustation_links">
 
-          <div class="degustation_links">
-            <a href="#">Ближайшие дегустации</a>
+          <div class="link_near_degustation">
+            <a href="#">Ближайшие<br/>дегустации</a>
           </div>
 
           <div class="link_near_courses animated fast bounceInDown">
-            <a href="#">Ближайшие курсы</a>
+            <a href="#">Ближайшие<br/>курсы</a>
           </div>
 
         </div>
@@ -315,7 +331,9 @@
       </section>
 
       <section class="section reviews">
-        <h2>Отзывы</h2>
+
+        <div class="reviews_content">
+          <h2>Отзывы</h2>
 
           <div class="article">
               <article>
@@ -335,7 +353,9 @@
               </article>
           </div>
 
-        <div class="all_reviews"><a class="icon_reviews"href="#">Все отзывы</a></div>
+          <div class="all_reviews"><a class="icon_reviews"href="#">Все отзывы</a></div>
+
+        </div>
       </section>
 
       <section class="section partners">
@@ -513,5 +533,14 @@
     </div>
     <script type='text/javascript' src="js/carousel.js"></script>
     <script type='text/javascript' src="js/self.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+    <script>
+      $(document).ready(function(){
+        $('.slider').bxSlider();
+      });
+    </script>
   </body>
 </html>

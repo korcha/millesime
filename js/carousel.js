@@ -1,4 +1,6 @@
 "use strict";
+
+
 var newsCarousel = document.querySelector(".news");
 if (newsCarousel) {
     var newsList = newsCarousel.querySelector(".news__list"),
