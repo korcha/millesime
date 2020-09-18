@@ -54,11 +54,13 @@
           ресторанно-винный <br />
           (два занятия, 6000р.)
         </h1>
-        <div class="coursepage__top">
-          <img
-            class="coursepage__picture"
-            src="img/content/wineglish_picture.jpg"
-          />
+
+        <div class="coursepage__content">
+
+          <div class="coursepage__picture">
+            <img src="img/content/wineglish_picture.jpg"/>
+          </div>
+
           <ul class="coursepage__data">
             <li class="coursepage__item">
               <p class="coursepage__data-title">Начало курса:</p>
@@ -80,9 +82,7 @@
             </li>
             <li class="coursepage__item">
               <p class="coursepage__data-title">Преподаватель:</p>
-              <p
-                class="coursepage__data-content coursepage__data-content--bolder"
-              >
+              <p class="coursepage__data-content coursepage__data-content--bolder">
                 Николай Чащинов WA
               </p>
             </li>
@@ -95,10 +95,15 @@
             <li class="coursepage__item">
               <a class="button-link" href="#form_course">ЗАПИСАТЬСЯ</a>
             </li>
+            <li class="coursepage__item">
+              <a class="icon-certificate button-link" href="">КУПИТЬ ПОДАРОЧНЫЙ СЕРТИФИКАТ</a>
+            </li>
+            <li class="coursepage__item">
+              <a class="coursepage__link button-link" href="">ВСЕ СЕМИНАРЫ И ДЕГУСТАЦИИ</a>
+            </li>
           </ul>
-        </div>
-        <div class="coursepage__bottom">
-          <div class="coursepage__content">
+
+          <div class="coursepage__info">
             <h3>Какой формат?</h3>
             <p>
               Для работников ресторанной сферы, для всех посетителей ресторанов,
@@ -132,85 +137,87 @@
               <a class="grey" href="#">Здесь можно оплатить со скидкой 50% для студентов текущих курсов</a>
             </p>
           </div>
-          <div class="coursepage__links">
-            <a class="icon-certificate button-link" href="">КУПИТЬ ПОДАРОЧНЫЙ СЕРТИФИКАТ</a>
-            <a class="coursepage__link button-link" href="">ВСЕ СЕМИНАРЫ И ДЕГУСТАЦИИ</a>
+
+          <div class="coursepage__register" id="form_course">
+
+            <div class="courses__status">
+              <div><a href="javascript:;" id="form_sign_up">Записаться</a></div>
+              <div><a href="javascript:;" id="form_other_date">Заказать на другие даты</a></div>
+            </div>
+            <div class="coursepage__form__info">
+              <mark>
+                * Подтвердить свое участие нужно не позднее чем за два дня до
+                начала мероприятия.
+              </mark>
+            </div>
+
+            <form class="coursepage__form form">
+              <input
+                      type="text"
+                      class="footer__field form__field"
+                      placeholder="Ваше имя"
+                      name=""
+              />
+              <input
+                      type="text"
+                      class="footer__field form__field"
+                      placeholder="Ваша электронная почта"
+                      name=""
+              />
+              <input
+                      type="text"
+                      class="footer__field form__field"
+                      placeholder="Телефон"
+                      name=""
+              />
+
+              <input
+                      type="text"
+                      class="footer__field form__field date"
+                      placeholder="Интересующие Вас даты"
+                      name=""
+                      hidden
+              />
+
+              <input
+                      type="text"
+                      class="footer__field form__field participant"
+                      placeholder="Кол-во учатников"
+                      name=""
+                      hidden
+              />
+
+              <textarea class="footer__field form__field comments"
+                        placeholder="Ваши комментарии"
+                        name="" hidden></textarea>
+
+
+              <div class="form__checkbox">
+                <input type="checkbox" value="" id="checkbox_1"/>
+                <label for="checkbox_1">Сообщать мне о новых дегустациях и курсах</label>
+              </div>
+              <div class="form__checkbox">
+                <input type="checkbox" value="" id="checkbox_2"/>
+                <label for="checkbox_2">Согласен с политикой обработки персональных данных</label>
+              </div>
+              <div class="form__checkbox">
+                <input type="checkbox" value="" id="checkbox_3"/>
+                <label for="checkbox_3">Согласен с Договором публичной оферты</label>
+              </div>
+
+              <button type="submit" class="footer__button form_button_send">
+                ОТПРАВИТЬ
+              </button>
+            </form>
+
           </div>
+
         </div>
-        <div class="coursepage__register" id="form_course">
-          <div class="courses__status">
-            <div><a href="javascript:;" id="form_sign_up">Записаться</a></div>
-            <div><a href="javascript:;" id="form_other_date">Заказать на другие даты</a></div>
-          </div>
-          <div class="coursepage__info">
-            <mark>
-              * Подтвердить свое участие нужно не позднее чем за два дня до
-              начала мероприятия.
-            </mark>
-          </div>
 
-          <form class="coursepage__form form">
-            <input
-              type="text"
-              class="footer__field form__field"
-              placeholder="Ваше имя"
-              name=""
-            />
-            <input
-              type="text"
-              class="footer__field form__field"
-              placeholder="Ваша электронная почта"
-              name=""
-            />
-            <input
-              type="text"
-              class="footer__field form__field"
-              placeholder="Телефон"
-              name=""
-            />
-
-            <input
-              type="text"
-              class="footer__field form__field date"
-              placeholder="Интересующие Вас даты"
-              name=""
-              hidden
-            />
-
-            <input
-              type="text"
-              class="footer__field form__field participant"
-              placeholder="Кол-во учатников"
-              name=""
-              hidden
-            />
-
-            <textarea class="footer__field form__field comments"
-              placeholder="Ваши комментарии"
-              name="" hidden></textarea>
-
-
-            <div class="form__checkbox">
-              <input type="checkbox" value="" id="checkbox_1"/>
-              <label for="checkbox_1">Сообщать мне о новых дегустациях и курсах</label>
-            </div>
-            <div class="form__checkbox">
-              <input type="checkbox" value="" id="checkbox_2"/>
-              <label for="checkbox_2">Согласен с политикой обработки персональных данных</label>
-            </div>
-            <div class="form__checkbox">
-              <input type="checkbox" value="" id="checkbox_3"/>
-              <label for="checkbox_3">Согласен с Договором публичной оферты</label>
-            </div>
-
-            <button type="submit" class="footer__button form_button_send">
-              ОТПРАВИТЬ
-            </button>
-          </form>
-
-        </div>
       </section>
+
       <div class="icon__list wow rotateInUpRight animated fast"></div>
+
       <footer class="footer">
 
         <div class="footer__box">

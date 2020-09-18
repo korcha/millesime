@@ -1,10 +1,10 @@
 .teacherspage {
-  width: 100%;
+  width: 1200px;
   max-width: 100%;
   margin:-60px auto 0 auto;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
   text-align: center;
-  position: relative;
+
 
   &:after{
     content: '';
@@ -24,9 +24,15 @@
     width: 100%;
 
     display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 2vw;
+    grid-template-columns: repeat(6, minmax(175px, 175px));
+    grid-gap: 30px;
+    align-items: center;
+    position: relative;
+
+    @media only screen and (max-width: 960px) {
+      grid-template-columns: repeat(6, minmax(50px, 165px));
+      padding:0 20px;
+    }
 
     &:after{
       content: '';
@@ -37,24 +43,36 @@
       background: url(../img/svg/icon_white_list.svg) no-repeat;
       width:240px;
       height: 250px;
+      z-index: 0;
     }
 
     p{
       text-align: left;
+      z-index: 10;
 
       &:nth-child(1){
-        grid-column-start: 2;
-        grid-column-end: 6;
+        grid-column: 2/5;
         line-height: 1.2;
+
+        @media only screen and (max-width: 960px) {
+          grid-column: 1/6;
+        }
 
         @include font-vollkorn;
         font-size: 36px;
       }
 
       &:nth-child(2){
-        grid-column-start: 3;
-        grid-column-end: 6;
-        max-width: 600px;
+        grid-column: 3/5;
+
+        @media only screen and (max-width: 960px) {
+          grid-column: 2/6;
+        }
+
+        @media only screen and (max-width: 640px) {
+          grid-column: 1/6;
+        }
+
       }
     }
 
@@ -111,8 +129,16 @@
       &:nth-child(13),
       &:nth-child(16),
       &:nth-child(18){
-        width: 33%;
         max-width: 350px;
+        margin:50px 1%;
+
+        @media only screen and (max-width: 1200px) {
+          max-width: 280px;
+        }
+
+        @media only screen and (max-width: 960px) {
+          max-width: 400px;
+        }
       }
 
       &:nth-child(4),
@@ -123,10 +149,21 @@
       &:nth-child(15),
       &:nth-child(19),
       &:nth-child(20){
-        width: 45%;
         max-width: 350px;
-        margin:50px;
+        margin:50px 5%;
+
+        @media only screen and (max-width: 1200px) {
+          max-width: 280px;
+          margin:50px 10%;
+        }
+
+        @media only screen and (max-width: 960px) {
+          max-width: 400px;
+          margin:50px 1%;
+        }
       }
+
+
 
       &.center{
         display: block;
