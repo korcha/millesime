@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * animate.css -https://daneden.github.io/animate.css/
  * Version - 3.7.2
@@ -6765,151 +6764,143 @@ mark {
         grid-template-columns: repeat(4, minmax(50px, 375px));
         grid-gap: 20px;
         padding: 0 20px; } }
-    .reviewspage .reviews__list .block-grid {
-      margin: 0 0 50px 0px; }
-      .reviewspage .reviews__list .block-grid .icon__write_reviews {
-        display: block;
-        position: relative;
-        vertical-align: top;
-        background: url("../img/svg/bg_reviews.svg") no-repeat;
-        width: 180px;
-        height: 90px;
-        text-align: center;
-        margin: 0 0 100px 0;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 137.9%;
-        color: #b17c8f;
-        font-weight: 500;
-        text-transform: uppercase;
-        line-height: 70px; }
-      .reviewspage .reviews__list .block-grid .course-preview {
-        grid-column: 5/7;
-        vertical-align: top;
-        width: 100%;
-        height: 100%;
-        max-width: 420px;
-        max-height: 700px;
-        margin: 0 20px; }
-        @media only screen and (max-width: 960px) {
-          .reviewspage .reviews__list .block-grid .course-preview {
-            grid-column: 1/5;
-            width: 420px;
-            height: 420px;
-            justify-self: end; } }
-        .reviewspage .reviews__list .block-grid .course-preview .course-preview__desc,
-        .reviewspage .reviews__list .block-grid .course-preview .course-preview__type {
-          margin-left: 60%;
-          margin-top: 10%; }
-          @media only screen and (max-width: 1200px) {
-            .reviewspage .reviews__list .block-grid .course-preview .course-preview__desc,
-            .reviewspage .reviews__list .block-grid .course-preview .course-preview__type {
-              margin-left: 40%;
-              margin-top: 5%; } }
-      .reviewspage .reviews__list .block-grid.card__gift {
-        position: relative; }
-        @media only screen and (max-width: 1100px) {
-          .reviewspage .reviews__list .block-grid.card__gift {
-            grid-column: 1/5;
-            justify-self: end; } }
+    .reviewspage .reviews__list .reviews__item {
+      display: inline-block;
+      width: 100%;
+      display: inline-grid;
+      grid-template-columns: repeat(6, minmax(175px, 375px));
+      grid-gap: 30px;
+      align-items: center;
+      position: relative; }
+      @media only screen and (max-width: 1200px) {
+        .reviewspage .reviews__list .reviews__item {
+          grid-template-columns: repeat(6, minmax(120px, 365px)); } }
+      @media only screen and (max-width: 960px) {
+        .reviewspage .reviews__list .reviews__item {
+          grid-template-columns: repeat(4, minmax(50px, 375px));
+          grid-gap: 20px;
+          padding: 0 20px; } }
+      .reviewspage .reviews__list .reviews__item:nth-child(odd) {
+        grid-column: 1/7; }
         @media only screen and (max-width: 640px) {
-          .reviewspage .reviews__list .block-grid.card__gift {
-            right: -40px;
-            width: 530px;
-            height: 320px; } }
+          .reviewspage .reviews__list .reviews__item:nth-child(odd) {
+            grid-column: 1/5; } }
+      .reviewspage .reviews__list .reviews__item:nth-child(even) {
+        grid-column: 2/7; }
+        @media only screen and (max-width: 640px) {
+          .reviewspage .reviews__list .reviews__item:nth-child(even) {
+            grid-column: 1/5; } }
+      .reviewspage .reviews__list .reviews__item .reviews__iframe {
+        grid-column: 1/4;
+        display: inline-block;
+        width: 500px;
+        height: 700px; }
+        @media only screen and (max-width: 640px) {
+          .reviewspage .reviews__list .reviews__item .reviews__iframe {
+            width: 400px;
+            grid-column: 1/5; } }
+        .reviewspage .reviews__list .reviews__item .reviews__iframe iframe {
+          display: inline;
+          margin: 5px 5px;
+          float: left;
+          width: auto;
+          border-radius: 2px; }
+      .reviewspage .reviews__list .reviews__item .block-grid {
+        grid-column: 3/5;
+        display: inline-block;
+        margin: 0 0 50px 0; }
+        @media only screen and (max-width: 640px) {
+          .reviewspage .reviews__list .reviews__item .block-grid {
+            grid-column: 1/5; } }
+        .reviewspage .reviews__list .reviews__item .block-grid .icon__write_reviews {
+          display: block;
+          position: relative;
+          vertical-align: top;
+          background: url("../img/svg/bg_reviews.svg") no-repeat;
+          width: 180px;
+          height: 90px;
+          text-align: center;
+          margin: 0 0 100px 0;
+          font-family: 'Ubuntu', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 137.9%;
+          color: #b17c8f;
+          font-weight: 500;
+          text-transform: uppercase;
+          line-height: 70px; }
+        .reviewspage .reviews__list .reviews__item .block-grid .course-preview {
+          vertical-align: top;
+          width: 100%;
+          height: 100%;
+          max-width: 420px;
+          max-height: 700px;
+          margin: 0 20px; }
+          @media only screen and (max-width: 960px) {
+            .reviewspage .reviews__list .reviews__item .block-grid .course-preview {
+              width: 420px;
+              height: 420px;
+              justify-self: end; } }
+          .reviewspage .reviews__list .reviews__item .block-grid .course-preview .course-preview__desc,
+          .reviewspage .reviews__list .reviews__item .block-grid .course-preview .course-preview__type {
+            margin-left: 60%;
+            margin-top: 10%; }
+            @media only screen and (max-width: 1200px) {
+              .reviewspage .reviews__list .reviews__item .block-grid .course-preview .course-preview__desc,
+              .reviewspage .reviews__list .reviews__item .block-grid .course-preview .course-preview__type {
+                margin-left: 40%;
+                margin-top: 5%; } }
+        .reviewspage .reviews__list .reviews__item .block-grid .card__gift {
+          position: relative;
+          right: 100px; }
+          @media only screen and (max-width: 960px) {
+            .reviewspage .reviews__list .reviews__item .block-grid .card__gift {
+              justify-self: end; } }
+          @media only screen and (max-width: 640px) {
+            .reviewspage .reviews__list .reviews__item .block-grid .card__gift {
+              width: 530px;
+              height: 320px;
+              justify-self: end;
+              right: -100px; } }
   @media only screen and (max-width: 640px) and (max-width: 640px) {
-    .reviewspage .reviews__list .block-grid.card__gift:after {
+    .reviewspage .reviews__list .reviews__item .block-grid .card__gift:after {
       width: 530px;
       height: 320px; } }
 
-      .reviewspage .reviews__list .block-grid.icon__bung {
-        grid-column: 5/7;
-        background: url("../img/svg/icon_bung.svg") no-repeat;
-        width: 156px;
-        height: 188px; }
-        @media only screen and (max-width: 640px) {
-          .reviewspage .reviews__list .block-grid.icon__bung {
-            display: none; } }
-      .reviewspage .reviews__list .block-grid.partner-preview {
-        grid-column: 5/7;
-        vertical-align: top;
-        width: 100%;
-        height: 100%;
-        max-width: 420px;
-        max-height: 420px; }
-        @media only screen and (max-width: 960px) {
-          .reviewspage .reviews__list .block-grid.partner-preview {
-            grid-column: 1/5;
-            width: 420px;
-            height: 420px;
-            justify-self: end; } }
-      .reviewspage .reviews__list .block-grid.reviews__item {
-        margin-bottom: 0; }
-      .reviewspage .reviews__list .block-grid:nth-child(1), .reviewspage .reviews__list .block-grid:nth-child(5), .reviewspage .reviews__list .block-grid:nth-child(8) {
-        grid-column: 1/5; }
-        .reviewspage .reviews__list .block-grid:nth-child(1).reviews__item, .reviewspage .reviews__list .block-grid:nth-child(5).reviews__item, .reviewspage .reviews__list .block-grid:nth-child(8).reviews__item {
-          height: 700px; }
-      .reviewspage .reviews__list .block-grid:nth-child(2), .reviewspage .reviews__list .block-grid:nth-child(4), .reviewspage .reviews__list .block-grid:nth-child(6), .reviewspage .reviews__list .block-grid:nth-child(9) {
-        grid-column: 5/7; }
-        .reviewspage .reviews__list .block-grid:nth-child(2).reviews__item, .reviewspage .reviews__list .block-grid:nth-child(4).reviews__item, .reviewspage .reviews__list .block-grid:nth-child(6).reviews__item, .reviewspage .reviews__list .block-grid:nth-child(9).reviews__item {
-          height: 700px; }
-        @media only screen and (max-width: 1100px) {
-          .reviewspage .reviews__list .block-grid:nth-child(2), .reviewspage .reviews__list .block-grid:nth-child(4), .reviewspage .reviews__list .block-grid:nth-child(6), .reviewspage .reviews__list .block-grid:nth-child(9) {
-            grid-column: 1/5;
-            justify-self: end;
-            height: 600px; } }
-      .reviewspage .reviews__list .block-grid:nth-child(3), .reviewspage .reviews__list .block-grid:nth-child(7) {
-        grid-column: 2/5; }
-        .reviewspage .reviews__list .block-grid:nth-child(3).reviews__item, .reviewspage .reviews__list .block-grid:nth-child(7).reviews__item {
-          height: 700px; }
-        @media only screen and (max-width: 640px) {
-          .reviewspage .reviews__list .block-grid:nth-child(3), .reviewspage .reviews__list .block-grid:nth-child(7) {
-            grid-column: 1/5; } }
-    .reviewspage .reviews__list .reviews__item {
-      display: inline-block;
-      width: 500px;
-      height: auto; }
-      @media only screen and (max-width: 640px) {
-        .reviewspage .reviews__list .reviews__item {
-          width: 400px; } }
-      .reviewspage .reviews__list .reviews__item:nth-child(odd) {
-        grid-column: 1/4; }
-      .reviewspage .reviews__list .reviews__item:nth-child(even) {
-        grid-column: 2/5; }
-      .reviewspage .reviews__list .reviews__item iframe {
-        display: inline;
-        margin: 5px 5px;
-        float: left;
-        width: auto;
-        border-radius: 2px; }
-      .reviewspage .reviews__list .reviews__item .source {
-        color: #726c78;
-        font-weight: 500; }
-      .reviewspage .reviews__list .reviews__item .show_link {
-        position: relative;
-        color: #ffffff; }
-        .reviewspage .reviews__list .reviews__item .show_link:before {
-          content: 'Показать полностью';
-          display: contents;
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%; }
-      .reviewspage .reviews__list .reviews__item.open .show_link:before {
-        content: ' Скрыть'; }
-
-.icon__corkscrew {
-  display: block;
-  position: absolute;
-  top: 900px;
-  left: -100px;
-  background: url("../img/svg/icon_corkscrew.svg") no-repeat;
-  width: 330px;
-  height: 330px; }
-  @media only screen and (max-width: 640px) {
-    .icon__corkscrew {
-      display: none; } }
+        .reviewspage .reviews__list .reviews__item .block-grid.icon__bung {
+          background: url("../img/svg/icon_bung.svg") no-repeat;
+          width: 156px;
+          height: 188px; }
+          @media only screen and (max-width: 960px) {
+            .reviewspage .reviews__list .reviews__item .block-grid.icon__bung {
+              grid-column: 4/5; } }
+          @media only screen and (max-width: 640px) {
+            .reviewspage .reviews__list .reviews__item .block-grid.icon__bung {
+              display: none; } }
+        .reviewspage .reviews__list .reviews__item .block-grid.partner-preview {
+          vertical-align: top;
+          width: 100%;
+          height: 100%;
+          max-width: 420px;
+          max-height: 420px; }
+          @media only screen and (max-width: 960px) {
+            .reviewspage .reviews__list .reviews__item .block-grid.partner-preview {
+              width: 420px;
+              height: 420px;
+              justify-self: end; } }
+        .reviewspage .reviews__list .reviews__item .block-grid.reviews__item {
+          margin-bottom: 0; }
+  .reviewspage .icon__corkscrew {
+    display: block;
+    position: absolute;
+    top: 900px;
+    left: -100px;
+    background: url("../img/svg/icon_corkscrew.svg") no-repeat;
+    width: 330px;
+    height: 330px; }
+    @media only screen and (max-width: 640px) {
+      .reviewspage .icon__corkscrew {
+        display: none; } }
 
 .formvacancypage {
   width: 100%;
