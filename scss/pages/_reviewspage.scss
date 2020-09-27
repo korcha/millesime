@@ -71,8 +71,11 @@
         height: 700px;
 
         @media only screen and (max-width: 640px) {
-          width: 400px;
           grid-column: 1/5;
+        }
+
+        @media only screen and (max-width: 480px) {
+          width:400px;
         }
 
         iframe {
@@ -85,9 +88,14 @@
       }
 
       .block-grid {
-        grid-column: 3/5;
+        grid-column: 4/7;
         display: inline-block;
         margin:0 0 50px 0;
+        justify-self: end;
+
+        @media only screen and (max-width: 960px) {
+          grid-column: 3/5;
+        }
 
         @media only screen and (max-width: 640px) {
           grid-column: 1/5;
@@ -138,10 +146,10 @@
 
         .card__gift {
           position: relative;
-          right: 100px;
 
           @media only screen and (max-width: 960px) {
             justify-self: end;
+            right:-100px;
           }
 
           @media only screen and (max-width: 640px) {
@@ -168,7 +176,7 @@
             grid-column: 4/5;
           }
 
-          @media only screen and (max-width: 640px) {
+          @media only screen and (max-width: 800px) {
             display: none;
           }
         }

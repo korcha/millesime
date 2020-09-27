@@ -6797,8 +6797,10 @@ mark {
         height: 700px; }
         @media only screen and (max-width: 640px) {
           .reviewspage .reviews__list .reviews__item .reviews__iframe {
-            width: 400px;
             grid-column: 1/5; } }
+        @media only screen and (max-width: 480px) {
+          .reviewspage .reviews__list .reviews__item .reviews__iframe {
+            width: 400px; } }
         .reviewspage .reviews__list .reviews__item .reviews__iframe iframe {
           display: inline;
           margin: 5px 5px;
@@ -6806,9 +6808,13 @@ mark {
           width: auto;
           border-radius: 2px; }
       .reviewspage .reviews__list .reviews__item .block-grid {
-        grid-column: 3/5;
+        grid-column: 4/7;
         display: inline-block;
-        margin: 0 0 50px 0; }
+        margin: 0 0 50px 0;
+        justify-self: end; }
+        @media only screen and (max-width: 960px) {
+          .reviewspage .reviews__list .reviews__item .block-grid {
+            grid-column: 3/5; } }
         @media only screen and (max-width: 640px) {
           .reviewspage .reviews__list .reviews__item .block-grid {
             grid-column: 1/5; } }
@@ -6851,11 +6857,11 @@ mark {
                 margin-left: 40%;
                 margin-top: 5%; } }
         .reviewspage .reviews__list .reviews__item .block-grid .card__gift {
-          position: relative;
-          right: 100px; }
+          position: relative; }
           @media only screen and (max-width: 960px) {
             .reviewspage .reviews__list .reviews__item .block-grid .card__gift {
-              justify-self: end; } }
+              justify-self: end;
+              right: -100px; } }
           @media only screen and (max-width: 640px) {
             .reviewspage .reviews__list .reviews__item .block-grid .card__gift {
               width: 530px;
@@ -6874,7 +6880,7 @@ mark {
           @media only screen and (max-width: 960px) {
             .reviewspage .reviews__list .reviews__item .block-grid.icon__bung {
               grid-column: 4/5; } }
-          @media only screen and (max-width: 640px) {
+          @media only screen and (max-width: 800px) {
             .reviewspage .reviews__list .reviews__item .block-grid.icon__bung {
               display: none; } }
         .reviewspage .reviews__list .reviews__item .block-grid.partner-preview {
