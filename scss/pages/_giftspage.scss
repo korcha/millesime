@@ -1,7 +1,7 @@
 .giftspage {
   width: 100%;
   max-width: 100%;
-  margin:-60px auto 0 auto;
+  margin: -60px auto 0 auto;
   padding-bottom: 50px;
   text-align: center;
 
@@ -11,7 +11,7 @@
     grid-gap: 30px;
     align-items: center;
     position: relative;
-    padding:0 30px;
+    padding: 0 30px;
     align-items: start;
 
     @media only screen and (max-width: 1200px) {
@@ -39,7 +39,7 @@
 
       p {
         text-align: left;
-        margin:0 0 20px 0;
+        margin: 0 0 20px 0;
 
         &.vine {
           color: $color-vine;
@@ -47,61 +47,61 @@
       }
     }
 
-      .gift_picture{
-        grid-column:4/7;
+    .gift_picture {
+      grid-column: 4/7;
 
-        @media only screen and (max-width: 960px) {
-          grid-column: 3/5;
-        }
-
-        @media only screen and (max-width: 640px) {
-          grid-column: 1/5;
-        }
+      @media only screen and (max-width: 960px) {
+        grid-column: 3/5;
       }
 
-      .gift_text{
-        grid-column:2/5;
-        text-align: left;
-        justify-self: start;
-        margin:50px 0 0 0;
+      @media only screen and (max-width: 640px) {
+        grid-column: 1/5;
+      }
+    }
 
-        @media only screen and (max-width: 960px) {
-          margin:50px 0 -100px 0;
-        }
+    .gift_text {
+      grid-column: 2/5;
+      text-align: left;
+      justify-self: start;
+      margin: 50px 0 0 0;
 
-        @media only screen and (max-width: 640px) {
-          grid-column: 1/5;
-          margin:50px 0 50px 0;
-        }
+      @media only screen and (max-width: 960px) {
+        margin: 50px 0 -100px 0;
       }
 
-      .gift__card{
-        grid-column:6/7;
-        justify-self: end;
+      @media only screen and (max-width: 640px) {
+        grid-column: 1/5;
+        margin: 50px 0 50px 0;
+      }
+    }
 
-        @media only screen and (max-width: 960px) {
-          grid-column: 4/5;
-        }
+    .gift__card {
+      grid-column: 6/7;
+      justify-self: end;
 
-        @media only screen and (max-width: 640px) {
-          display: none;
-        }
-
-        .icon__gift{
-          display: block;
-          position: relative;
-          right:-40px;
-          background: url("../img/content/bg_gift.png") no-repeat;
-          width:240px;
-          height:350px;
-
-          @media only screen and (max-width: 960px) {
-            top:200px;
-          }
-        }
+      @media only screen and (max-width: 960px) {
+        grid-column: 4/5;
       }
 
-    .gift__preview{
+      @media only screen and (max-width: 640px) {
+        display: none;
+      }
+
+      .icon__gift {
+        display: block;
+        position: relative;
+        right: -40px;
+        background: url("../img/content/bg_gift.png") no-repeat;
+        width: 240px;
+        height: 350px;
+
+        @media only screen and (max-width: 960px) {
+          top: 200px;
+        }
+      }
+    }
+
+    .gift__preview {
       grid-column: 5/7;
       vertical-align: top;
       width: 100%;
@@ -109,7 +109,7 @@
       max-width: 420px;
       max-height: 420px;
       justify-self: end;
-      margin:50px 0 0 0;
+      margin: 50px 0 0 0;
 
       @media only screen and (max-width: 960px) {
         grid-column: 3/5;
@@ -121,22 +121,22 @@
       }
     }
 
-    .gift__type{
+    .gift__type {
       grid-column: 1/4;
 
       @media only screen and (max-width: 960px) {
-        margin:-100px 0 0 0;
+        margin: -100px 0 0 0;
       }
 
       @media only screen and (max-width: 640px) {
         grid-column: 1/5;
-        margin:50px 0 0 0;
+        margin: 50px 0 0 0;
       }
     }
 
-    .gift__form{
+    .gift__form {
       grid-column: 2/5;
-      margin:100px 0 0 0;
+      margin: 100px 0 0 0;
 
       @media only screen and (max-width: 640px) {
         grid-column: 1/5;
