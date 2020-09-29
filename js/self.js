@@ -21,7 +21,14 @@ var changeLang= function(){
     document.querySelector(".lang_list").classList.toggle('active');
 }
 
-document.querySelector(".language").onclick=changeLang;
+document.querySelector(".link_near_courses").onclick=changeLang;
+
+var openConsole= function(){
+
+    alert('sdfsd');
+
+}
+document.querySelector(".degustation_item").onclick=openConsole;
 
 $(document).ready(function() {
 
@@ -100,6 +107,21 @@ $(document).ready(function() {
         var filename = $(this).val().replace(/.*\\/, "").substr(0, 20);
         $(this).siblings(".filename").text(filename);
         $(this).siblings(".filename").addClass('dwld');
+    });
+
+    $(".degustation__viewbox").on("click", ".bx-viewport", function () {
+
+        var index, link;
+
+        $('.bx-pager-link').each(function(){
+            if($(this).hasClass('active')) {
+                index=$(this).data('slide-index') + 1;
+            }
+
+            link=$('.degustation_item:eq('+ index +')').find('a').attr('href');
+        });
+
+        $(location).attr('href', link);
     });
 });
 

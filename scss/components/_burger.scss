@@ -2,7 +2,7 @@
   position: fixed;
   z-index: $z-burger;
   display: inline-block;
-  z-index: 10000;
+  right:20px;
 
   .burger__button {
     @include text-button;

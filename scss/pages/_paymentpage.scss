@@ -1,0 +1,42 @@
+.paymentpage {
+  width: 1200px;
+  max-width: 100%;
+  margin:-60px auto 0 auto;
+  padding-bottom: 50px;
+  text-align: center;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  .payment__msg{
+    display: block;
+    position: relative;
+    font-size:26px;
+    line-height: 32px;
+    color:$color-dark;
+    padding:100px 0 100px 50px;
+    margin:0 auto;
+
+    &:before{
+      display: block;
+      position: absolute;
+      top:50%;
+      left:0;
+      font-size:50px;
+      margin:-20px 0 0 0;
+    }
+
+    &.success:before{
+      content:"\2714";
+      color:$color-green;
+    }
+
+    &.fail:before{
+      content:"\2718";
+      color:$color-red;
+    }
+  }
+
+}
+
+
