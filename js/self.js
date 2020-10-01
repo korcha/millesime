@@ -21,23 +21,27 @@ var changeLang= function(){
     document.querySelector(".lang_list").classList.toggle('active');
 }
 
-document.querySelector(".link_near_courses").onclick=changeLang;
+document.querySelector(".language").onclick=changeLang;
 
-var openConsole= function(){
-
-    alert('sdfsd');
-
-}
-document.querySelector(".degustation_item").onclick=openConsole;
 
 $(document).ready(function() {
 
-    if($('.reviewspage').length){
+    function iframeWidth(block){
+        var iframe, url_iframe, str;
 
-        $('.reviewspage .article').each(function(){
-            var block_article=$(this),
-                block_content=$(this).find('.article__content');
-            heightBlock(block_article, block_content);
+        iframe = block.find('iframe');
+        url_iframe= iframe.attr('src');
+        str=url_iframe.split('&width=').pop().split('&appId')[0];
+        url_iframe=url_iframe.replace(str, 'auto');
+
+        iframe.css({'width': '100%', 'height': '100%'});
+        iframe.attr('src', url_iframe);
+    }
+
+    if($('.reviews__iframe').length){
+
+        $('.reviews__iframe').each(function(){
+            iframeWidth($(this));
         });
     }
 
@@ -93,11 +97,6 @@ $(document).ready(function() {
         $(this).parents('.select_list').toggleClass('active');
     });
 
-    function heightBlock(block_1, block_2){
-        if(block_1.height() < (block_2.height() + 50)){
-            block_1.parent().find('.show_link').css('color', '#B5B2B8');
-        }
-    }
 
     $('.show_link').on('click', function(){
         $(this).parents('.reviews__item').toggleClass('open');
