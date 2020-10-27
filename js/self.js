@@ -83,15 +83,42 @@ $(document).ready(function() {
         $('.coursepage__form').find('.date, .participant, .comments').attr('hidden', 'hidden');
     });
 
-    $('.timetable__item').on('mouseover', function() {
-        $(this).addClass('active');
-        $(this).siblings(".timetable__item").addClass('hide');
+    window.addEventListener('resize', function(event) {
+        tableTime();
     });
 
-    $('.timetable__item').on('mouseleave', function() {
-        $(this).removeClass('active');
-        $(this).siblings(".timetable__item").removeClass('hide');
-    });
+    if ($('.timetablepage').length) {
+        tableTime();
+    }
+
+    function tableTime() {
+        if (document.body.offsetWidth > 960) {
+            $('.timetable__item').on('mouseover', function () {
+                $(this).addClass('active');
+                $(this).siblings(".timetable__item").addClass('hide');
+            });
+
+            $('.timetable__item').on('mouseleave', function () {
+                $(this).removeClass('active');
+                $(this).siblings(".timetable__item").removeClass('hide');
+            });
+
+            $('.timetable__week li').show();
+        }
+        else {
+
+            $('.timetable__item').bind('click', function(){
+                var course_link=$(this).find('.item__description a').attr('href');
+                $(location).attr('href', course_link);
+            });
+
+            $('.timetable__week li').each(function () {
+                if (!$(this).find('.timetable__item').length) {
+                    $(this).hide();
+                }
+            });
+        }
+    }
 
     $('.select_list a').bind('click', function(){
         $(this).parents('.select_list').toggleClass('active');

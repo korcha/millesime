@@ -9,7 +9,7 @@ $(document).ready(function() {
             array_img.push(img_src);
 
             return array_img;
-        });;
+        });
     }
 
     createGalery();

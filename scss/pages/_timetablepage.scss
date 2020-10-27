@@ -1,8 +1,8 @@
 .timetablepage {
   width: 100%;
   max-width: 100%;
-  margin:-60px auto 0 auto;
-  padding-bottom: 150px;
+  margin: -60px auto 0 auto;
+  padding-bottom: 50px;
   text-align: center;
 
   &:nth-child(7n){
@@ -50,7 +50,13 @@
         }
       }
       &.filters_list{
-        div{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap:nowrap;
+        align-items:center;
+
+        .select_filter{
           @include text-button;
           display: inline-block;
           padding:0 20px;
@@ -73,74 +79,155 @@
   }
 
   .timetable{
-    width:1401px;
+    width:100%;
+    max-width: 1400px;
     margin:0 auto;
 
     ul{
       display: flex;
       flex-direction: row;
-      flex-wrap:wrap;
+      flex-wrap:nowrap;
       align-items:center;
       flex-grow:1;
       width:100%;
 
-      li{
+      @media only screen and (max-width: 960px) {
+        margin:20px 0;
+      }
+
+      &:first-child{
+        @media only screen and (max-width: 960px) {
+          display: none;
+        }
+      }
+
+      li {
         position: relative;
-        width:200px;
-        padding:20px 10px;
+        flex-basis: 15%;
+        padding: 20px 10px;
         list-style: none;
         text-align: center;
 
-        .timetable__data{
+        @media only screen and (max-width: 960px) {
+          flex-basis: 100%;
+          width: 90%;
+        }
+
+        .timetable__info{
           display: block;
           position: absolute;
-          top:5px;
-          right:10px;
-          font-size: 14px;
-          color:$color-grey;
+          top: 20px;
+          right: 10px;
+
+          @media only screen and (max-width: 960px) {
+            left:20px;
+          }
+
+          .timetable__day {
+            display: none;
+            font-size: 14px;
+            color: $color-grey;
+
+            @media only screen and (max-width: 960px) {
+              display: block;
+            }
+          }
+
+          .timetable__data {
+            font-size: 14px;
+            color: $color-grey;
+
+            @media only screen and (max-width: 960px) {
+              left: 20px;
+            }
+          }
+        }
+
+        .timetable__item{
+          position: relative;
+
+          @media only screen and (max-width: 960px) {
+            width:100%;
+          }
+
         }
       }
     }
 
-    ul:nth-child(2){
-      border-right:1px solid $color-red-white;
-      border-bottom:1px solid $color-red-white;
+    .timetable__week{
+      border-right:1px solid $color-red-medium;
+      border-bottom:1px solid $color-red-medium;
+
+      @media only screen and (max-width: 960px) {
+        border:none;
+      }
+
+      @media only screen and (max-width: 960px) {
+        flex-direction: column;
+      }
 
       li{
         height: 350px;
-        flex-basis: 200px;
         padding:0;
         text-align: left;
-        border-top:1px solid $color-red-white;
-        border-left:1px solid $color-red-white;
+        border-top:1px solid $color-red-medium;
+        border-left:1px solid $color-red-medium;
+
+        @media only screen and (max-width: 960px) {
+          height: auto;
+          border-right:1px solid $color-red-medium;
+        }
+
       }
     }
   }
 
   .timetable__list_couses{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, minmax(50px, 275px));
     grid-gap: 1vw;
     align-items:start;
     position: relative;
-    width:1405px;
+    width:100%;
+    max-width:1400px;
     margin:60px auto;
 
+    @media only screen and (max-width: 960px) {
+      grid-template-columns: repeat(4, minmax(50px, 175px));
+      grid-column: 1/5;
+      margin:60px 5%;
+    }
+
     .icon_coures {
-      grid-column-start: 2;
-      grid-column-end: 5;
+      grid-column: 2/5;
+
+      @media only screen and (max-width: 960px) {
+        grid-column: 1/3;
+      }
+
+      @media only screen and (max-width: 640px) {
+        grid-column: 1/5;
+      }
     }
 
     .timetable__att{
-      grid-column-start: 6;
-      grid-column-end: 8;
+      grid-column: 5/7;
 
-      position: absolute;
       display: block;
       text-align: left;
       background: url('../img/content/bg_ellipse.png') no-repeat;
       width:100%;
       height: 196px;
+
+      @media only screen and (max-width: 960px) {
+        grid-column: 3/5;
+      }
+
+      @media only screen and (max-width: 640px) {
+        grid-column: 1/5;
+        grid-row: 4;
+        margin:50px 0 0 0;
+      }
 
       p{
         padding: 70px 0 0 40px;
