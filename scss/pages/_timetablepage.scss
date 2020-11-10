@@ -56,22 +56,55 @@
         flex-wrap:nowrap;
         align-items:center;
 
-        .select_filter{
+        .select_list{
           @include text-button;
           display: inline-block;
           padding:0 20px;
           text-transform: uppercase;
+          color:$color-grey-light;
 
-          a{
-            &:hover{
+          .courses {
+            a:hover {
+              color: $color-dark;
+            }
+          }
+
+          .pro{
+            a:hover{
+              color:$color-grey;
+            }
+          }
+
+          .amateur {
+            a:hover{
+              color: $color-vine;
+            }
+          }
+
+          .high_level{
+            a:hover{
               color:$color-green;
             }
+          }
 
-            span{
-              color:$color-grey-light;
-              font-weight: 400;
-              margin:0 0 0 5px;
+          .weekend{
+            a:hover{
+              color:$color-red;
             }
+          }
+
+          .teacher {
+            color: $color-grey-light;;
+
+            &:hover {
+              color: $color-grey;
+            }
+          }
+
+          span{
+            color:$color-grey-light;
+            font-weight: 400;
+            margin:0 0 0 5px;
           }
         }
       }
@@ -92,7 +125,8 @@
       width:100%;
 
       @media only screen and (max-width: 960px) {
-        margin:20px 0;
+        margin:20px auto;
+        width: 90%;
       }
 
       &:first-child{
@@ -110,7 +144,7 @@
 
         @media only screen and (max-width: 960px) {
           flex-basis: 100%;
-          width: 90%;
+          width:100%;
         }
 
         .timetable__info{
@@ -159,7 +193,7 @@
       border-bottom:1px solid $color-red-medium;
 
       @media only screen and (max-width: 960px) {
-        border:none;
+        border-right:none;
       }
 
       @media only screen and (max-width: 960px) {

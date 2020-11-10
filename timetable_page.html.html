@@ -76,16 +76,16 @@
                 <div class="select_list select_filter">
                     <a class="select pointer" href="javascript:;">Все курсы <span>30</span></a>
                     <ul>
-                        <li><a href="#">Все курсы <span>30</span></a></li>
-                        <li><a href="#">Profi <span>3</span></a></li>
-                        <li><a href="#">Первые шаги <span>10</span></a></li>
-                        <li><a href="#">Семинары <span>4</span></a></li>
-                        <li><a href="#">Profi Weekend<span>1</span></a></li>
+                        <li class="courses"><a href="#">Все курсы <span>30</span></a></li>
+                        <li class="pro"><a href="#">Profi <span>3</span></a></li>
+                        <li class="amateur"><a href="#">Первые шаги <span>10</span></a></li>
+                        <li class="high_level"><a href="#">Семинары <span>4</span></a></li>
+                        <li class="weekend"><a href="#">Profi Weekend<span>1</span></a></li>
                     </ul>
                 </div>
 
                 <div class="select_list">
-                    <a class="select pointer" href="javascript:;">Все преподаватели</a>
+                    <a class="select pointer teacher" href="javascript:;">Все преподаватели</a>
                     <ul>
                         <li>Николай Чащинов WA</li>
                         <li>Анна Баранова WA</li>
@@ -188,9 +188,22 @@
             <ul class="timetable__week">
                 <li>
                     <div class="timetable__info">
+                        <p class="timetable__day">Четверг</p>
                         <p class="timetable__data">05.02</p>
                     </div>
+
+                    <div class="timetable__item pro">
+                        <p class="item__time">10:30</p>
+                        <p class="item__title">Франция, вводное занятие Классификация и терминология</p>
+                        <p class="item__teacher">Наталья Большакова</p>
+                        <p class="item__description">
+                            <span>Игра в форме "Винного казино". Повторяем пройденный материал.
+                                Слепая дегустация вин Бордо и Бургундии</span> <br/>
+                            <a href="https://developer.mozilla.org/">Подробней</a>
+                        </p>
+                    </div>
                 </li>
+
 
 
                 <li>
@@ -471,5 +484,6 @@
 
 </div>
 <script type='text/javascript' src="js/self.js"></script>
+<script type='text/javascript' src="js/galery.js"></script>
 </body>
 </html>

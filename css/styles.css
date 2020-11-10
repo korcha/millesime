@@ -4694,7 +4694,7 @@ mark {
     position: relative;
     text-transform: none; }
     .select_list .select:hover {
-      color: #b17c8f !important; }
+      color: #b17c8f; }
     .select_list .select:after {
       content: '';
       display: inline-block;
@@ -6132,7 +6132,7 @@ mark {
       flex-direction: row;
       flex-wrap: nowrap;
       align-items: center; }
-      .timetablepage .timetable__filters div.filters_list .select_filter {
+      .timetablepage .timetable__filters div.filters_list .select_list {
         font-family: 'Ubuntu', sans-serif;
         font-weight: 400;
         font-size: 16px;
@@ -6141,10 +6141,23 @@ mark {
         line-height: 122%;
         display: inline-block;
         padding: 0 20px;
-        text-transform: uppercase; }
-        .timetablepage .timetable__filters div.filters_list .select_filter a:hover {
+        text-transform: uppercase;
+        color: #b5b2b8; }
+        .timetablepage .timetable__filters div.filters_list .select_list .courses a:hover {
+          color: #311616; }
+        .timetablepage .timetable__filters div.filters_list .select_list .pro a:hover {
+          color: #726c78; }
+        .timetablepage .timetable__filters div.filters_list .select_list .amateur a:hover {
+          color: #b17c8f; }
+        .timetablepage .timetable__filters div.filters_list .select_list .high_level a:hover {
           color: #96ccbf; }
-        .timetablepage .timetable__filters div.filters_list .select_filter a span {
+        .timetablepage .timetable__filters div.filters_list .select_list .weekend a:hover {
+          color: #f48870; }
+        .timetablepage .timetable__filters div.filters_list .select_list .teacher {
+          color: #b5b2b8; }
+          .timetablepage .timetable__filters div.filters_list .select_list .teacher:hover {
+            color: #726c78; }
+        .timetablepage .timetable__filters div.filters_list .select_list span {
           color: #b5b2b8;
           font-weight: 400;
           margin: 0 0 0 5px; }
@@ -6161,7 +6174,8 @@ mark {
       width: 100%; }
       @media only screen and (max-width: 960px) {
         .timetablepage .timetable ul {
-          margin: 20px 0; } }
+          margin: 20px auto;
+          width: 90%; } }
       @media only screen and (max-width: 960px) {
         .timetablepage .timetable ul:first-child {
           display: none; } }
@@ -6174,7 +6188,7 @@ mark {
         @media only screen and (max-width: 960px) {
           .timetablepage .timetable ul li {
             flex-basis: 100%;
-            width: 90%; } }
+            width: 100%; } }
         .timetablepage .timetable ul li .timetable__info {
           display: block;
           position: absolute;
@@ -6206,7 +6220,7 @@ mark {
       border-bottom: 1px solid #e0cbd2; }
       @media only screen and (max-width: 960px) {
         .timetablepage .timetable .timetable__week {
-          border: none; } }
+          border-right: none; } }
       @media only screen and (max-width: 960px) {
         .timetablepage .timetable .timetable__week {
           flex-direction: column; } }
