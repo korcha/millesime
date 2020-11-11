@@ -93,6 +93,7 @@
     .teacher__card{
       display: inline-block;
       position: relative;
+      vertical-align: top;
       text-align: left;
       color:$color-grey;
       margin:50px 20px;
@@ -102,6 +103,9 @@
           display: block;
           width:195px;
           height:270px;
+          -moz-border-radius: 120px / 160px;
+          -webkit-border-radius: 120px / 160px;
+          border-radius: 120px / 160px;
         }
       }
 
@@ -191,6 +195,7 @@
         .teacher__photo{
           img{
             width:420px;
+            border-radius:0;
           }
         }
       }

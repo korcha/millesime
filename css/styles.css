@@ -6428,13 +6428,17 @@ mark {
     .teacherspage .teachers__list .teacher__card {
       display: inline-block;
       position: relative;
+      vertical-align: top;
       text-align: left;
       color: #726c78;
       margin: 50px 20px; }
       .teacherspage .teachers__list .teacher__card .teacher__photo img {
         display: block;
         width: 195px;
-        height: 270px; }
+        height: 270px;
+        -moz-border-radius: 120px / 160px;
+        -webkit-border-radius: 120px / 160px;
+        border-radius: 120px / 160px; }
       .teacherspage .teachers__list .teacher__card .teacher__name {
         font-family: 'Ubuntu', sans-serif;
         font-weight: 400;
@@ -6486,7 +6490,8 @@ mark {
         .teacherspage .teachers__list .teacher__card.center:after {
           right: -100px; }
         .teacherspage .teachers__list .teacher__card.center .teacher__photo img {
-          width: 420px; }
+          width: 420px;
+          border-radius: 0; }
 
 .graduatespage {
   width: 1200px;
@@ -6841,7 +6846,7 @@ mark {
       width: 100%;
       height: 100%;
       max-width: 420px;
-      max-height: 420px; }
+      min-height: 420px; }
       @media only screen and (max-width: 960px) {
         .listjobspage .jobs_content .course-preview {
           grid-column: 1/5;
@@ -6988,6 +6993,15 @@ mark {
         @media only screen and (max-width: 640px) {
           .reviewspage .reviews__list .reviews__item:nth-child(even) {
             grid-column: 1/5; } }
+      .reviewspage .reviews__list .reviews__item:nth-child(2):before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -360px;
+        background: url("../img/svg/icon_corkscrew.svg") no-repeat;
+        width: 330px;
+        height: 330px; }
       .reviewspage .reviews__list .reviews__item .reviews__iframe {
         grid-column: 1/4;
         display: inline-block;
@@ -7015,7 +7029,8 @@ mark {
             grid-column: 3/5; } }
         @media only screen and (max-width: 640px) {
           .reviewspage .reviews__list .reviews__item .block-grid {
-            grid-column: 1/5; } }
+            grid-column: 1/5;
+            justify-self: center; } }
         .reviewspage .reviews__list .reviews__item .block-grid .icon__write_reviews {
           display: block;
           position: relative;
@@ -7033,6 +7048,9 @@ mark {
           font-weight: 500;
           text-transform: uppercase;
           line-height: 70px; }
+          @media only screen and (max-width: 640px) {
+            .reviewspage .reviews__list .reviews__item .block-grid .icon__write_reviews {
+              margin: 0 auto 50px auto; } }
         .reviewspage .reviews__list .reviews__item .block-grid .course-preview {
           vertical-align: top;
           width: 100%;
@@ -7045,6 +7063,9 @@ mark {
               width: 420px;
               height: 420px;
               justify-self: end; } }
+          @media only screen and (max-width: 640px) {
+            .reviewspage .reviews__list .reviews__item .block-grid .course-preview {
+              justify-self: center; } }
           .reviewspage .reviews__list .reviews__item .block-grid .course-preview .course-preview__desc,
           .reviewspage .reviews__list .reviews__item .block-grid .course-preview .course-preview__type {
             margin-left: 60%;
@@ -7102,19 +7123,11 @@ mark {
               width: 420px;
               height: 420px;
               justify-self: end; } }
+          @media only screen and (max-width: 640px) {
+            .reviewspage .reviews__list .reviews__item .block-grid.partner-preview {
+              justify-self: center; } }
         .reviewspage .reviews__list .reviews__item .block-grid.reviews__item {
           margin-bottom: 0; }
-  .reviewspage .icon__corkscrew {
-    display: block;
-    position: absolute;
-    top: 900px;
-    left: -100px;
-    background: url("../img/svg/icon_corkscrew.svg") no-repeat;
-    width: 330px;
-    height: 330px; }
-    @media only screen and (max-width: 640px) {
-      .reviewspage .icon__corkscrew {
-        display: none; } }
 
 .formvacancypage {
   width: 100%;

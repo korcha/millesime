@@ -64,6 +64,17 @@
         }
       }
 
+      &:nth-child(2):before{
+        content:"";
+        display: block;
+        position: absolute;
+        top:0;
+        left:-360px;
+        background: url("../img/svg/icon_corkscrew.svg") no-repeat;
+        width: 330px;
+        height: 330px
+      }
+
       .reviews__iframe {
         grid-column: 1/4;
         display: inline-block;
@@ -99,6 +110,7 @@
 
         @media only screen and (max-width: 640px) {
           grid-column: 1/5;
+          justify-self: center;
         }
 
         .icon__write_reviews {
@@ -116,6 +128,11 @@
           font-weight: 500;
           text-transform: uppercase;
           line-height: 70px;
+
+          @media only screen and (max-width: 640px) {
+           margin:0 auto 50px auto;
+          }
+
         }
 
         .course-preview {
@@ -130,6 +147,10 @@
             width: 420px;
             height: 420px;
             justify-self: end;
+          }
+
+          @media only screen and (max-width: 640px) {
+            justify-self: center;
           }
 
           .course-preview__desc,
@@ -206,27 +227,16 @@
             height: 420px;
             justify-self: end;
           }
+
+          @media only screen and (max-width: 640px) {
+            justify-self: center;
+          }
         }
 
         &.reviews__item {
           margin-bottom: 0;
         }
       }
-    }
-  }
-
-
-  .icon__corkscrew {
-    display: block;
-    position: absolute;
-    top: 900px;
-    left: -100px;
-    background: url("../img/svg/icon_corkscrew.svg") no-repeat;
-    width: 330px;
-    height: 330px;
-
-    @media only screen and (max-width: 640px) {
-      display: none;
     }
   }
 }
