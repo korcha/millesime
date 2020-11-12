@@ -4064,9 +4064,11 @@ a {
           display: none; } }
     .reviews .reviews_content .all_reviews {
       grid-column: 5/5;
-      grid-row: 4/8;
+      grid-row: 7/8;
       text-align: left;
       padding: 50px 0 0 0; }
+      .reviews .reviews_content .all_reviews a {
+        display: grid; }
       @media only screen and (max-width: 960px) {
         .reviews .reviews_content .all_reviews {
           grid-column: 3/5;
