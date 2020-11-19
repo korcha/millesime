@@ -24,6 +24,35 @@ var changeLang= function(){
 document.querySelector(".language").onclick=changeLang;
 
 
+function tableTime() {
+    if (document.body.offsetWidth > 960) {
+        $('.timetable__item').on('mouseover', function () {
+            $(this).addClass('active');
+            $(this).siblings(".timetable__item").addClass('hide');
+        });
+
+        $('.timetable__item').on('mouseleave', function () {
+            $(this).removeClass('active');
+            $(this).siblings(".timetable__item").removeClass('hide');
+        });
+
+        $('.timetable__week li').show();
+    }
+    else {
+
+        $('.timetable__item').bind('click', function(){
+            var course_link=$(this).find('.item__description a').attr('href');
+            $(location).attr('href', course_link);
+        });
+
+        $('.timetable__week li').each(function () {
+            if (!$(this).find('.timetable__item').length) {
+                $(this).hide();
+            }
+        });
+    }
+}
+
 $(document).ready(function() {
 
     function iframeWidth(block){
@@ -89,35 +118,6 @@ $(document).ready(function() {
 
     if ($('.timetablepage').length) {
         tableTime();
-    }
-
-    function tableTime() {
-        if (document.body.offsetWidth > 960) {
-            $('.timetable__item').on('mouseover', function () {
-                $(this).addClass('active');
-                $(this).siblings(".timetable__item").addClass('hide');
-            });
-
-            $('.timetable__item').on('mouseleave', function () {
-                $(this).removeClass('active');
-                $(this).siblings(".timetable__item").removeClass('hide');
-            });
-
-            $('.timetable__week li').show();
-        }
-        else {
-
-            $('.timetable__item').bind('click', function(){
-                var course_link=$(this).find('.item__description a').attr('href');
-                $(location).attr('href', course_link);
-            });
-
-            $('.timetable__week li').each(function () {
-                if (!$(this).find('.timetable__item').length) {
-                    $(this).hide();
-                }
-            });
-        }
     }
 
     $('.select_list a').bind('click', function(){

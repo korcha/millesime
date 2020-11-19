@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
     var array_img=[], img_view, number_img=0;
