@@ -3278,6 +3278,10 @@ a {
   margin: 0 auto;
   margin: 100px 0 0 0; }
 
+ul li {
+  position: relative;
+  margin: 10px 0; }
+
 .header {
   padding: 50px 90px 0 60px;
   display: flex;
@@ -3514,16 +3518,16 @@ a {
       grid-row: 1;
       display: block;
       position: relative;
-      top: -80px;
+      top: -170px;
       left: 40%;
       background: url("../img/svg/bg_degustation_link.svg") no-repeat;
       width: 318px;
       height: 270px;
-      padding: 40% 0 0 50%; }
+      padding: 45% 0 0 50%; }
       @media only screen and (max-width: 1200px) {
         .degustation .degustation_links .link_near_degustation {
           grid-column: 3/7;
-          padding: 20% 0 0 25%; } }
+          padding: 25% 0 0 25%; } }
       @media only screen and (max-width: 960px) {
         .degustation .degustation_links .link_near_degustation {
           grid-column: 2/5; } }
@@ -4120,7 +4124,8 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px 120px 20px;
-    z-index: 100; }
+    z-index: 100;
+    list-style: none; }
     @media only screen and (max-width: 480px) {
       .partners ul {
         padding: 20px; } }
@@ -4323,7 +4328,8 @@ a {
   color: #b17c8f;
   text-align: left;
   margin: 0 auto 60px auto;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  max-width: 50%; }
   .section__title:after {
     content: " ";
     position: absolute;
@@ -5097,34 +5103,34 @@ mark {
     height: 100%; }
   .timetable__item.hide {
     display: none; }
-  .timetable__item.weekend .item__time {
-    color: #f48870; }
-  .timetable__item.weekend.active {
-    background-color: rgba(244, 136, 112, 0.2); }
-  @media only screen and (max-width: 960px) {
-    .timetable__item.weekend {
-      background-color: rgba(244, 136, 112, 0.2); } }
-  .timetable__item.pro .item__time {
+  .timetable__item.color_2 .item__time {
     color: #726c78; }
-  .timetable__item.pro.active {
+  .timetable__item.color_2.active {
     background-color: rgba(114, 108, 120, 0.2); }
   @media only screen and (max-width: 960px) {
-    .timetable__item.pro {
+    .timetable__item.color_2 {
       background-color: rgba(114, 108, 120, 0.2); } }
-  .timetable__item.amateur .item__time {
+  .timetable__item.color_3 .item__time {
     color: #b17c8f; }
-  .timetable__item.amateur.active {
+  .timetable__item.color_3.active {
     background-color: rgba(177, 124, 143, 0.2); }
   @media only screen and (max-width: 960px) {
-    .timetable__item.amateur {
+    .timetable__item.color_3 {
       background-color: rgba(177, 124, 143, 0.2); } }
-  .timetable__item.hight_level .item__time {
+  .timetable__item.color_4 .item__time {
     color: #96ccbf; }
-  .timetable__item.hight_level.active {
+  .timetable__item.color_4.active {
     background-color: rgba(150, 204, 191, 0.2); }
   @media only screen and (max-width: 960px) {
-    .timetable__item.hight_level {
+    .timetable__item.color_4 {
       background-color: rgba(150, 204, 191, 0.2); } }
+  .timetable__item.color_5 .item__time {
+    color: #f48870; }
+  .timetable__item.color_5.active {
+    background-color: rgba(244, 136, 112, 0.2); }
+  @media only screen and (max-width: 960px) {
+    .timetable__item.color_5 {
+      background-color: rgba(244, 136, 112, 0.2); } }
   .timetable__item .item__time {
     font-family: 'Vollkorn', serif;
     font-size: 48px;
@@ -5568,6 +5574,17 @@ mark {
         font-weight: 500; }
         .coursepage .coursepage__content .coursepage__info a:hover {
           color: #b17c8f; }
+      .coursepage .coursepage__content .coursepage__info ul {
+        padding: 1vw 2vw; }
+        .coursepage .coursepage__content .coursepage__info ul li {
+          position: relative;
+          margin: 10px 0; }
+          .coursepage .coursepage__content .coursepage__info ul li:before {
+            content: "\2014";
+            position: absolute;
+            left: -25px;
+            height: 2px;
+            color: #b17c8f; }
     .coursepage .coursepage__content .coursepage__links {
       text-align: left;
       margin-left: auto; }
@@ -5664,17 +5681,16 @@ mark {
       .seminarpage .seminar__info {
         grid-gap: 20px; } }
     .seminarpage .seminar__info p {
-      max-width: 400px;
       text-align: left;
       padding: 0 10px; }
       .seminarpage .seminar__info p:nth-child(1) {
-        grid-column: 3/5; }
+        grid-column: 3/7; }
         @media only screen and (max-width: 640px) {
           .seminarpage .seminar__info p:nth-child(1) {
-            grid-column: 1/3; } }
+            grid-column: 2/7; } }
         @media only screen and (max-width: 480px) {
           .seminarpage .seminar__info p:nth-child(1) {
-            grid-column: 1/5; } }
+            grid-column: 1/7; } }
       .seminarpage .seminar__info p:nth-child(2) {
         grid-column: 5/7; }
         @media only screen and (max-width: 640px) {
@@ -5873,7 +5889,8 @@ mark {
         font-size: 14px; }
       .listcoursespage div article .article__title {
         font-family: 'Vollkorn', serif;
-        margin: 25px 0; }
+        margin: 25px 0;
+        font-size: 36px; }
       .listcoursespage div article .article__content {
         font-weight: 500; }
         .listcoursespage div article .article__content span {
@@ -6134,7 +6151,7 @@ mark {
       flex-direction: row;
       flex-wrap: nowrap;
       align-items: center; }
-      .timetablepage .timetable__filters div.filters_list .select_list {
+      .timetablepage .timetable__filters div.filters_list .select_list li {
         font-family: 'Ubuntu', sans-serif;
         font-weight: 400;
         font-size: 16px;
@@ -6144,25 +6161,25 @@ mark {
         display: inline-block;
         padding: 0 20px;
         text-transform: uppercase;
+        color: #726c78; }
+      .timetablepage .timetable__filters div.filters_list .select_list .color_1 a:hover {
+        color: #311616; }
+      .timetablepage .timetable__filters div.filters_list .select_list .color_2 a:hover {
         color: #b5b2b8; }
-        .timetablepage .timetable__filters div.filters_list .select_list .courses a:hover {
-          color: #311616; }
-        .timetablepage .timetable__filters div.filters_list .select_list .pro a:hover {
+      .timetablepage .timetable__filters div.filters_list .select_list .color_3 a:hover {
+        color: #b17c8f; }
+      .timetablepage .timetable__filters div.filters_list .select_list .color_4 a:hover {
+        color: #96ccbf; }
+      .timetablepage .timetable__filters div.filters_list .select_list .color_5 a:hover {
+        color: #f48870; }
+      .timetablepage .timetable__filters div.filters_list .select_list .color_6 {
+        color: #b5b2b8; }
+        .timetablepage .timetable__filters div.filters_list .select_list .color_6:hover {
           color: #726c78; }
-        .timetablepage .timetable__filters div.filters_list .select_list .amateur a:hover {
-          color: #b17c8f; }
-        .timetablepage .timetable__filters div.filters_list .select_list .high_level a:hover {
-          color: #96ccbf; }
-        .timetablepage .timetable__filters div.filters_list .select_list .weekend a:hover {
-          color: #f48870; }
-        .timetablepage .timetable__filters div.filters_list .select_list .teacher {
-          color: #b5b2b8; }
-          .timetablepage .timetable__filters div.filters_list .select_list .teacher:hover {
-            color: #726c78; }
-        .timetablepage .timetable__filters div.filters_list .select_list span {
-          color: #b5b2b8;
-          font-weight: 400;
-          margin: 0 0 0 5px; }
+      .timetablepage .timetable__filters div.filters_list .select_list span {
+        color: #b5b2b8;
+        font-weight: 400;
+        margin: 0 0 0 5px; }
   .timetablepage .timetable {
     width: 100%;
     max-width: 1400px;
@@ -6186,7 +6203,8 @@ mark {
         flex-basis: 15%;
         padding: 20px 10px;
         list-style: none;
-        text-align: center; }
+        text-align: center;
+        margin: 0; }
         @media only screen and (max-width: 960px) {
           .timetablepage .timetable ul li {
             flex-basis: 100%;
@@ -6231,7 +6249,8 @@ mark {
         padding: 0;
         text-align: left;
         border-top: 1px solid #e0cbd2;
-        border-left: 1px solid #e0cbd2; }
+        border-left: 1px solid #e0cbd2;
+        margin: 0; }
         @media only screen and (max-width: 960px) {
           .timetablepage .timetable .timetable__week li {
             height: auto;
@@ -6804,7 +6823,7 @@ mark {
       grid-column: 1/5; }
       .listjobspage .jobs_content .job__list .job__item {
         display: inline-grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, minmax(20px, 275px));
         grid-template-rows: 1fr;
         grid-gap: 1vw;
         width: 100%;
@@ -6815,7 +6834,7 @@ mark {
         text-align: center;
         transition: all .5s; }
         .listjobspage .jobs_content .job__list .job__item .job__data {
-          grid-column: 1/3;
+          grid-column: 1/2;
           align-self: center;
           font-family: 'Ubuntu', sans-serif;
           font-weight: 400;
@@ -6823,7 +6842,7 @@ mark {
           line-height: 137.9%;
           color: #b5b2b8; }
         .listjobspage .jobs_content .job__list .job__item .job__title_info {
-          grid-column: 3/7;
+          grid-column: 2/5;
           color: #726c78;
           font-family: 'Ubuntu', sans-serif;
           font-weight: 400;

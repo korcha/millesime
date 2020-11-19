@@ -213,21 +213,21 @@
       grid-row: 1;
       display: block;
       position: relative;
-      top:-80px;
+      top:-170px;
       left:40%;
       background: url("../img/svg/bg_degustation_link.svg") no-repeat;
       width:318px;
       height:270px;
-      padding: 40% 0 0 50%;
+      padding: 45% 0 0 50%;
 
       @media only screen and (max-width: 1200px) {
         grid-column: 3/7;
-        padding: 20% 0 0 25%;
+        padding: 25% 0 0 25%;
       }
 
       @media only screen and (max-width: 960px) {
         grid-column: 2/5;
-      }
+      }  
 
       @media only screen and (max-width: 800px) {
         grid-column: 3/5;

@@ -130,6 +130,24 @@
           color: $color-vine;
         }
       }
+
+      ul{
+        padding:1vw 2vw;
+
+        li{
+          position: relative;
+          margin:10px 0;
+
+          &:before{
+            content:"\2014";
+            position: absolute;
+            left:-25px;
+            height:2px;
+            color: $color-vine;
+          }
+        }
+      }
+
     }
 
     .coursepage__links {

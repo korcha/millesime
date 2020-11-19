@@ -57,44 +57,47 @@
         align-items:center;
 
         .select_list{
-          @include text-button;
-          display: inline-block;
-          padding:0 20px;
-          text-transform: uppercase;
-          color:$color-grey-light;
 
-          .courses {
+          li {
+            @include text-button;
+            display: inline-block;
+            padding: 0 20px;
+            text-transform: uppercase;
+            color: $color-grey;
+          }
+
+          .color_1 {
             a:hover {
               color: $color-dark;
             }
           }
 
-          .pro{
+          .color_2{
             a:hover{
-              color:$color-grey;
+              color:$color-grey-light;
             }
           }
 
-          .amateur {
+          .color_3 {
             a:hover{
               color: $color-vine;
             }
           }
 
-          .high_level{
+          .color_4{
             a:hover{
               color:$color-green;
             }
           }
 
-          .weekend{
+          .color_5{
             a:hover{
               color:$color-red;
             }
           }
 
-          .teacher {
-            color: $color-grey-light;;
+          .color_6 {
+            color: $color-grey-light;
 
             &:hover {
               color: $color-grey;
@@ -141,6 +144,7 @@
         padding: 20px 10px;
         list-style: none;
         text-align: center;
+        margin:0;
 
         @media only screen and (max-width: 960px) {
           flex-basis: 100%;
@@ -206,12 +210,12 @@
         text-align: left;
         border-top:1px solid $color-red-medium;
         border-left:1px solid $color-red-medium;
+        margin:0;
 
         @media only screen and (max-width: 960px) {
           height: auto;
           border-right:1px solid $color-red-medium;
         }
-
       }
     }
   }
