@@ -5535,9 +5535,12 @@ mark {
         .coursepage .coursepage__content .coursepage__data .coursepage__item:last-child {
           margin-bottom: 0; }
       .coursepage .coursepage__content .coursepage__data .coursepage__data-title {
-        color: #b5b2b8; }
+        color: #b5b2b8;
+        margin-bottom: 10px;
+        line-height: 1; }
       .coursepage .coursepage__content .coursepage__data .coursepage__data-content {
-        color: #726c78; }
+        color: #726c78;
+        line-height: 1; }
         .coursepage .coursepage__content .coursepage__data .coursepage__data-content--big {
           font-size: 24px; }
         .coursepage .coursepage__content .coursepage__data .coursepage__data-content--bolder {
@@ -6626,13 +6629,17 @@ mark {
       padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
-      max-width: 100%; }
+      max-width: 100%;
+      text-align: left;
+      align-items: end; }
       .contactspage .contacts_video .item__video iframe {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%; }
+      .contactspage .contacts_video .item__video .icon-certificate {
+        display: block; }
       .contactspage .contacts_video .item__video .item__overlay {
         display: block;
         position: absolute;
@@ -6667,16 +6674,16 @@ mark {
           .contactspage .contacts_video .item__video:nth-child(1) {
             grid-column: 1/5; } }
       .contactspage .contacts_video .item__video:nth-child(2) {
-        grid-column: 2/4;
+        grid-column: 2/5;
         grid-row: 6/7;
         text-align: left;
         align-items: end; }
         @media only screen and (max-width: 960px) {
           .contactspage .contacts_video .item__video:nth-child(2) {
-            grid-column: 1/3; } }
+            grid-column: 1/4; } }
         @media only screen and (max-width: 640px) {
           .contactspage .contacts_video .item__video:nth-child(2) {
-            grid-column: 1/4; } }
+            grid-column: 1/5; } }
       .contactspage .contacts_video .item__video:nth-child(3) {
         grid-column: 4/7; }
         @media only screen and (max-width: 960px) {
