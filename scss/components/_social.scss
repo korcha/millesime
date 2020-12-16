@@ -42,6 +42,13 @@
       background-image: url("../img/svg/vkontakte.svg");
     }
 
+    &--youtube {
+      width: 20px;
+      height: 12px;
+      background-image: url("../img/svg/youtube.svg");
+    }
+
+
     &--vkontakte-vine {
       width: 20px;
       height: 12px;
@@ -60,6 +67,11 @@
     &--twitter-vine {
       width: 16px;
       height: 14px;
+    }
+
+    &--youtube-vine {
+      width: 18px;
+      height: 13px;
     }
 
     .fill-icon{

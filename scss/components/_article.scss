@@ -22,9 +22,11 @@
     @include text-h3;
   }
   .article__content {
-    display: block;
-    position: relative;
-    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    font-size: 16px;
+    color: $color-grey;
 
     span{
       display: block;
@@ -37,6 +39,21 @@
       vertical-align: top;
       max-width: 100px;
       height:auto;
+    }
+
+    .about_school__text_info{
+      display: block;
+      margin:20px 0;
+
+      .title_info{
+        font-size: 22px;
+        margin:20px 0 0 0;
+      }
+
+      .legal_info{
+        color:$color-grey-light;
+        margin:20px 0 0 0;
+      }
     }
   }
   .article_link{
