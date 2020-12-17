@@ -4949,6 +4949,21 @@ mark {
   display: flex;
   flex-direction: column;
   position: relative; }
+  .form .error_email {
+    display: block;
+    position: relative;
+    font-size: 10px;
+    color: #f48870;
+    margin: 0 0 0 20px;
+    font-weight: 500; }
+    .form .error_email:before {
+      content: '*';
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      left: -10px;
+      color: #f48870;
+      font-size: 10px; }
   .form .form__field {
     max-width: 420px;
     width: 100%;
@@ -5009,14 +5024,16 @@ mark {
   .form .form__radio {
     display: inline-block;
     position: relative;
-    padding: 10px 0; }
+    padding: 5px 0;
+    text-align: left; }
     .form .form__radio input[type="radio"] {
       opacity: 0; }
     .form .form__radio label {
-      position: absolute;
-      display: inline-block;
+      position: relative;
+      display: block;
       left: 20px;
-      padding-left: 30px; }
+      padding: 0 0 0 30px;
+      text-align: left; }
       .form .form__radio label:before, .form .form__radio label:after {
         position: absolute;
         content: "";
@@ -5353,7 +5370,7 @@ mark {
     display: block;
     position: relative;
     width: 100%;
-    height: 150px;
+    height: 100%;
     border-left: 1px solid #b17c8f;
     opacity: 0;
     transition: all .5s; }
