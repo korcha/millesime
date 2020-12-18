@@ -83,7 +83,7 @@
         grid-column: 4/5;
       }
 
-      @media only screen and (max-width: 640px) {
+      @media only screen and (max-width: 960px) {
         display: none;
       }
 
@@ -94,10 +94,6 @@
         background: url("../img/content/bg_gift.png") no-repeat;
         width: 240px;
         height: 350px;
-
-        @media only screen and (max-width: 960px) {
-          top: 200px;
-        }
       }
     }
 
@@ -117,31 +113,70 @@
 
       @media only screen and (max-width: 640px) {
         grid-column: 1/5;
-        justify-self: start;
-      }
-    }
-
-    .gift__type {
-      grid-column: 1/4;
-
-      @media only screen and (max-width: 960px) {
-        margin: -100px 0 0 0;
-      }
-
-      @media only screen and (max-width: 640px) {
-        grid-column: 1/5;
-        margin: 50px 0 0 0;
+        justify-self: center;
       }
     }
 
     .gift__form {
-      grid-column: 2/5;
-      margin: 100px 0 0 0;
+      grid-column: 1/5;
+      margin: 50px 0 0 0;
+
+      display: grid;
+      grid-template-columns: repeat(4, minmax(50px, 375px));
+
+
+      @media only screen and (max-width: 960px) {
+        grid-column: 1/4;
+        margin: 100px 0 0 0;
+      }
 
       @media only screen and (max-width: 640px) {
         grid-column: 1/5;
+        margin:0;
       }
+
+      .form{
+        grid-column: 1/5;
+
+        display: grid;
+        grid-template-columns: repeat(4, minmax(50px, 375px));
+
+        .gift__type {
+          grid-column: 1/5;
+         text-align: left;
+        }
+
+        .gift__order{
+          display: block;
+          grid-column: 2/5;
+          width: 500px;
+          justify-self: start;
+          margin:100px 0 0 0;
+
+          @media only screen and (max-width: 640px) {
+            grid-column: 1/5;
+          }
+
+          @media only screen and (max-width: 480px) {
+            width:100%;
+          }
+
+          .form__field{
+            display: block;
+          }
+        }
+
+        .form_button_send{
+          grid-column: 2/5;
+
+          @media only screen and (max-width: 640px) {
+            grid-column: 1/5;
+          }
+        }
+      }
+
     }
+
   }
 }
 

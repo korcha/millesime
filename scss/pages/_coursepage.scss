@@ -187,10 +187,11 @@
         display: flex;
         flex-direction: row;
         justify-content:flex-start;
-        align-items:center;
+        align-items:start;
         padding:40px 0;
 
         a{
+          display: block;
           @include text-button;
           position: relative;
           color:$color-grey;

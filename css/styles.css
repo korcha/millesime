@@ -4990,17 +4990,17 @@ mark {
     .bg_pink .form .form__field {
       background: #f4f3f4; }
   .form .form__checkbox {
-    display: inline-block;
+    display: block;
     position: relative;
-    padding: 10px 0;
+    padding: 0;
     text-align: left; }
     .form .form__checkbox input[type="checkbox"] {
       opacity: 0; }
     .form .form__checkbox label {
-      position: absolute;
-      display: inline-block;
+      position: relative;
+      display: block;
       left: 20px;
-      padding-left: 30px; }
+      padding: 0 0 0 30px; }
       .form .form__checkbox label:before, .form .form__checkbox label:after {
         position: absolute;
         content: "";
@@ -5022,7 +5022,7 @@ mark {
     .form .form__checkbox input[type="checkbox"]:checked + label:after {
       content: ''; }
   .form .form__radio {
-    display: inline-block;
+    display: block;
     position: relative;
     padding: 5px 0;
     text-align: left; }
@@ -5647,9 +5647,10 @@ mark {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        align-items: center;
+        align-items: start;
         padding: 40px 0; }
         .coursepage .coursepage__content .coursepage__register .courses__status a {
+          display: block;
           font-family: 'Ubuntu', sans-serif;
           font-weight: 400;
           font-size: 16px;
@@ -6011,7 +6012,7 @@ mark {
       @media only screen and (max-width: 960px) {
         .giftspage .gift__content .gift__card {
           grid-column: 4/5; } }
-      @media only screen and (max-width: 640px) {
+      @media only screen and (max-width: 960px) {
         .giftspage .gift__content .gift__card {
           display: none; } }
       .giftspage .gift__content .gift__card .icon__gift {
@@ -6021,9 +6022,6 @@ mark {
         background: url("../img/content/bg_gift.png") no-repeat;
         width: 240px;
         height: 350px; }
-        @media only screen and (max-width: 960px) {
-          .giftspage .gift__content .gift__card .icon__gift {
-            top: 200px; } }
     .giftspage .gift__content .gift__preview {
       grid-column: 5/7;
       vertical-align: top;
@@ -6039,22 +6037,46 @@ mark {
       @media only screen and (max-width: 640px) {
         .giftspage .gift__content .gift__preview {
           grid-column: 1/5;
-          justify-self: start; } }
-    .giftspage .gift__content .gift__type {
-      grid-column: 1/4; }
-      @media only screen and (max-width: 960px) {
-        .giftspage .gift__content .gift__type {
-          margin: -100px 0 0 0; } }
-      @media only screen and (max-width: 640px) {
-        .giftspage .gift__content .gift__type {
-          grid-column: 1/5;
-          margin: 50px 0 0 0; } }
+          justify-self: center; } }
     .giftspage .gift__content .gift__form {
-      grid-column: 2/5;
-      margin: 100px 0 0 0; }
+      grid-column: 1/5;
+      margin: 50px 0 0 0;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(50px, 375px)); }
+      @media only screen and (max-width: 960px) {
+        .giftspage .gift__content .gift__form {
+          grid-column: 1/4;
+          margin: 100px 0 0 0; } }
       @media only screen and (max-width: 640px) {
         .giftspage .gift__content .gift__form {
-          grid-column: 1/5; } }
+          grid-column: 1/5;
+          margin: 0; } }
+      .giftspage .gift__content .gift__form .form {
+        grid-column: 1/5;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(50px, 375px)); }
+        .giftspage .gift__content .gift__form .form .gift__type {
+          grid-column: 1/5;
+          text-align: left; }
+        .giftspage .gift__content .gift__form .form .gift__order {
+          display: block;
+          grid-column: 2/5;
+          width: 500px;
+          justify-self: start;
+          margin: 100px 0 0 0; }
+          @media only screen and (max-width: 640px) {
+            .giftspage .gift__content .gift__form .form .gift__order {
+              grid-column: 1/5; } }
+          @media only screen and (max-width: 480px) {
+            .giftspage .gift__content .gift__form .form .gift__order {
+              width: 100%; } }
+          .giftspage .gift__content .gift__form .form .gift__order .form__field {
+            display: block; }
+        .giftspage .gift__content .gift__form .form .form_button_send {
+          grid-column: 2/5; }
+          @media only screen and (max-width: 640px) {
+            .giftspage .gift__content .gift__form .form .form_button_send {
+              grid-column: 1/5; } }
 
 .aboutschoolpage {
   width: 1200px;

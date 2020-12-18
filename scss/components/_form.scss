@@ -50,9 +50,9 @@
   }
 
   .form__checkbox {
-    display: inline-block;
+    display: block;
     position: relative;
-    padding: 10px 0;
+    padding: 0;
     text-align: left;
 
     input[type="checkbox"] {
@@ -60,10 +60,10 @@
     }
 
     label {
-      position: absolute;
-      display: inline-block;
+      position: relative;
+      display: block;
       left: 20px;
-      padding-left: 30px;
+      padding: 0 0 0 30px;
 
       &:before,
       &:after {
@@ -99,7 +99,7 @@
   }
 
   .form__radio{
-    display: inline-block;
+    display: block;
     position: relative;
     padding: 5px 0;
     text-align: left;
