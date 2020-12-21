@@ -149,6 +149,23 @@ $(document).ready(function() {
 
         $(location).attr('href', link);
     });
+
+    $.getScript('js/jquery.cookie.js', function(){
+
+        if (!$.cookie('adultPopup')) {
+            $('.popup').addClass('active');
+        }
+
+        $('.popup a').bind('click', function(){
+            $(this).parents('.popup').toggleClass('active');
+
+            $.cookie('adultPopup', 1, {
+                expires: 1,
+                ptariffath: '/',
+            });
+        });
+    });
+
 });
 
 

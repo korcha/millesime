@@ -1,0 +1,50 @@
+.popup {
+  overflow: scroll;
+  display: none;
+  z-index: $z-popup;
+  position: fixed;
+  background: rgba(177,124,143, 0.1);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+
+  &.active{
+    display: block;
+  }
+
+  .popup__content{
+    display: block;
+    position: relative;
+    top:50%;
+    width: 420px;
+    padding:50px 70px;
+    background: #fff;
+    text-align: center;
+    margin:-250px auto 0 auto;
+
+    @media only screen and (max-width: 480px) {
+     width:100%;
+    }
+
+
+    p{
+      font-size: 16px;
+      color:$color-grey;
+      margin:20px 0;
+
+      span{
+        font-size: 14px;
+        color: $color-grey-light;
+      }
+
+      a{
+        font-size:16px;
+        color:$color-vine;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+  }
+}

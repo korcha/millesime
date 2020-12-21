@@ -4587,6 +4587,44 @@ mark {
     opacity: 0; }
   to {
     opacity: 1; } }
+.popup {
+  overflow: scroll;
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  background: rgba(177, 124, 143, 0.1);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center; }
+  .popup.active {
+    display: block; }
+  .popup .popup__content {
+    display: block;
+    position: relative;
+    top: 50%;
+    width: 420px;
+    padding: 50px 70px;
+    background: #fff;
+    text-align: center;
+    margin: -250px auto 0 auto; }
+    @media only screen and (max-width: 480px) {
+      .popup .popup__content {
+        width: 100%; } }
+    .popup .popup__content p {
+      font-size: 16px;
+      color: #726c78;
+      margin: 20px 0; }
+      .popup .popup__content p span {
+        font-size: 14px;
+        color: #b5b2b8; }
+      .popup .popup__content p a {
+        font-size: 16px;
+        color: #b17c8f;
+        text-transform: uppercase;
+        font-weight: 600; }
+
 .social {
   display: flex;
   flex-direction: column;
