@@ -6381,36 +6381,42 @@ mark {
       justify-content: center;
       flex-direction: row;
       flex-wrap: nowrap;
-      align-items: center; }
-      .timetablepage .timetable__filters div.filters_list .select_list li {
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 137.9%;
-        font-weight: 500;
-        line-height: 122%;
-        display: inline-block;
-        padding: 0 20px;
-        text-transform: uppercase;
-        color: #726c78; }
-      .timetablepage .timetable__filters div.filters_list .select_list .color_1 a:hover {
-        color: #311616; }
-      .timetablepage .timetable__filters div.filters_list .select_list .color_2 a:hover {
-        color: #b5b2b8; }
-      .timetablepage .timetable__filters div.filters_list .select_list .color_3 a:hover {
-        color: #b17c8f; }
-      .timetablepage .timetable__filters div.filters_list .select_list .color_4 a:hover {
-        color: #96ccbf; }
-      .timetablepage .timetable__filters div.filters_list .select_list .color_5 a:hover {
-        color: #f48870; }
-      .timetablepage .timetable__filters div.filters_list .select_list .color_6 {
-        color: #b5b2b8; }
-        .timetablepage .timetable__filters div.filters_list .select_list .color_6:hover {
+      align-items: center;
+      z-index: 10; }
+      .timetablepage .timetable__filters div.filters_list .select_list {
+        z-index: 100;
+        padding: 0;
+        text-align: left;
+        margin: 0 10px 0 0; }
+        .timetablepage .timetable__filters div.filters_list .select_list li {
+          font-family: 'Ubuntu', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 137.9%;
+          font-weight: 500;
+          line-height: 122%;
+          display: inline-block;
+          padding: 0;
+          text-transform: uppercase;
           color: #726c78; }
-      .timetablepage .timetable__filters div.filters_list .select_list span {
-        color: #b5b2b8;
-        font-weight: 400;
-        margin: 0 0 0 5px; }
+        .timetablepage .timetable__filters div.filters_list .select_list .color_1 a:hover {
+          color: #311616; }
+        .timetablepage .timetable__filters div.filters_list .select_list .color_2 a:hover {
+          color: #b5b2b8; }
+        .timetablepage .timetable__filters div.filters_list .select_list .color_3 a:hover {
+          color: #b17c8f; }
+        .timetablepage .timetable__filters div.filters_list .select_list .color_4 a:hover {
+          color: #96ccbf; }
+        .timetablepage .timetable__filters div.filters_list .select_list .color_5 a:hover {
+          color: #f48870; }
+        .timetablepage .timetable__filters div.filters_list .select_list .color_6 {
+          color: #b5b2b8; }
+          .timetablepage .timetable__filters div.filters_list .select_list .color_6:hover {
+            color: #726c78; }
+        .timetablepage .timetable__filters div.filters_list .select_list span {
+          color: #b5b2b8;
+          font-weight: 400;
+          margin: 0 0 0 5px; }
   .timetablepage .timetable {
     width: 100%;
     max-width: 1400px;
