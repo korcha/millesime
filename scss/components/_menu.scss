@@ -16,9 +16,14 @@
     grid-gap: 30px;
     align-items: center;
     position: relative;
+    overflow-x:hidden;
 
     @media only screen and (max-width: 960px) {
       grid-template-columns: repeat(6, minmax(50px, 165px));
+    }
+
+    @media only screen and (max-width: 480px) {
+      grid-gap: 0;
     }
 
     ul{
@@ -82,6 +87,10 @@
       background-color: $color-white;
       padding-bottom: 36px;
 
+      @media only screen and (max-width: 480px) {
+        grid-column: 2/6;
+      }
+
       .menu__main-link {
         @include text-h2;
         @include font-vollkorn;
@@ -120,9 +129,18 @@
         padding: 0 20px;
       }
 
+      @media only screen and (max-width: 480px) {
+        grid-gap: 0;
+      }
+
       .menu__links {
         grid-column: 3/5;
         padding-top: 60px;
+
+
+        @media only screen and (max-width: 480px) {
+          grid-column: 2/5;
+        }
 
         .menu__link {
           @include text-h3;
@@ -145,7 +163,7 @@
       }
 
       .menu__social {
-        position: absolute;
+        grid-column: 6/7;
         z-index: $z-burger;
         bottom: 72px;
         right: 90px;

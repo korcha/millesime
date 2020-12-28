@@ -2,10 +2,11 @@
   @include position_relative;
   text-align: center;
   max-width: 100%;
+  z-index: 1;
 
   .icon_glass {
     @include position_absolute;
-    bottom: -280px;
+    bottom: -650px;
     right: -70px;
     background: url("../img/content/icon_glass.jpg") no-repeat;
     width: 285px;
@@ -29,7 +30,7 @@
     justify-content:center;
     max-width: 1200px;
     margin:0 auto;
-    padding:40px 20px 120px 20px;
+    padding:40px 20px 80px 20px;
     z-index: 100;
     list-style: none;
 

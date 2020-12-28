@@ -38,7 +38,16 @@
     position: relative;
 
     @media only screen and (max-width: 640px) {
+      grid-template-columns: repeat(4, minmax(50px, 250px));
       grid-gap: 20px;
+    }
+
+    @media only screen and (max-width: 640px) {
+      grid-gap: 20px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      grid-gap: 0;
     }
 
     div{
@@ -132,7 +141,7 @@
     div:nth-child(odd),
     div:nth-child(even){
       @media only screen and (max-width: 480px) {
-        grid-column: 1/7;
+        grid-column: 1/5;
       }
     }
 
