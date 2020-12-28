@@ -3382,6 +3382,7 @@ ul li {
     grid-column: 1/7;
     grid-row: 1;
     z-index: 100;
+    margin: 0 auto;
     display: table;
     vertical-align: middle; }
     @media only screen and (max-width: 960px) {
@@ -3660,9 +3661,6 @@ ul li {
         .seminars .seminars__info .block__gift {
           height: 160px;
           grid-column: 1/4; } }
-      @media only screen and (max-width: 320px) {
-        .seminars .seminars__info .block__gift {
-          grid-column: 1/5; } }
   .seminars .list_seminars {
     display: inline-grid;
     grid-template-columns: repeat(6, minmax(100px, 175px));
@@ -4105,7 +4103,13 @@ ul li {
       text-align: left;
       padding: 50px 0 0 0; }
       .reviews .reviews_content .all_reviews a {
-        display: grid; }
+        display: grid;
+        color: #b17c8f;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 137.9%;
+        font-weight: 500; }
       @media only screen and (max-width: 960px) {
         .reviews .reviews_content .all_reviews {
           grid-column: 3/5;
@@ -6393,7 +6397,10 @@ mark {
         z-index: 100;
         padding: 0;
         text-align: left;
-        margin: 0 10px 0 0; }
+        margin: 0 20px 0 0;
+        min-width: 150px; }
+        .timetablepage .timetable__filters div.filters_list .select_list .select {
+          min-width: 150px; }
         .timetablepage .timetable__filters div.filters_list .select_list li {
           font-family: 'Ubuntu', sans-serif;
           font-weight: 400;
@@ -6402,7 +6409,7 @@ mark {
           font-weight: 500;
           line-height: 122%;
           display: inline-block;
-          padding: 0;
+          padding: 0 10px 0 0;
           text-transform: uppercase;
           color: #726c78; }
         .timetablepage .timetable__filters div.filters_list .select_list .color_1 a:hover {
@@ -7518,8 +7525,7 @@ ul.bxslider {
 
 .bx-viewport {
   /*fix other elements on the page moving (on Chrome)*/
-  -webkit-transform: translatez(0);
-  z-index: 10; }
+  -webkit-transform: translatez(0); }
 
 /* PAGER */
 .bx-wrapper .bx-pager {
@@ -7563,17 +7569,13 @@ ul.bxslider {
   transform: scaleX(-1);
   background: url(../img/svg/arrow_right.svg) no-repeat;
   background-size: 32px 32px;
-  background-position: center center;
-  z-index: 1; }
+  background-position: center center; }
   @media only screen and (max-width: 960px) {
     .bx-wrapper .bx-prev {
       left: -25%; } }
   @media only screen and (max-width: 640px) {
     .bx-wrapper .bx-prev {
       left: -50%; } }
-  @media only screen and (max-width: 480px) {
-    .bx-wrapper .bx-prev {
-      left: -40%; } }
 
 .bx-wrapper .bx-prev:hover {
   background-color: #F9F3F4; }
@@ -7582,17 +7584,13 @@ ul.bxslider {
   right: -15%;
   background: url(../img/svg/arrow_right.svg) no-repeat red;
   background-size: 32px 32px;
-  background-position: center center;
-  z-index: 1; }
+  background-position: center center; }
   @media only screen and (max-width: 960px) {
     .bx-wrapper .bx-next {
       right: -25%; } }
   @media only screen and (max-width: 640px) {
     .bx-wrapper .bx-next {
       right: -50%; } }
-  @media only screen and (max-width: 480px) {
-    .bx-wrapper .bx-next {
-      right: -40%; } }
 
 .bx-wrapper .bx-next:hover {
   background-color: #F9F3F4; }
@@ -7608,8 +7606,7 @@ ul.bxslider {
   z-index: 9999;
   background-color: #fff;
   text-align: center;
-  border-radius: 40px;
-  z-index: 1; }
+  border-radius: 40px; }
 
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none; }
