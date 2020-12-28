@@ -3622,7 +3622,7 @@ ul li {
           width: 100%; } }
       @media only screen and (max-width: 480px) {
         .seminars .seminars__info .list__title {
-          grid-column: 1/5; } }
+          grid-column: 1/4; } }
     .seminars .seminars__info .block-wset {
       grid-column: 1/4;
       display: block;
@@ -6251,7 +6251,7 @@ mark {
       @media only screen and (max-width: 640px) {
         .aboutschoolpage .about_school__info .about_school__info__block {
           flex-direction: column; } }
-      .aboutschoolpage .about_school__info .about_school__info__block .about_school__img {
+      .aboutschoolpage .about_school__info .about_school__info__block .about_school_img {
         width: 100%;
         max-width: 420px;
         min-width: 300px;
