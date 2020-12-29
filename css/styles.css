@@ -4494,7 +4494,8 @@ mark {
     align-items: center;
     position: relative;
     overflow-x: hidden;
-    overflow-y: auto; }
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; }
     @media only screen and (max-width: 960px) {
       .menu .menu__content {
         grid-template-columns: repeat(6, minmax(50px, 165px)); } }
@@ -4513,6 +4514,10 @@ mark {
       position: absolute;
       top: 50px;
       left: 50px; }
+      @media only screen and (max-width: 480px) {
+        .menu .menu__content .menu__logo {
+          top: 30px;
+          left: 30px; } }
       @media only screen and (max-width: 960px) {
         .menu .menu__content .menu__logo .logo__picture {
           width: 166px;
@@ -4590,7 +4595,8 @@ mark {
         padding: 60px 0 30px 0; }
         @media only screen and (max-width: 480px) {
           .menu .menu__content .menu__bottom .menu__links {
-            grid-column: 2/5; } }
+            grid-column: 2/5;
+            padding: 30px 0 0 0; } }
         .menu .menu__content .menu__bottom .menu__links .menu__link {
           font-family: 'Ubuntu', sans-serif;
           font-weight: 400;
@@ -5250,7 +5256,7 @@ mark {
   @media only screen and (max-width: 960px) {
     .timetable__item {
       display: grid;
-      grid-template-columns: 50px 1fr 1fr;
+      grid-template-columns: 100px 1fr 1fr;
       grid-auto-rows: 1fr 1fr;
       align-items: center;
       position: relative; } }
@@ -5907,6 +5913,9 @@ mark {
     grid-template-columns: repeat(6, minmax(50px, 175px));
     grid-template-rows: auto;
     grid-gap: 30px; }
+    @media only screen and (max-width: 640px) {
+      .eventpage .event__info {
+        grid-template-columns: repeat(4, minmax(50px, 175px)); } }
     .eventpage .event__info p {
       max-width: 400px;
       text-align: left; }
@@ -5914,7 +5923,7 @@ mark {
         grid-column: 4/6; }
         @media only screen and (max-width: 640px) {
           .eventpage .event__info p:nth-child(1) {
-            grid-column: 2/6; } }
+            grid-column: 2/5; } }
   .eventpage .event__list {
     margin: 0 auto 50px auto;
     max-width: 100%;
@@ -6398,10 +6407,10 @@ mark {
         z-index: 100;
         padding: 0;
         text-align: left;
-        margin: 0 20px 0 0;
-        min-width: 150px; }
+        margin: 0 10px;
+        min-width: 120px; }
         .timetablepage .timetable__filters div.filters_list .select_list .select {
-          min-width: 150px; }
+          min-width: 120px; }
         .timetablepage .timetable__filters div.filters_list .select_list li {
           font-family: 'Ubuntu', sans-serif;
           font-weight: 400;

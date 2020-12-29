@@ -18,6 +18,7 @@
     position: relative;
     overflow-x:hidden;
     overflow-y:auto;
+    -webkit-overflow-scrolling: touch;
 
     @media only screen and (max-width: 960px) {
       grid-template-columns: repeat(6, minmax(50px, 165px));
@@ -41,6 +42,11 @@
       position: absolute;
       top:50px;
       left:50px;
+
+      @media only screen and (max-width: 480px) {
+        top:30px;
+        left:30px;
+      }
 
       .logo__picture{
         @media only screen and (max-width: 960px) {
@@ -142,6 +148,7 @@
 
         @media only screen and (max-width: 480px) {
           grid-column: 2/5;
+          padding: 30px 0 0 0;
         }
 
         .menu__link {
