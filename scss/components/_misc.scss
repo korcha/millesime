@@ -21,7 +21,7 @@
   text-align: left;
   margin: 0 auto 60px auto;
   padding-bottom: 50px;
-  max-width: 50%;
+  max-width: 60%;
 
   &:after {
     content: " ";
@@ -45,7 +45,7 @@
   color: $color-vine;
 
   @media only screen and (max-width: 480px) {
-   font-size: 14px;
+   font-size: 13px;
   }
 }
 

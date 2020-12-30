@@ -1,6 +1,6 @@
 .partner-preview {
-  width: 420px;
-  height: 420px;
+  max-width: 420px;
+  max-height: 420px;
   position: relative;
   padding: 20px 30px;
   color: $color-white;
@@ -17,7 +17,6 @@
     @include font-vollkorn;
     overflow-wrap: break-word;
     text-align: left;
-    margin-bottom:60%;
   }
 
   .partner-preview__desc,

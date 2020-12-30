@@ -16,7 +16,7 @@
 
   p {
     @include text-regular;
-    margin: 0 10px 20px 10px;
+    padding: 0 10px 20px 10px;
     text-align: left;
   }
   a {
@@ -33,7 +33,7 @@
 
     @media only screen and (max-width: 480px) {
       width:100%;
-      margin:0 10px;
+      margin:0 auto;
     }
   }
 

@@ -30,7 +30,7 @@
     position: relative;
 
     @media only screen and (max-width: 960px) {
-      grid-template-columns: repeat(6, minmax(50px, 165px));
+      grid-template-columns: repeat(4, minmax(50px, 175px));
       padding:0 20px;
     }
 
@@ -55,7 +55,7 @@
         line-height: 1.2;
 
         @media only screen and (max-width: 960px) {
-          grid-column: 1/6;
+          grid-column: 1/5;
         }
 
         @include font-vollkorn;
@@ -66,11 +66,11 @@
         grid-column: 3/5;
 
         @media only screen and (max-width: 960px) {
-          grid-column: 2/6;
+          grid-column: 2/5;
         }
 
         @media only screen and (max-width: 640px) {
-          grid-column: 1/6;
+          grid-column: 1/5;
         }
 
       }
