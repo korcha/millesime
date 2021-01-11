@@ -48,6 +48,7 @@ function tableTime() {
         $('.timetable__week li').each(function () {
             if (!$(this).find('.timetable__item').length) {
                 $(this).hide();
+                $(this).parents().css('border', 'none');
             }
         });
     }
