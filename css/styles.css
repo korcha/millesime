@@ -4481,12 +4481,13 @@ mark {
   overflow: scroll;
   display: none;
   z-index: 300;
-  position: absolute;
+  position: fixed;
   background-color: #ffffff;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  -webkit-overflow-scrolling: touch; }
   .menu .menu__content {
     display: inline-grid;
     width: 100%;

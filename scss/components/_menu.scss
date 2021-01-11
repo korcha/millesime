@@ -2,12 +2,13 @@
   overflow: scroll;
   display: none;
   z-index: $z-menu;
-  position: absolute;
+  position: fixed;
   background-color: $color-white;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+  -webkit-overflow-scrolling: touch;
 
   .menu__content{
     display: inline-grid;
