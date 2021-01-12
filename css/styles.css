@@ -4478,7 +4478,7 @@ mark {
   display: none; }
 
 .menu {
-  overflow: scroll;
+  overflow-y: scroll;
   display: none;
   z-index: 300;
   position: absolute;
@@ -4486,7 +4486,7 @@ mark {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   -webkit-overflow-scrolling: touch; }
   .menu .menu__content {
     display: inline-grid;
@@ -4598,7 +4598,7 @@ mark {
         @media only screen and (max-width: 480px) {
           .menu .menu__content .menu__bottom .menu__links {
             grid-column: 2/5;
-            padding: 30px 0 0 0; } }
+            padding: 30px 0; } }
         .menu .menu__content .menu__bottom .menu__links .menu__link {
           font-family: 'Ubuntu', sans-serif;
           font-weight: 400;
