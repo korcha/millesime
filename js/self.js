@@ -45,10 +45,21 @@ function tableTime() {
             $(location).attr('href', course_link);
         });
 
-        $('.timetable__week li').each(function () {
-            if (!$(this).find('.timetable__item').length) {
-                $(this).hide();
-                $(this).parents().css('border', 'none');
+        var item;
+
+        $('.timetable__week').each(function () {
+            var item=0;
+            $(this).find('li').each(function () {
+                if (!$(this).find('.timetable__item').length) {
+                    $(this).hide();
+                } else {
+                    item++;
+                }
+                return item;
+            });
+
+            if (item == 0) {
+                $(this).css('border', 'none');
             }
         });
     }
