@@ -6265,7 +6265,7 @@ mark {
       @media only screen and (max-width: 640px) {
         .aboutschoolpage .about-school-info .about-school-info-block {
           flex-direction: column; } }
-      .aboutschoolpage .about-school-info .about-school-info-block .about-school-img {
+      .aboutschoolpage .about-school-info .about-school-info-block .about-school-pic {
         width: 100%;
         max-width: 420px;
         min-width: 300px;
