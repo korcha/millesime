@@ -1,11 +1,11 @@
-.aboutschoolpage {
+.schoolpage {
   width: 1200px;
   max-width: 100%;
   margin:-60px auto 0 auto;
   padding-bottom: 50px;
   text-align: center;
 
-  .about-school-info{
+  .school-info{
     @include text-regular;
     margin:0 auto 50px auto;
     max-width: 100%;
@@ -38,7 +38,7 @@
       }
     }
 
-    .about-school-info-block{
+    .school-info-block{
       display:flex;
       flex-direction: row;
       justify-content: space-around;
@@ -48,7 +48,7 @@
         flex-direction: column;
       }
 
-      .about-school-pic {
+      .school-pic {
         width:100%;
         max-width: 420px;
         min-width: 300px;
@@ -85,7 +85,7 @@
         }
       }
     }
-    .about-school-info-block:nth-child(1){
+    .school-info-block:nth-child(1){
       grid-column: 2/6;
       align-items: center;
 
@@ -98,7 +98,7 @@
       }
     }
 
-    .about-school-info-block:nth-child(2){
+    .school-info-block:nth-child(2){
       flex-direction: row-reverse;
       align-items: center;
       grid-column: 2/7;
@@ -112,7 +112,7 @@
       }
     }
 
-    .about-school-info-block:nth-child(3){
+    .school-info-block:nth-child(3){
       position: relative;
       grid-column: 1/6;
 
@@ -121,7 +121,7 @@
       }
     }
 
-    .about-school-info-block:nth-child(4){
+    .school-info-block:nth-child(4){
       position: relative;
       grid-column: 2/5;
 
@@ -141,7 +141,7 @@
       }
     }
 
-    .about-school-info-block:nth-child(5){
+    .school-info-block:nth-child(5){
       position: relative;
       flex-wrap: wrap;
       grid-column: 1/7;
@@ -181,7 +181,7 @@
     }
 
 
-    .about-school-info-block:nth-child(6){
+    .school-info-block:nth-child(6){
       position: relative;
       grid-column: 3/5;
 

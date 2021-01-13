@@ -6228,13 +6228,13 @@ mark {
             .giftspage .gift__content .gift__form .form .form_button_send {
               grid-column: 1/5; } }
 
-.aboutschoolpage {
+.schoolpage {
   width: 1200px;
   max-width: 100%;
   margin: -60px auto 0 auto;
   padding-bottom: 50px;
   text-align: center; }
-  .aboutschoolpage .about-school-info {
+  .schoolpage .school-info {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -6247,84 +6247,84 @@ mark {
     align-items: center;
     position: relative; }
     @media only screen and (max-width: 1200px) {
-      .aboutschoolpage .about-school-info {
+      .schoolpage .school-info {
         grid-template-columns: repeat(6, minmax(120px, 165px)); } }
     @media only screen and (max-width: 960px) {
-      .aboutschoolpage .about-school-info {
+      .schoolpage .school-info {
         grid-template-columns: repeat(4, minmax(50px, 175px));
         grid-gap: 20px; } }
-    .aboutschoolpage .about-school-info span {
+    .schoolpage .school-info span {
       color: #b17c8f; }
-    .aboutschoolpage .about-school-info a {
+    .schoolpage .school-info a {
       color: #726c78;
       font-weight: 500; }
-      .aboutschoolpage .about-school-info a:hover {
+      .schoolpage .school-info a:hover {
         color: #b17c8f; }
-    .aboutschoolpage .about-school-info .about-school-info-block {
+    .schoolpage .school-info .school-info-block {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       padding: 20px 10px; }
       @media only screen and (max-width: 640px) {
-        .aboutschoolpage .about-school-info .about-school-info-block {
+        .schoolpage .school-info .school-info-block {
           flex-direction: column; } }
-      .aboutschoolpage .about-school-info .about-school-info-block .about-school-pic {
+      .schoolpage .school-info .school-info-block .school-pic {
         width: 100%;
         max-width: 420px;
         min-width: 300px;
         height: intrinsic;
         max-height: 100%;
         min-height: 250px; }
-      .aboutschoolpage .about-school-info .about-school-info-block article {
+      .schoolpage .school-info .school-info-block article {
         padding: 1vw 2vw; }
-        .aboutschoolpage .about-school-info .about-school-info-block article p {
+        .schoolpage .school-info .school-info-block article p {
           padding: 5px 0; }
-        .aboutschoolpage .about-school-info .about-school-info-block article .article__title {
+        .schoolpage .school-info .school-info-block article .article__title {
           font-family: 'Vollkorn', serif;
           margin: 0;
           font-size: 36px;
           line-height: 1.4;
           padding: 0; }
-        .aboutschoolpage .about-school-info .about-school-info-block article li {
+        .schoolpage .school-info .school-info-block article li {
           position: relative;
           margin: 10px 0; }
-          .aboutschoolpage .about-school-info .about-school-info-block article li:before {
+          .schoolpage .school-info .school-info-block article li:before {
             content: "\2014";
             position: absolute;
             left: -25px;
             height: 2px;
             color: #b17c8f; }
-    .aboutschoolpage .about-school-info .about-school-info-block:nth-child(1) {
+    .schoolpage .school-info .school-info-block:nth-child(1) {
       grid-column: 2/6;
       align-items: center; }
       @media only screen and (max-width: 960px) {
-        .aboutschoolpage .about-school-info .about-school-info-block:nth-child(1) {
+        .schoolpage .school-info .school-info-block:nth-child(1) {
           grid-column: 1/5; } }
-      .aboutschoolpage .about-school-info .about-school-info-block:nth-child(1) article {
+      .schoolpage .school-info .school-info-block:nth-child(1) article {
         text-align: left; }
-    .aboutschoolpage .about-school-info .about-school-info-block:nth-child(2) {
+    .schoolpage .school-info .school-info-block:nth-child(2) {
       flex-direction: row-reverse;
       align-items: center;
       grid-column: 2/7; }
       @media only screen and (max-width: 960px) {
-        .aboutschoolpage .about-school-info .about-school-info-block:nth-child(2) {
+        .schoolpage .school-info .school-info-block:nth-child(2) {
           grid-column: 1/5; } }
       @media only screen and (max-width: 640px) {
-        .aboutschoolpage .about-school-info .about-school-info-block:nth-child(2) {
+        .schoolpage .school-info .school-info-block:nth-child(2) {
           flex-direction: column; } }
-    .aboutschoolpage .about-school-info .about-school-info-block:nth-child(3) {
+    .schoolpage .school-info .school-info-block:nth-child(3) {
       position: relative;
       grid-column: 1/6; }
       @media only screen and (max-width: 960px) {
-        .aboutschoolpage .about-school-info .about-school-info-block:nth-child(3) {
+        .schoolpage .school-info .school-info-block:nth-child(3) {
           grid-column: 1/5; } }
-    .aboutschoolpage .about-school-info .about-school-info-block:nth-child(4) {
+    .schoolpage .school-info .school-info-block:nth-child(4) {
       position: relative;
       grid-column: 2/5; }
       @media only screen and (max-width: 960px) {
-        .aboutschoolpage .about-school-info .about-school-info-block:nth-child(4) {
+        .schoolpage .school-info .school-info-block:nth-child(4) {
           grid-column: 1/5; } }
-      .aboutschoolpage .about-school-info .about-school-info-block:nth-child(4):before {
+      .schoolpage .school-info .school-info-block:nth-child(4):before {
         content: "";
         display: block;
         position: absolute;
@@ -6333,40 +6333,40 @@ mark {
         background: url("../img/svg/icon_spot.svg") no-repeat;
         width: 227px;
         height: 242px; }
-    .aboutschoolpage .about-school-info .about-school-info-block:nth-child(5) {
+    .schoolpage .school-info .school-info-block:nth-child(5) {
       position: relative;
       flex-wrap: wrap;
       grid-column: 1/7; }
-      .aboutschoolpage .about-school-info .about-school-info-block:nth-child(5) p {
+      .schoolpage .school-info .school-info-block:nth-child(5) p {
         width: 195px;
         height: 120px;
         margin: 20px 0; }
         @media only screen and (max-width: 960px) {
-          .aboutschoolpage .about-school-info .about-school-info-block:nth-child(5) p {
+          .schoolpage .school-info .school-info-block:nth-child(5) p {
             display: block;
             width: 50%; } }
   @media only screen and (max-width: 960px) and (max-width: 420px) {
-    .aboutschoolpage .about-school-info .about-school-info-block:nth-child(5) p {
+    .schoolpage .school-info .school-info-block:nth-child(5) p {
       width: 100%; } }
 
-        .aboutschoolpage .about-school-info .about-school-info-block:nth-child(5) p img {
+        .schoolpage .school-info .school-info-block:nth-child(5) p img {
           width: 195px;
           height: 120px; }
       @media only screen and (max-width: 960px) {
-        .aboutschoolpage .about-school-info .about-school-info-block:nth-child(5) {
+        .schoolpage .school-info .school-info-block:nth-child(5) {
           grid-column: 1/5; } }
       @media only screen and (max-width: 640px) {
-        .aboutschoolpage .about-school-info .about-school-info-block:nth-child(5) {
+        .schoolpage .school-info .school-info-block:nth-child(5) {
           flex-direction: row; } }
       @media only screen and (max-width: 420px) {
-        .aboutschoolpage .about-school-info .about-school-info-block:nth-child(5) {
+        .schoolpage .school-info .school-info-block:nth-child(5) {
           flex-direction: column;
           justify-content: center; } }
-    .aboutschoolpage .about-school-info .about-school-info-block:nth-child(6) {
+    .schoolpage .school-info .school-info-block:nth-child(6) {
       position: relative;
       grid-column: 3/5; }
       @media only screen and (max-width: 960px) {
-        .aboutschoolpage .about-school-info .about-school-info-block:nth-child(6) {
+        .schoolpage .school-info .school-info-block:nth-child(6) {
           grid-column: 1/5; } }
 
 .timetablepage {
