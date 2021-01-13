@@ -3283,6 +3283,9 @@ ul li {
   position: relative;
   margin: 10px 0; }
 
+.base-mrg {
+  margin: 5px 0; }
+
 .header {
   padding: 50px 90px 0 60px;
   display: flex;
