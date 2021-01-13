@@ -5958,6 +5958,7 @@ mark {
       .eventpage .event__list div img {
         width: 100%;
         max-width: 420px;
+        min-width: 300px;
         height: intrinsic;
         max-height: 100%;
         min-height: 250px; }
@@ -6266,7 +6267,7 @@ mark {
       @media only screen and (max-width: 640px) {
         .schoolpage .school-info .school-info-block {
           flex-direction: column; } }
-      .schoolpage .school-info .school-info-block .school-pic {
+      .schoolpage .school-info .school-info-block img {
         width: 100%;
         max-width: 420px;
         min-width: 300px;
